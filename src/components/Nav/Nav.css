@@ -1,0 +1,57 @@
+.header {
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1px solid black;
+}
+
+.nav__logo {
+  font-size: 1.4rem;
+}
+
+.nav__logo span {
+  font-size: 1.8rem;
+  color: red;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.nav__dropmenu {
+  position: absolute;
+  top: 4.2rem;
+  opacity: 0;
+  display: none;
+  z-index: 1;
+  display: grid;
+  gap: 0.7rem;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.nav__dropmenu li:hover {
+  color: #ffffff93;
+}
+
+nav__item {
+  transition: 0.8s;
+}
+
+.nav__item:hover ul.nav__dropmenu {
+  opacity: 1;
+  display: block;
+  transition: 1s;
+  position: fixed;
+  margin-top: 0;
+}
