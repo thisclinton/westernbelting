@@ -55,3 +55,11 @@ nav__item {
   position: fixed;
   margin-top: 0;
 }
+
+.nav__contact {
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
