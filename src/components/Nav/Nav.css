@@ -50,7 +50,7 @@ nav__item {
 
 .nav__item:hover ul.nav__dropmenu {
   opacity: 1;
-  display: block;
+  display: none;
   transition: 1s;
   position: fixed;
   margin-top: 0;
