@@ -6,13 +6,6 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { heroAnim } from "../Animations";
 
 function Hero() {
-  const text =
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, nam!";
-
-  useEffect(() => {
-    heroAnim();
-  });
-
   return (
     <section className="hero">
       <div className="hero__img">
