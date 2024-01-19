@@ -1,9 +1,22 @@
+import { useState } from "react";
 import "./Nav.css";
 
 function Nav() {
+  const [nav, setNav] = useState(false);
+
+  function changeBackground() {
+    if (window.scrollY >= 80) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
     <>
-      <header className="header">
+      <header className={nav ? "header active" : "header"}>
         <nav className="nav">
           <a className="nav__logo">
             Western <span>BELTING</span>

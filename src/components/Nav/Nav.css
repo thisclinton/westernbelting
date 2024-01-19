@@ -1,14 +1,25 @@
 .header {
-  padding: 2rem;
+  padding: 1rem 2rem;
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: transparent;
+  z-index: 2;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
+  height: 3rem;
   align-items: center;
   margin-bottom: 1px solid black;
+}
+
+.header.active {
+  background: #fff;
+  color: #000;
 }
 
 .nav__logo {

@@ -1,9 +1,72 @@
 .hero {
+  position: relative;
   height: 100vh;
+  isolation: isolate;
+}
+
+.hero__img img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  object-position: center;
+}
+
+.hero__shadow {
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: #000;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.hero__container {
+  height: 100%;
+  max-width: 1110px;
+  margin: 0rem auto;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
-  font-size: 5rem;
-  font-weight: Bold;
+  gap: 5rem;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.hero__title {
+  font-size: 4.5rem;
+}
+
+.hero__title span {
+  color: red;
+}
+
+.hero__subtitle {
+  font-size: 1.2rem;
+}
+
+.hero__scroll span {
+  position: absolute;
+  rotate: 90deg;
+  bottom: 12rem;
+  right: 0.6rem;
+}
+
+.hero__line {
+  width: 0.1rem;
+  height: 5rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: 4rem;
+  right: 1.8rem;
+}
+
+.hero__arrow {
+  position: absolute;
+  font-size: 1.7rem;
+  bottom: 2.6rem;
+  right: 1rem;
 }
