@@ -1,23 +1,9 @@
 import gsap from "gsap";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
-import SplitText from "gsap-trial/SplitText";
 
 // Declare a general timeline to use in all the animation functions.
-gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const tl = gsap.timeline();
-
-let mySplitText = new SplitText(".hero__title", { type: "chars" });
-let chars = mySplitText.chars;
-
-export const heroAnim = () => {
-  tl.from(chars, {
-    yPercent: 130,
-    stagger: 0.05,
-    ease: "back.out",
-    duration: 1,
-  });
-};
 
 // Preloader Animation
 export const preLoaderAnim = () => {
