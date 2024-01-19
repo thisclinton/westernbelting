@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import ScrollTrigger from "gsap-trial/ScrollTrigger";
 
 // Declare a general timeline to use in all the animation functions.
 
