@@ -3,7 +3,6 @@ import "./Hero.css";
 import HeroImg from "../../assets/hero.jpg";
 import { useEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { heroAnim } from "../Animations";
 
 function Hero() {
   return (
