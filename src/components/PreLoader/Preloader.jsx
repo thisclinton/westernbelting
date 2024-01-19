@@ -1,7 +1,6 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
 import "./preloader.css";
 import gsap from "gsap";
-import SplitText from "gsap-trial/SplitText";
 import { preLoaderAnim } from "../Animations";
 
 function Preloader() {
