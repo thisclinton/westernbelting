@@ -11,12 +11,11 @@ const images = [
       "The preferred method of joining two ends of a belt together. With vulcanizing a belt, you attain the longest life possible from that splice. Our technicians are trained by the manufacturers to provide our customers with the best possible splice for each belt. Some systems don’t allow you to install belts with the belt already endless. We can come to your site and string the belt on your system. Once the belt is strung on your system, we can then begin to prep the belt and vulcanize the belt on site.",
   },
   {
-    src: "https://static.wixstatic.com/media/2b8fca_851ca43994c24ec99aef871071a80d18~mv2.jpg/v1/fill/w_1200,h_890,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/on%20site%20Lagging_edited.jpg",
-    title: "Pulley Lagging",
+    src: "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "",
   },
   {
-    src: "https://static.wixstatic.com/media/2b8fca_0928955622574217be334856dd0590d4~mv2_d_2448_3059_s_4_2.jpg/v1/fill/w_1200,h_1500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_0928955622574217be334856dd0590d4~mv2_d_2448_3059_s_4_2.jpg",
+    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2301&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     title: "Lacing",
 
@@ -24,7 +23,7 @@ const images = [
       "Depending on the size of the system pulleys and other specifications, vulcanizing a belt is not the best solution. If you have small diameter pulleys, or need to quickly replace a belt on a system, then the other solution is to lace the belt on both ends and join it together with a lacing pin. This allows for quick change out of a belt and also allows for use of small diameter pulleys. We are able to lace belts with a large selection of lacing ranging from lace that will work on a 1/64″ thick belt to a belt that might be over 1-1/2″ thick. Also, we can install stainless steel lacing for belts that handle food products, to regular steel for belts that handle packaged goods. Our lacing can handle any job you can throw at it. ",
   },
   {
-    src: "https://static.wixstatic.com/media/2b8fca_67e686b1e64043ebaa7402e9d57a5833~mv2_d_2448_3264_s_4_2.jpg/v1/crop/x_163,y_0,w_2195,h_2162/fill/w_1076,h_1060,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_67e686b1e64043ebaa7402e9d57a5833~mv2_d_2448_3264_s_4_2.jpg",
+    src: "https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?q=80&w=2754&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     title: "Tracking",
 
