@@ -18,10 +18,14 @@ function Hero() {
             Western <span>BELTING</span>
           </h1>
           <span className="hero__subtitle">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-            dolores veniam eaque neque, <br />
-            officiis at. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Ipsum, sed!
+            Welcome to Western Belting Company, where precision meets
+            performance in every belt we craft. As industry leaders, we take
+            pride in delivering high-quality belting solutions tailored to your
+            unique needs. Whether it's conveying efficiency, industrial power,
+            or innovative solutions, we are your trusted partner on the road to
+            seamless operations. Explore the frontier of belting technology with
+            Western Belting Company – where reliability and excellence come
+            together for your success.
           </span>
         </div>
         <div className="hero__scroll">
