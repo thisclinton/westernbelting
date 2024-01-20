@@ -39,7 +39,9 @@ function Preloader() {
   return (
     <section className="preloader" ref={comp}>
       <div className="text__container">
-        <h1 className="preloader__title">Western BELTING</h1>
+        <h1 className="preloader__title">
+          Western <h1>BELTING</h1>
+        </h1>
         <span>Conveyor Belts since 1959</span>
       </div>
     </section>
