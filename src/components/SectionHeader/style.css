@@ -1,0 +1,9 @@
+.section__header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  color: red;
+}
