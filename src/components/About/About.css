@@ -7,8 +7,9 @@
 }
 
 .about__description {
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.12;
+  color: #000000bc;
 }
 
 .slider {
