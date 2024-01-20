@@ -24,7 +24,6 @@
 
 .hero__container {
   height: 100%;
-  max-width: 1110px;
   margin: 0rem auto;
   width: 100%;
   display: flex;
@@ -36,12 +35,16 @@
   z-index: 10;
 }
 
+.hero__data {
+  margin-left: 4rem;
+}
+
 .hero__title {
-  font-size: 4.5rem;
+  font-size: 7rem;
 }
 
 .hero__title span {
-  color: red;
+  color: yellow;
 }
 
 .hero__subtitle {
@@ -52,7 +55,7 @@
   position: absolute;
   rotate: 90deg;
   bottom: 12rem;
-  right: 0.6rem;
+  right: 3rem;
 }
 
 .hero__line {
@@ -61,12 +64,12 @@
   background-color: #fff;
   position: absolute;
   bottom: 4rem;
-  right: 1.8rem;
+  right: 4.3rem;
 }
 
 .hero__arrow {
   position: absolute;
   font-size: 1.7rem;
   bottom: 2.6rem;
-  right: 1rem;
+  right: 3.5rem;
 }
