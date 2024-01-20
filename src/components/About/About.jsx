@@ -9,11 +9,14 @@ function About() {
     <section className="about">
       <SectionHeader title="about us" />
       <p className="about__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-        laudantium doloremque deserunt saepe, sunt beatae est corrupti tenetur?
-        Nobis assumenda rem dolorum eaque? Reprehenderit doloribus repudiandae
-        porro placeat rem quibusdam necessitatibus odit quisquam blanditiis
-        facere quidem illo, mollitia fugit sint!
+        Western Belting Ltd was established in 1959 with one mission: to bring a
+        real high quality of support, products and service to the industry. Our
+        passion for excellence is what inspired us in the beginning and it
+        continues to drive us today. We pride ourselves in the superior
+        experience in Conveyor, Material Handling and in the long-term
+        relationships we’ve built with our customers. ​ People come back to
+        Western Belting Ltd because they know they’ll find what they’re looking
+        for, if they don’t, we’ll help them find it!
       </p>
     </section>
   );
