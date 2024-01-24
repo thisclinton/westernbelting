@@ -100,6 +100,24 @@ export const preLoaderAnim = () => {
     });
 };
 
+export const heroAnim = () => {
+  const tl = gsap.timeline();
+  tl.from(".hero__subtitle", {
+    duration: 2,
+    opacity: 0,
+    delay: 2,
+    y: 0,
+    stagger: 0.5,
+  }).to(".hero__subtitle", {
+    duration: 1,
+    opacity: 1,
+    y: "-=30",
+    delay: 0.5,
+    stagger: 0.5,
+    ease: "Power3.easeOut",
+  });
+};
+
 export const openMenu = () => {
   const tl = gsap.timeline();
   tl.to("body", {

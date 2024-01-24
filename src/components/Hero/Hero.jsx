@@ -1,10 +1,15 @@
 import gsap from "gsap";
 import "./Hero.css";
 import HeroImg from "../../assets/hero.jpg";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { heroAnim } from "../Animations";
 
 function Hero() {
+  useLayoutEffect(() => {
+    heroAnim();
+  }, []);
+
   return (
     <section className="hero">
       <div className="hero__img">

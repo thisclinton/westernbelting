@@ -1,11 +1,8 @@
 .header {
   padding: 1rem 2rem;
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
   color: #fff;
-  background-color: transparent;
+  background-color: #000;
   z-index: 2;
 }
 
@@ -17,11 +14,11 @@
   margin-bottom: 1px solid black;
 }
 
-.header.active {
+/* .header.active {
   background: #000;
   color: #fff;
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
-}
+} */
 
 .nav__logo {
   font-size: 1.4rem;

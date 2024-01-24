@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [nav, setNav] = useState(false);
@@ -18,16 +19,16 @@ function Nav() {
     <>
       <header className={nav ? "header active" : "header"}>
         <nav className="nav">
-          <a className="nav__logo">
+          <Link to="/" className="nav__logo">
             Western <span>BELTING</span>
-          </a>
+          </Link>
 
           <div className="nav__menu">
             <ul className="nav__list">
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/products" className="nav__link">
                   Products
-                </a>
+                </Link>
                 <ul className="nav__dropmenu">
                   <li>
                     <a href="#">Heavy Duty Belting</a>
@@ -45,9 +46,9 @@ function Nav() {
               </li>
 
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/services" className="nav__link">
                   Services
-                </a>
+                </Link>
 
                 <ul className="nav__dropmenu">
                   <li>
@@ -78,21 +79,21 @@ function Nav() {
               </li>
 
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/workshop" className="nav__link">
                   Our Workshops
-                </a>
+                </Link>
               </li>
 
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/safety" className="nav__link">
                   Safety
-                </a>
+                </Link>
               </li>
 
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/shop" className="nav__link">
                   Shop
-                </a>
+                </Link>
               </li>
 
               <li className="nav__item">

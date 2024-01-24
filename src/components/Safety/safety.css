@@ -1,0 +1,36 @@
+.safety {
+  margin-top: 8rem;
+}
+
+.safety__container {
+  display: grid;
+  padding: 3rem;
+}
+
+.safety__title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.safety__description {
+  color: #000000a8;
+}
+
+.safety__programs {
+  margin-top: 4rem;
+}
+
+.safety__programs-title {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+.safety__programs-description,
+.safety__list {
+  color: #000000a8;
+}
+
+.safety__list {
+  list-style-type: disc;
+}

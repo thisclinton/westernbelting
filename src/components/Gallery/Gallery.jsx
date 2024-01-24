@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./gallery.css";
 
 const images = [
@@ -71,11 +72,13 @@ function Gallery() {
   return (
     <section className="gallery">
       <div className="gallery__container">
-        <article className="article">
-          <span className="article__title">Products</span>
-          <img src={images[0].src} alt="" className="article__img" />
-          <span className="article__description"></span>
-        </article>
+        <Link to="/products">
+          <article className="article">
+            <span className="article__title">Products</span>
+            <img src={images[0].src} alt="" className="article__img" />
+            <span className="article__description"></span>
+          </article>
+        </Link>
 
         <article className="article">
           <span className="article__title">Services</span>
