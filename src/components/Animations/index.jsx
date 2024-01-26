@@ -1,4 +1,14 @@
 import gsap from "gsap";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "../Home/Home.jsx";
+import Products from "../Products/Products.jsx";
+import Services from "../Services/Services.jsx";
+import Workshop from "../Workshop/Workshop.jsx";
+import Safety from "../Safety/Safety.jsx";
+import Shop from "../Shop/Shop.jsx";
+import HerculesConveyor from "../HerculesConveyor/index.jsx";
+import ScraperConveyor from "../ScraperConveyor/index.jsx";
+import { AnimatePresence, motion } from "framer-motion";
 
 // Declare a general timeline to use in all the animation functions.
 
@@ -335,3 +345,28 @@ export const fadeOut = (el) => {
     ease: "power4.out",
   });
 };
+
+function AnimatedRoutes() {
+  const location = useLocation();
+  return (
+    <>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="" element={<Home />} />
+          <Route path="products" element={<Products />}></Route>
+          <Route
+            path="/products/herculesconveyor"
+            element={<HerculesConveyor />}
+          />
+          <Route path="/products/conveyor" element={<ScraperConveyor />} />
+          <Route path="services" element={<Services />} />
+          <Route path="workshop" element={<Workshop />} />
+          <Route path="safety" element={<Safety />} />
+          <Route path="shop" element={<Shop />} />
+        </Routes>
+      </AnimatePresence>
+    </>
+  );
+}
+
+export default AnimatedRoutes;

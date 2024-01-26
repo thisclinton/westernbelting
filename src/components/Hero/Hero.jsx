@@ -3,12 +3,10 @@ import "./Hero.css";
 import HeroImg from "../../assets/hero.jpg";
 import { useEffect, useLayoutEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { heroAnim } from "../Animations";
+import { motion } from "framer-motion";
 
 function Hero() {
-  useLayoutEffect(() => {
-    heroAnim();
-  }, []);
+  useLayoutEffect(() => {}, []);
 
   return (
     <section className="hero">

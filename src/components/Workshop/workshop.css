@@ -1,8 +1,32 @@
-.workshop {
+.title__container {
+  margin-bottom: 3rem;
+}
+
+.workshop__card {
   display: flex;
-  height: 100vh;
-  align-items: center;
-  text-transform: uppercase;
-  justify-content: center;
-  font-size: 5rem;
+  justify-content: space-between;
+  align-items: self-start;
+  width: 70%;
+  margin: 3rem auto;
+  border: 2px solid black;
+  padding: 1rem 2.5rem;
+  gap: 2rem;
+}
+
+.workshop__img img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.workshop__data {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.workshop__btn {
+  background: #000;
+  color: #fff;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
 }

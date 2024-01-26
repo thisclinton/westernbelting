@@ -1,7 +1,14 @@
+import { motion } from "framer-motion";
 import "./shop.css";
+import Transition from "../../transition";
 
 function Shop() {
-  return <section className="shop">Shoppppp</section>;
+  return (
+    <>
+      <Transition />
+      <section className="shop">Shoppppp</section>;
+    </>
+  );
 }
 
 export default Shop;

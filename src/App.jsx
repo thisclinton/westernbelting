@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Preloader from "./components/PreLoader/Preloader";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
+import transition from "./transition";
 
 function App() {
   const [count, setCount] = useState(0);
