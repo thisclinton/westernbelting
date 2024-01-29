@@ -1,17 +1,16 @@
+import Transition from "../../transition";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Gallery from "../Gallery/Gallery";
 import Hero from "../Hero/Hero";
-import Preloader from "../PreLoader/Preloader";
 
 function Home() {
   return (
     <>
-      <Preloader />
+      <Transition />
       <Hero />
       <About />
       <Gallery />
-      <Contact />
     </>
   );
 }
