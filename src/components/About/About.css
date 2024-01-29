@@ -17,12 +17,14 @@
 .suppliers__card {
   /* background: #fff;
   box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2); */
-  border: 1px solid black;
-  box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2);
+  width: 80%;
+  border-bottom: 1px solid black;
+  /* box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2); */
   position: relative;
   display: flex;
   gap: 3rem;
   margin-bottom: 3rem;
+  margin: 3rem auto;
   padding: 2rem 1rem;
 }
 
