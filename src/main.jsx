@@ -15,10 +15,12 @@ import Nav from "./components/Nav/Nav.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import AnimatedRoutes from "./components/Animations/index.jsx";
+import Preloader from "./components/PreLoader/Preloader.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
+      <Preloader />
       <Nav />
       <AnimatedRoutes />
       <Contact />

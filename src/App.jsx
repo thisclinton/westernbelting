@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
@@ -8,20 +8,18 @@ import Preloader from "./components/PreLoader/Preloader";
 import Gallery from "./components/Gallery/Gallery";
 import Contact from "./components/Contact/Contact";
 import transition from "./transition";
+import Home from "./components/Home/Home";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="wrapper">
-        <Preloader />
-        <Nav />
+        {/* <Preloader /> */}
+        {/* <Nav />
         <Hero />
         <About />
         <Gallery />
-        <Contact />
-        <Footer />
+        <Footer /> */}
       </div>
     </>
   );

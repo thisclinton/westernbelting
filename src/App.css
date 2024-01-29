@@ -29,6 +29,7 @@ ul {
   height: 100vh;
   background: #0f0f0f;
   transform-origin: bottom;
+  z-index: 999;
 }
 
 .slide-out {
@@ -39,4 +40,5 @@ ul {
   height: 100vh;
   background: #0f0f0f;
   transform-origin: top;
+  z-index: 999;
 }
