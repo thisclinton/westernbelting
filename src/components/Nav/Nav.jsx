@@ -97,9 +97,9 @@ function Nav() {
               </li>
 
               <li className="nav__item">
-                <a href="#" className="nav__link">
+                <Link to="/about" className="nav__link">
                   About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
