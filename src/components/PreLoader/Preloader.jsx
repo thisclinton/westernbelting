@@ -51,6 +51,7 @@ function Preloader() {
         variants={container}
         initial="hidden"
         animate="show"
+        exit="exit"
       >
         <h1 className="preloader__title">
           Western <h1>BELTING</h1>
