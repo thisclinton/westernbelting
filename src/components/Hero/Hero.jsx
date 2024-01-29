@@ -33,8 +33,19 @@ function Hero() {
         </div>
         <div className="hero__scroll">
           <span>scroll</span>
-          <div className="hero__line"></div>
-          <RiArrowDownSLine className="hero__arrow" />
+          <motion.div
+            className="hero__line"
+            /* initial={{ translateY: 0 }} */
+            animate={{ y: 10 }}
+            transition={{
+              duration: 1,
+              ease: "easeOut",
+              repeat: Infinity,
+              repeatDelay: 0.8,
+            }}
+          >
+            <RiArrowDownSLine className="hero__arrow" />
+          </motion.div>
         </div>
       </div>
 
