@@ -20,25 +20,28 @@
 }
 
 .product {
-  background-color: #fff;
   width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
   padding: 2rem 1rem;
-  box-shadow: 0 12px 32px hsla(0, 0%, 20%, 0.1);
+  border: 4px solid black;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .product__img {
   height: 400px;
   width: 400px;
+  object-fit: cover;
 }
 
 .product__title {
   display: block;
   font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .product__more {
