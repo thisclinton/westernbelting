@@ -1,51 +1,56 @@
-.about {
-  height: 70vh;
-  padding: 8rem 3rem;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
+.suppliers {
+  padding: 2rem 3rem;
 }
 
-.about__description {
-  font-size: 1.7rem;
-  line-height: 1.12;
-  color: #000000bc;
+.suppliers > .section__title {
+  text-align: center;
 }
 
-.slider {
+.suppliers > .section__description {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #000000af;
 }
 
-.slider__wrapper {
-  width: max-content;
-  padding: 0 150px;
-  height: 100%;
-  display: flex;
-  align-items: center;
+.suppliers__card {
+  /* background: #fff;
+  box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2); */
+  border: 1px solid black;
+  box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2);
   position: relative;
-  gap: 8rem;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
 }
 
-.slide {
-  width: 500px;
-  height: 500px;
-  background: gray;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.marker__wrapper {
+.suppliers__number {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: max-content;
-  height: 100vh;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.suppliers__data {
+  display: grid;
+  gap: 2rem;
+}
+
+.suppliers__img {
+  width: 300px;
+}
+
+.suppliers__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.suppliers__description {
+  color: #000000af;
+  line-height: 1.8;
 }
 
 .marker {
