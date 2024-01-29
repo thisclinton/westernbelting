@@ -9,6 +9,11 @@ function Safety() {
       <section className="safety">
         <div className="title__container">
           <h1 className="section__title">Safety</h1>
+          <p className="section__description">
+            Explore our safety section for comprehensive guidelines and
+            resources. We prioritize safety above all else, ensuring a secure
+            environment for all stakeholders.
+          </p>
         </div>
         <div className="safety__container">
           <p className="safety__description">
