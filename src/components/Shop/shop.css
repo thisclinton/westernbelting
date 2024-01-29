@@ -1,8 +1,39 @@
-.shop {
+.shop__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin: 2rem 3rem;
+}
+
+.shop__card {
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  padding: 2rem 4rem;
   display: flex;
-  height: 100vh;
-  align-items: center;
-  text-transform: uppercase;
-  justify-content: center;
-  font-size: 5rem;
+  flex-direction: column;
+  gap: 3rem;
+  cursor: pointer;
+}
+
+.shop__img {
+  width: 100%;
+}
+
+.shop__data {
+  display: grid;
+  gap: 1rem;
+}
+
+.shop__title {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.shop__cart {
+  background: #000;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 0.7rem 1.4rem;
+  bottom: 0.6rem;
+  right: 1rem;
 }
