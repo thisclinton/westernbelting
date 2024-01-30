@@ -5,6 +5,19 @@ import { useEffect, useLayoutEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 
+const textVariants = {
+  hidden: { opacity: 0, y: "1vh", transition: { duration: 0.5 } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 1,
+      duration: 1,
+      staggerChildren: 1,
+    },
+  },
+};
+
 function Hero() {
   useLayoutEffect(() => {}, []);
 
@@ -16,11 +29,16 @@ function Hero() {
       <div className="hero__shadow"></div>
 
       <div className="hero__container">
-        <div className="hero__data">
+        <motion.div
+          className="hero__data"
+          variants={textVariants}
+          initial="hidden"
+          animate="show"
+        >
           <h1 className="hero__title">
             Western <span>BELTING</span>
           </h1>
-          <span className="hero__subtitle">
+          <motion.span className="hero__subtitle">
             Welcome to Western Belting Company, where precision meets
             performance in every belt we craft. As industry leaders, we take
             pride in delivering high-quality belting solutions tailored to your
@@ -29,8 +47,8 @@ function Hero() {
             seamless operations. Explore the frontier of belting technology with
             Western Belting Company – where reliability and excellence come
             together for your success.
-          </span>
-        </div>
+          </motion.span>
+        </motion.div>
         <div className="hero__scroll">
           <span>scroll</span>
           <motion.div
@@ -38,10 +56,9 @@ function Hero() {
             /* initial={{ translateY: 0 }} */
             animate={{ y: 10 }}
             transition={{
-              duration: 1,
+              duration: 0.8,
               ease: "easeOut",
               repeat: Infinity,
-              repeatDelay: 0.8,
             }}
           >
             <RiArrowDownSLine className="hero__arrow" />
