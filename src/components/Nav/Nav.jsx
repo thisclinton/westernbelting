@@ -29,7 +29,7 @@ function Nav() {
                 <Link to="/products" className="nav__link">
                   Products
                 </Link>
-                <ul className="nav__dropmenu">
+                {/* <ul className="nav__dropmenu">
                   <li>
                     <a href="#">Heavy Duty Belting</a>
                   </li>
@@ -42,7 +42,7 @@ function Nav() {
                   <li>
                     <a href="#">Piranha Plate Protection Products</a>
                   </li>
-                </ul>
+                </ul> */}
               </li>
 
               <li className="nav__item">
@@ -50,7 +50,7 @@ function Nav() {
                   Services
                 </Link>
 
-                <ul className="nav__dropmenu">
+                {/*  <ul className="nav__dropmenu">
                   <li>
                     <a href="#">Vulcanizing</a>
                   </li>
@@ -75,7 +75,7 @@ function Nav() {
                   <li>
                     <a href="#">Lightweight Speciality</a>
                   </li>
-                </ul>
+                </ul> */}
               </li>
 
               <li className="nav__item">
@@ -105,7 +105,7 @@ function Nav() {
           </div>
 
           <div className="nav__contact">
-            <a href="#">Contact Us</a>
+            <Link to="/contact">Contact Us</Link>
           </div>
         </nav>
       </header>
