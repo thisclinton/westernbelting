@@ -12,6 +12,7 @@
   line-height: 1.7;
   text-align: center;
   color: #000000af;
+  font-size: 1.2rem;
 }
 
 .suppliers__card {
@@ -53,6 +54,7 @@
 .suppliers__description {
   color: #000000af;
   line-height: 1.8;
+  font-size: 1.2rem;
 }
 
 .marker {
