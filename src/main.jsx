@@ -20,7 +20,7 @@ import Preloader from "./components/PreLoader/Preloader.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      {/* <Preloader /> */}
+      <Preloader />
       <Nav />
       <AnimatedRoutes />
       <Partners />
