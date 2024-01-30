@@ -106,7 +106,7 @@ function Gallery() {
       </div>
 
       <a href="#" className="gallery__button">
-        Discover More
+        Partners Us
       </a>
     </section>
   );
