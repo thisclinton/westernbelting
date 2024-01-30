@@ -10,6 +10,7 @@ import HerculesConveyor from "../HerculesConveyor/index.jsx";
 import ScraperConveyor from "../ScraperConveyor/index.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import AboutUs from "../AboutUs/AboutUs.jsx";
+import Contact from "../Contact/Contact.jsx";
 
 // Declare a general timeline to use in all the animation functions.
 
@@ -365,6 +366,7 @@ function AnimatedRoutes() {
           <Route path="safety" element={<Safety />} />
           <Route path="shop" element={<Shop />} />
           <Route path="about" element={<AboutUs />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
     </>
