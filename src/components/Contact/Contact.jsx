@@ -1,47 +1,76 @@
+import Transition from "../../transition";
 import "./contact.css";
 
 function Contact() {
   return (
-    <section className="client">
-      <h2 className="client__title">Text goes in Here.</h2>
-      <div className="client__gallery">
-        <a href="https://www.complyworks.com/en/home/" target="_blank">
-          <img
-            src="https://static.wixstatic.com/media/2b8fca_e754a6f2dc8b4e6fb773b140cc9230de~mv2.png/v1/fill/w_490,h_158,al_c,lg_1,q_85,enc_auto/2b8fca_e754a6f2dc8b4e6fb773b140cc9230de~mv2.png"
-            alt="comply works"
-            className="client__img"
-          />
-        </a>
-        <a href="https://www.avetta.com/" target="_blank">
-          <img
-            src="https://static.wixstatic.com/media/2b8fca_904e4da632754f04bfc239305c9dd9b1~mv2.png/v1/fill/w_232,h_84,al_c,lg_1,q_85,enc_auto/2b8fca_904e4da632754f04bfc239305c9dd9b1~mv2.png"
-            alt="Avetta"
-            className="client__img"
-          />
-        </a>
-        <a href="https://www.isnetworld.com/" target="_blank">
-          <img
-            src="https://static.wixstatic.com/media/2b8fca_222e00e55bb24f5fbc58b6937d038fb5~mv2.png/v1/fill/w_531,h_148,al_c,lg_1,q_85,enc_auto/2b8fca_222e00e55bb24f5fbc58b6937d038fb5~mv2.png"
-            alt="ISN"
-            className="client__img"
-          />
-        </a>
-        <a href="https://www.cognibox.com/en/" target="_blank">
-          <img
-            src="https://static.wixstatic.com/media/2b8fca_6446378c3af946c7b707c5e78543ede8~mv2.jpg/v1/crop/x_0,y_0,w_272,h_57/fill/w_381,h_78,al_c,lg_1,q_80,enc_auto/logo%2520Cognibox_edited.jpg"
-            alt="Cogni Box"
-            className="client__img"
-          />
-        </a>
-        <a href="https://mltnorthamerica.com/" target="_blank">
-          <img
-            src="https://static.wixstatic.com/media/2b8fca_9fe9363013144ef6a2c5be2e53f618e5~mv2.jpg/v1/fill/w_349,h_132,al_c,lg_1,q_80,enc_auto/MLT_Logo.jpg"
-            alt="MLT"
-            className="client__img"
-          />
-        </a>
-      </div>
-    </section>
+    <>
+      <Transition />
+      <section className="contact">
+        <div className="title__container">
+          <h1 className="section__title">Contact Us</h1>
+        </div>
+        <div className="contact__container">
+          <div className="contact__img">
+            <img
+              src="https://static.wixstatic.com/media/2b8fca_50adb6b7570a44f4922ca2ed0ed0b9a8~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_920,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_50adb6b7570a44f4922ca2ed0ed0b9a8~mv2_d_2448_3264_s_4_2.jpg"
+              alt="contact page image"
+            />
+          </div>
+
+          <form action="" className="contact__form">
+            <div className="form__box">
+              <input
+                type="text"
+                className="form__input"
+                placeholder="Enter Name"
+              />
+              <label htmlFor="" className="form__label">
+                enter name
+              </label>
+              <div className="form__shadow"></div>
+            </div>
+
+            <div className="form__box">
+              <input
+                type="email"
+                className="form__input"
+                placeholder="Enter Email"
+              />
+              <label htmlFor="" className="form__label">
+                enter email
+              </label>
+              <div className="form__shadow"></div>
+            </div>
+
+            <div className="form__box">
+              <input
+                type="text"
+                className="form__input"
+                placeholder="Subject"
+              />
+              <label htmlFor="" className="form__label">
+                subject
+              </label>
+              <div className="form__shadow"></div>
+            </div>
+
+            <div className="form__box form__message">
+              <input
+                type="text"
+                className="form__input"
+                placeholder="Message"
+              />
+              <label htmlFor="" className="form__label">
+                Message
+              </label>
+              <div className="form__shadow"></div>
+            </div>
+
+            <button className="btn form__btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </>
   );
 }
 
