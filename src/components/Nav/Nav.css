@@ -21,7 +21,7 @@
 } */
 
 .nav__logo {
-  font-size: 1.4rem;
+  font-size: 1.9rem;
   font-weight: 600;
 }
 
@@ -32,11 +32,10 @@
 
 .nav__list {
   display: flex;
-  gap: 2.5rem;
-  position: relative;
+  gap: 1.45rem;
 }
 
-.nav__dropmenu {
+/* .nav__dropmenu {
   position: absolute;
   top: 4.2rem;
   opacity: 0;
@@ -52,18 +51,26 @@
 
 .nav__dropmenu li:hover {
   color: #ffffff93;
+} */
+
+.nav__item {
+  transition: 0.4s;
+  font-size: 1.25rem;
+  padding: 0.7rem 1rem;
 }
 
-nav__item {
-  transition: 0.8s;
-}
-
-.nav__item:hover ul.nav__dropmenu {
+/* .nav__item:hover ul.nav__dropmenu {
   opacity: 1;
   display: none;
   transition: 1s;
   position: fixed;
   margin-top: 0;
+} */
+
+.nav__item:hover {
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
 }
 
 .nav__contact {
@@ -72,4 +79,9 @@ nav__item {
   padding: 0.7rem 1.4rem;
   border-radius: 5px;
   font-weight: bold;
+  transition: 0.4s;
+}
+
+.nav__contact:hover {
+  background-color: #ffffffcd;
 }
