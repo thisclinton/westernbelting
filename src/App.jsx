@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Preloader from "./components/PreLoader/Preloader";
 import Gallery from "./components/Gallery/Gallery";
-import Contact from "./components/Contact/Contact";
+import Partners from "./components/Partners/Partners";
 import transition from "./transition";
 import Home from "./components/Home/Home";
 
