@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
-import Contact from "./components/Contact/Contact";
+import Partners from "./components/Partners/Partners";
 
 function Layout() {
   return (
     <>
       <Nav />
       <Outlet />
-      <Contact />
+      <Partners />
       <Footer />
     </>
   );
