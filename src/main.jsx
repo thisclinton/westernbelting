@@ -12,7 +12,7 @@ import Shop from "./components/Shop/Shop.jsx";
 import HerculesConveyor from "./components/HerculesConveyor/index.jsx";
 import ScraperConveyor from "./components/ScraperConveyor/index.jsx";
 import Nav from "./components/Nav/Nav.jsx";
-import Contact from "./components/Contact/Contact.jsx";
+import Partners from "./components/Partners/Partners.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import AnimatedRoutes from "./components/Animations/index.jsx";
 import Preloader from "./components/PreLoader/Preloader.jsx";
@@ -20,10 +20,10 @@ import Preloader from "./components/PreLoader/Preloader.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <Preloader />
+      {/* <Preloader /> */}
       <Nav />
       <AnimatedRoutes />
-      <Contact />
+      <Partners />
       <Footer />
     </Router>
   </React.StrictMode>
