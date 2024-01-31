@@ -11,7 +11,7 @@ const textVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 1,
+      delay: 5,
       duration: 1,
       staggerChildren: 1,
     },
@@ -57,8 +57,10 @@ function Hero() {
             animate={{ y: 10 }}
             transition={{
               duration: 0.8,
-              ease: "easeOut",
+              ease: "easeInOut",
               repeat: Infinity,
+              repeatType: "reverse",
+              repeatDelay: 1,
             }}
           >
             <RiArrowDownSLine className="hero__arrow" />
