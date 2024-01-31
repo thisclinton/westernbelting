@@ -3,6 +3,13 @@ import "./About.css";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import SectionHeader from "../SectionHeader";
+import {
+  useAnimation,
+  useInView,
+  motion,
+  useTransform,
+  useScroll,
+} from "framer-motion";
 
 const suppliersData = [
   {
@@ -50,16 +57,58 @@ const suppliersData = [
 ];
 
 function About() {
+  const containerRef = useRef(null);
+
+  const isInView = useInView(containerRef, { once: true });
+  const mainControls = useAnimation();
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end end"],
+  });
+
+  const paragraphOneValue = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["-100%", "0%"]
+  );
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  });
+
   return (
-    <section className="suppliers">
-      <h2 className="section__title">Suppliers</h2>
-      <p className="section__description">
+    <section className="suppliers" ref={containerRef}>
+      <motion.h2
+        className="section__title"
+        animate={mainControls}
+        initial="hidden"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{ delay: 1, duration: 0.5 }}
+      >
+        Suppliers
+      </motion.h2>
+      <motion.p
+        className="section__description"
+        animate={mainControls}
+        initial="hidden"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{ delay: 1.5, duration: 0.5 }}
+      >
         Discover our trusted suppliers section, where we partner with
         industry-leading providers to ensure premium-quality materials and
         services. Our rigorous selection process guarantees reliability,
         efficiency, and unmatched performance, empowering your projects with the
         best-in-class solutions.
-      </p>
+      </motion.p>
       <div className="suppliers__container">
         {suppliersData.map((supplier) => (
           <article className="suppliers__card" key={supplier.id}>
@@ -67,10 +116,10 @@ function About() {
             <div className="suppliers__img-container">
               <img src={supplier.img} alt="" className="suppliers__img" />
             </div>
-            <div className="suppliers__data">
+            <motion.div className="suppliers__data">
               <h3 className="suppliers__title">{supplier.title}</h3>
               <p className="suppliers__description">{supplier.description}</p>
-            </div>
+            </motion.div>
           </article>
         ))}
       </div>
