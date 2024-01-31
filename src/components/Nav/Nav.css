@@ -21,7 +21,7 @@
 } */
 
 .nav__logo {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -55,8 +55,9 @@
 
 .nav__item {
   transition: 0.4s;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 0.7rem 1rem;
+  text-transform: capitalize;
 }
 
 /* .nav__item:hover ul.nav__dropmenu {
@@ -83,5 +84,5 @@
 }
 
 .nav__contact:hover {
-  background-color: #ffffffcd;
+  background-color: #ffffffd5;
 }
