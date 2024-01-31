@@ -105,6 +105,7 @@ function Shop() {
                 <span className="shop__price">{product.price}</span>
                 <span className="shop__cart">Add to Cart</span>
               </div>
+              <div className="shop__shadow"></div>
             </article>
           ))}
 
