@@ -80,6 +80,7 @@ function Services() {
                   <h3 class="services__title">{service.title}</h3>
                   <span class="services__info">{service.description}</span>
                   <span className="services__btn">Learn More</span>
+                  <div className="services__shadow"></div>
                 </article>
               ))}
             </div>
