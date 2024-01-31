@@ -6,12 +6,23 @@
 }
 
 .shop__card {
-  border: 2px solid rgba(0, 0, 0, 0.15);
+  border: 2px solid black;
   padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
   cursor: pointer;
+  position: relative;
+  background: #fff;
+}
+
+.shop__shadow {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform: translate(-55px, -20px);
 }
 
 .shop__img {
