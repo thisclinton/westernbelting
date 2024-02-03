@@ -1,4 +1,4 @@
-import "./blog.css";
+import "./Blog.css";
 
 function Blog() {
   const posts = [

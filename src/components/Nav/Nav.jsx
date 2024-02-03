@@ -29,7 +29,7 @@ const navs = [
   { title: "safety", link: "/safety", id: 4 },
   { title: "shop", link: "/shop", id: 5 },
   { title: "about us", link: "/about", id: 6 },
-  { title: "blog", link: "/blog", id: 6 },
+  { title: "blog", link: "/blog", id: 7 },
 ];
 
 function Nav() {
