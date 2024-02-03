@@ -3,10 +3,11 @@ import "./style.css";
 function HerculesConveyor() {
   return (
     <section className="hercules">
+      <div className="title__container">
+        <h1 className="section__title">Hercules Conveyor Belt Winder</h1>
+        <p className="section__description">Made by Scandia USA Midwest LLC</p>
+      </div>
       <div className="hercules__container">
-        <h1 className="hercules__title">Hercules Conveyor Belt Winder</h1>
-        <p className="hercules__description">Made by Scandia USA Midwest LLC</p>
-
         <div className="hercules__data">
           <div className="hercules__top">
             <img
@@ -33,6 +34,7 @@ function HerculesConveyor() {
                 </p>
               </span>
             </span>
+            <div className="hercules__shadow"></div>
           </div>
 
           <div className="hercules__bottom">
@@ -78,6 +80,7 @@ function HerculesConveyor() {
                 </li>
               </ul>
             </div>
+            <div className="hercules__shadow-bottom"></div>
           </div>
         </div>
       </div>

@@ -1,16 +1,5 @@
-.hercules {
-  margin-top: 5rem;
-}
-
 .hercules__container {
   padding: 2rem 3rem;
-}
-
-.hercules__title {
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
 }
 
 .hercules__description {
@@ -23,6 +12,19 @@
   align-items: center;
   gap: 3rem;
   margin-bottom: 6rem;
+  border: 2px solid black;
+  padding: 3rem;
+  position: relative;
+  background: #fff;
+}
+
+.hercules__shadow {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform: translate(-35px, 10px);
 }
 
 .hercules__img1 {
@@ -55,6 +57,19 @@
 .hercules__bottom {
   display: flex;
   gap: 3rem;
+  position: relative;
+  background: #fff;
+  border: 2px solid black;
+  padding: 3rem;
+}
+
+.hercules__shadow-bottom {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform: translate(-35px, -35px);
 }
 
 .hercules__img2,

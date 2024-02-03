@@ -11,6 +11,7 @@ import ScraperConveyor from "../ScraperConveyor/index.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import AboutUs from "../AboutUs/AboutUs.jsx";
 import Contact from "../Contact/Contact.jsx";
+import Blog from "../Blog/Blog.jsx";
 
 // Declare a general timeline to use in all the animation functions.
 
@@ -366,6 +367,7 @@ function AnimatedRoutes() {
           <Route path="safety" element={<Safety />} />
           <Route path="shop" element={<Shop />} />
           <Route path="about" element={<AboutUs />} />
+          <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>

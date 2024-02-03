@@ -29,6 +29,8 @@ function Products() {
             <Link to="/products/herculesconveyor" className="product__more">
               Learn More
             </Link>
+
+            <div className="product__shadow"></div>
           </div>
 
           <div className="product">
@@ -44,6 +46,8 @@ function Products() {
             <Link to="/products/scraperconveyor" className="product__more">
               Learn More
             </Link>
+
+            <div className="product__shadow"></div>
           </div>
         </div>
       </section>
