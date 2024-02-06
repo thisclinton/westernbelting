@@ -11,23 +11,24 @@
 
 .safety__description {
   color: #000000a8;
-  font-size: 1.4rem;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
   line-height: 1.7;
 }
 
 .safety__programs {
   margin-top: 4rem;
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 3vw, 1.45rem);
 }
 
 .safety__programs-title {
-  font-size: 3.6rem;
+  font-size: clamp(1rem, 8vw + 1rem, 3.6rem);
   text-transform: uppercase;
 }
 
 .safety__programs-description,
 .safety__list {
   color: #000000a8;
+  margin-bottom: 2rem;
 }
 
 .safety__list {
