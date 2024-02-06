@@ -1,5 +1,7 @@
 .suppliers {
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 3rem 0;
 }
 
 .suppliers > .section__title {
@@ -12,7 +14,7 @@
   line-height: 1.7;
   text-align: center;
   color: #000000af;
-  font-size: 1.2rem;
+  font-size: clamp(0.7rem, 3vw, 1.2rem);
 }
 
 .suppliers__card {
@@ -24,9 +26,8 @@
   position: relative;
   display: flex;
   gap: 3rem;
-  margin-bottom: 3rem;
-  margin: 3rem auto;
-  padding: 2rem 1rem;
+  margin: 3rem 0;
+  overflow: none;
 }
 
 .suppliers__number {
@@ -43,18 +44,19 @@
 }
 
 .suppliers__img {
-  width: 300px;
+  width: 12.75rem;
 }
 
 .suppliers__title {
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 3vw + 1rem, 1.8rem);
   text-transform: uppercase;
 }
 
 .suppliers__description {
   color: #000000af;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: clamp(0.7rem, 3vw, 1.4rem);
+  margin-bottom: 2rem;
 }
 
 .marker {
@@ -82,4 +84,10 @@
   top: 60px;
   left: 40px;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 680px) {
+  .suppliers__card {
+    flex-direction: column;
+  }
 }

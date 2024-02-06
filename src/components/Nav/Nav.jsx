@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { RiMenuFill, RiCloseFill } from "react-icons/ri";
 
 const navVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -9,9 +10,9 @@ const navVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      staggerChildren: 0.25,
-      duration: 1.3,
-      delay: 4,
+      staggerChildren: 0.35,
+      duration: 1.5,
+      delay: 0.3,
       ease: "easeOut",
     },
   },
@@ -27,13 +28,13 @@ const navs = [
   { title: "services", link: "/services", id: 2 },
   { title: "our workshops", link: "/workshop", id: 3 },
   { title: "safety", link: "/safety", id: 4 },
-  { title: "shop", link: "/shop", id: 5 },
-  { title: "about us", link: "/about", id: 6 },
-  { title: "blog", link: "/blog", id: 7 },
+  { title: "about us", link: "/about", id: 5 },
+  { title: "blog", link: "/blog", id: 6 },
 ];
 
 function Nav() {
   const [nav, setNav] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <>
@@ -49,29 +50,39 @@ function Nav() {
             </Link>
           </motion.div>
 
-          <div className="nav__menu">
-            <motion.ul
-              className="nav__list"
-              variants={navVariants}
-              initial="hidden"
-              animate="show"
-            >
-              {navs.map((nav) => (
-                <motion.li
-                  className="nav__item"
-                  key={nav.id}
-                  variants={navLinksVariants}
-                >
-                  <Link to={nav.link} className="nav__link">
-                    {nav.title}
-                  </Link>
-                </motion.li>
-              ))}
-            </motion.ul>
-          </div>
+          {toggleMenu && (
+            <div className="nav__menu show__menu">
+              <motion.ul
+                className="nav__list"
+                variants={navVariants}
+                initial="hidden"
+                animate="show"
+              >
+                {navs.map((nav) => (
+                  <motion.li
+                    className="nav__item"
+                    key={nav.id}
+                    variants={navLinksVariants}
+                  >
+                    <Link to={nav.link} className="nav__link">
+                      {nav.title}
+                    </Link>
+                  </motion.li>
+                ))}
+              </motion.ul>
 
-          <div className="nav__contact">
+              <div className="nav__close">
+                <RiCloseFill onClick={() => setToggleMenu(false)} />
+              </div>
+            </div>
+          )}
+
+          {/* <div className="nav__contact">
             <Link to="/contact">Contact Us</Link>
+          </div> */}
+
+          <div className="nav__toggle">
+            <RiMenuFill onClick={() => setToggleMenu(true)} />
           </div>
         </nav>
       </header>

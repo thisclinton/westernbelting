@@ -23,7 +23,7 @@
 
 .hero__container {
   height: 100%;
-  margin: 0rem auto;
+  margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,7 @@
 }
 
 .hero__title {
-  font-size: 7rem;
+  font-size: clamp(50px, 8vw + 1rem, 100px);
 }
 
 .hero__title span {
@@ -47,15 +47,15 @@
 }
 
 .hero__subtitle {
-  font-size: 1.2rem;
+  font-size: clamp(10px, 3vw + 1rem, 16px);
   line-height: 2;
 }
 
 .hero__scroll span {
   position: absolute;
   rotate: 90deg;
-  bottom: 13rem;
-  right: 3rem;
+  bottom: 8rem;
+  right: 1rem;
 }
 
 .hero__line {
@@ -63,8 +63,8 @@
   height: 5rem;
   background-color: #fff;
   position: absolute;
-  bottom: 7rem;
-  right: 4.3rem;
+  bottom: 1.5rem;
+  right: 2.3rem;
 }
 
 .hero__arrow {
@@ -72,4 +72,18 @@
   font-size: 1.7rem;
   bottom: -1rem;
   right: -0.8rem;
+}
+
+@media screen and (max-width: 480px) {
+  .hero__container {
+    display: inline-flex;
+  }
+  .hero__data {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .hero__title {
+    margin-bottom: 1.6rem;
+  }
 }

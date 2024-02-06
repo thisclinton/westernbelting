@@ -6,7 +6,7 @@
 }
 
 .section__title {
-  font-size: 7rem;
+  font-size: clamp(1rem, 8vw, 8rem);
   text-transform: uppercase;
 }
 
@@ -75,4 +75,13 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .services__data {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    margin: 0 3rem;
+  }
 }
