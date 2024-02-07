@@ -3,7 +3,7 @@ import "./partners.css";
 function Partners() {
   return (
     <section className="client">
-      <h2 className="client__title">Compliants</h2>
+      <h2 className="client__title">Compliance</h2>
       <div className="client__gallery">
         <a href="https://www.complyworks.com/en/home/" target="_blank">
           <img
