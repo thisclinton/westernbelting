@@ -1,3 +1,4 @@
+import Transition from "../../transition";
 import "./Blog.css";
 
 function Blog() {
@@ -8,19 +9,22 @@ function Blog() {
   ];
 
   return (
-    <section className="blog">
-      <div className="title__container">
-        <h1 className="section__title">BLOG</h1>
-      </div>
-      <main>
-        {posts.map((post) => (
-          <div className="post" key={post.id}>
-            <h2>{post.title}</h2>
-            <p>{post.content}</p>
-          </div>
-        ))}
-      </main>
-    </section>
+    <>
+      <Transition />
+      <section className="blog">
+        <div className="title__container">
+          <h1 className="section__title">News</h1>
+        </div>
+        <main>
+          {posts.map((post) => (
+            <div className="post" key={post.id}>
+              <h2>{post.title}</h2>
+              <p>{post.content}</p>
+            </div>
+          ))}
+        </main>
+      </section>
+    </>
   );
 }
 

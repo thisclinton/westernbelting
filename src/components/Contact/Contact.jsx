@@ -1,7 +1,30 @@
+import { useRef } from "react";
 import Transition from "../../transition";
 import "./contact.css";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_ti6c5ce", "template_9aij86e", form.current, {
+        publicKey: "dFHokw6GgVLju7RVZ",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <>
       <Transition />
@@ -10,19 +33,25 @@ function Contact() {
           <h1 className="section__title">Contact Us</h1>
         </div>
         <div className="contact__container">
-          <div className="contact__img">
+          {/* <div className="contact__img">
             <img
               src="https://static.wixstatic.com/media/2b8fca_50adb6b7570a44f4922ca2ed0ed0b9a8~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_920,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_50adb6b7570a44f4922ca2ed0ed0b9a8~mv2_d_2448_3264_s_4_2.jpg"
               alt="contact page image"
             />
-          </div>
+          </div> */}
 
-          <form action="" className="contact__form">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            action=""
+            className="contact__form"
+          >
             <div className="form__box">
               <input
                 type="text"
                 className="form__input"
                 placeholder="Enter Name"
+                name="user_name"
               />
               <label htmlFor="" className="form__label">
                 enter name
@@ -35,6 +64,7 @@ function Contact() {
                 type="email"
                 className="form__input"
                 placeholder="Enter Email"
+                name="user_email"
               />
               <label htmlFor="" className="form__label">
                 enter email

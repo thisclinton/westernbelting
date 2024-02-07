@@ -17,7 +17,6 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  width: 30vw;
   height: 40vh;
   margin-bottom: 4rem;
 }
@@ -59,4 +58,16 @@
   padding: 1rem 3rem;
   border-radius: 5px;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 999px) {
+  .gallery__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gallery__container {
+    grid-template-columns: 1fr;
+  }
 }

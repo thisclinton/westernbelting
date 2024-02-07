@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 120vh;
+  height: 100vh;
 }
 
 .hero__img img {
@@ -25,12 +25,10 @@
   margin: 0 auto;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 5rem;
   color: white;
   position: relative;
-  padding: 3rem 0;
   z-index: 1;
 }
 
@@ -81,5 +79,15 @@
   .hero__data {
     width: 100%;
     margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hero {
+    height: 100%;
+  }
+
+  .hero__container {
+    padding: 3rem 0;
   }
 }

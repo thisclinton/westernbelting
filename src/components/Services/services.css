@@ -48,6 +48,17 @@
   text-align: start;
   position: relative;
   cursor: pointer;
+  transition: 0.5s all;
+}
+
+.services__card:hover {
+  background: #000;
+  color: #fff;
+}
+
+.services__card:hover .services__btn {
+  background: #fff;
+  color: #000;
 }
 
 .services__shadow {
@@ -75,6 +86,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: auto;
+  transition: 0.5s all;
 }
 
 @media screen and (max-width: 1025px) {

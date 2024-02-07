@@ -10,7 +10,7 @@ function Footer() {
 
         <div className="footer__line"></div>
 
-        <div className="footer__content">
+        {/* <div className="footer__content">
           <div className="footer__links">
             <span className="footer__head">Services</span>
             <ul className="footer__list">
@@ -116,9 +116,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className="footer__line"></div>
+        </div> */}
 
         <div className="footer__address">
           <span className="footer__head">Our Locations</span>

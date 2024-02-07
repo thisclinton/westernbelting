@@ -72,4 +72,30 @@
 .footer__locations {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1230px) {
+  .footer__locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .footer__address {
+    margin-left: 1rem;
+  }
+
+  .footer__locations {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: ) {
+}
+
+@media screen and (max-width: ) {
 }

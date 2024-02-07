@@ -29,7 +29,7 @@ const navs = [
   { title: "services", link: "/services", id: 3 },
   { title: "our workshops", link: "/workshop", id: 4 },
   { title: "safety", link: "/safety", id: 5 },
-  { title: "blog", link: "/blog", id: 6 },
+  { title: "news", link: "/blog", id: 6 },
 ];
 
 function Nav() {
@@ -83,13 +83,20 @@ function Nav() {
                     key={nav.id}
                     variants={navLinksVariants}
                   >
-                    <Link to={nav.link} className="nav__link">
+                    <Link
+                      to={nav.link}
+                      className="nav__link"
+                      onClick={() => setToggleMenu(false)}
+                    >
                       {nav.title}
                     </Link>
                   </motion.li>
                 ))}
 
-                <div className="nav__contact">
+                <div
+                  className="nav__contact"
+                  onClick={() => setToggleMenu(false)}
+                >
                   <Link to="/contact">Contact Us</Link>
                 </div>
               </motion.ul>

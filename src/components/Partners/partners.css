@@ -11,12 +11,27 @@
 
 .client__gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
   gap: 3rem;
   margin: auto;
-  overflow: hidden;
 }
 
 .client__img {
   width: 300px;
+}
+
+@media screen and (max-width: 728px) {
+  .client {
+    padding: 4rem 1rem;
+  }
+
+  .client__img {
+    width: 100%;
+  }
+
+  .client__gallery {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
 }

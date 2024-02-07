@@ -43,7 +43,7 @@ function LightDutyConveyor() {
               <div className="hercules__shadow"></div>
             </div>
 
-            <div className="hercules__bottom">
+            {/* <div className="hercules__bottom">
               <div className="hercules__bottom-img">
                 <img
                   src="https://static.wixstatic.com/media/2b8fca_e2c4f0b9ed48494985edf4b379877f5c~mv2_d_1836_3264_s_2.jpg/v1/fill/w_384,h_666,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20190610_131754_jpg.jpg"
@@ -59,7 +59,7 @@ function LightDutyConveyor() {
               </div>
 
               <div className="hercules__shadow-bottom"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

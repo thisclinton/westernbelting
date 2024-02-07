@@ -21,15 +21,22 @@
 }
 
 .preloader__title {
-  font-size: 7rem;
+  font-size: clamp(1rem, 7vw, 7rem);
 }
 
 .preloader__title h1 {
   color: yellow;
-  font-size: 7rem;
+  font-size: clamp(1rem, 7vw, 7rem);
   display: inline-block;
 }
 
 .text__container span {
-  font-size: 1.4rem;
+  font-size: clamp(0.6rem, 3vw, 1.4rem);
+}
+
+@media screen and (max-width: ) {
+  .text__container,
+  .preloader__title {
+    width: 100%;
+  }
 }
