@@ -27,13 +27,18 @@
 
 .nav__logo,
 .nav__logo span {
-  font-size: clamp(1.4rem, 6vw, 1.8rem);
+  font-size: clamp(0.8rem, 6vw, 1.8rem);
   font-weight: 600;
 }
 
-.nav__logo span {
-  font-size: 1.8rem;
-  color: yellow;
+.nav__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__logo-img {
+  width: 60px;
 }
 
 .nav__list {
@@ -112,14 +117,18 @@
 
 @media screen and (max-width: 1110px) {
   .nav__list {
-    gap: 0.9rem;
+    gap: 0.5rem;
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1020px) {
   ul.nav__list.nav__large,
   .nav__contact-large {
     display: none;
+  }
+
+  .nav__logo-img {
+    width: 60px;
   }
 
   .nav__menu {
@@ -173,5 +182,15 @@
     position: absolute;
     top: 1.8rem;
     right: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    padding: 1.5rem 0.6rem;
+  }
+
+  .nav__logo-img {
+    width: 50px;
   }
 }

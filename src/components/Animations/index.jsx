@@ -33,7 +33,7 @@ export const preLoaderAnim = () => {
       opacity: 1,
       ease: "Power3.easeOut",
     })
-    .from([".preloader__title", ".text__container span"], {
+    .from([".preloader__logo", ".preloader__title", ".text__container span"], {
       duration: 1.3,
       opacity: 0,
       delay: 0.5,
@@ -41,7 +41,7 @@ export const preLoaderAnim = () => {
       stagger: 0.5,
       ease: "Power3.easeOut",
     })
-    .to([".preloader__title", ".text__container span"], {
+    .to([".preloader__title", ".preloader__logo", ".text__container span"], {
       opacity: 0,
       y: "-=30",
       delay: 0.3,

@@ -20,23 +20,36 @@
   align-items: center;
 }
 
+.preloader__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader__logo {
+  width: 250px;
+}
+
 .preloader__title {
   font-size: clamp(1rem, 7vw, 7rem);
 }
 
 .preloader__title h1 {
-  color: yellow;
   font-size: clamp(1rem, 7vw, 7rem);
   display: inline-block;
 }
 
 .text__container span {
-  font-size: clamp(0.6rem, 3vw, 1.4rem);
+  font-size: clamp(0.6rem, 3vw, 1.3rem);
 }
 
-@media screen and (max-width: ) {
+@media screen and (max-width: 650px) {
   .text__container,
   .preloader__title {
     width: 100%;
+  }
+
+  .preloader__logo {
+    width: 100px;
   }
 }

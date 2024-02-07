@@ -3,6 +3,7 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { RiMenuFill, RiCloseFill } from "react-icons/ri";
+import Logo from "../../assets/Western-Belting-Logo-Website.png";
 
 const navVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -45,6 +46,11 @@ function Nav() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1.7, delay: 4 } }}
           >
+            <img
+              src={Logo}
+              alt="Western-Belting-Logo"
+              className="nav__logo-img"
+            />
             <Link to="/" className="nav__logo">
               Western <span>BELTING</span>
             </Link>

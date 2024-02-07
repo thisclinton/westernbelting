@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import "./preloader.css";
 import gsap from "gsap";
 import { motion } from "framer-motion";
+import Logo from "../../assets/Western-Belting-Logo-Website.png";
 import { preLoaderAnim } from "../Animations";
 
 const container = {
@@ -53,9 +54,16 @@ function Preloader() {
         animate="show"
         exit="exit"
       >
-        <h1 className="preloader__title">
-          Western <h1>BELTING</h1>
-        </h1>
+        <div className="preloader__head">
+          <img
+            src={Logo}
+            alt="Western-Belting-Logo"
+            className="preloader__logo"
+          />
+          <h1 className="preloader__title">
+            Western <h1>BELTING</h1>
+          </h1>
+        </div>
         <span>Conveyor Belts since 1959</span>
       </motion.div>
     </section>
