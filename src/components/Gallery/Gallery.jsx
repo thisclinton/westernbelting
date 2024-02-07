@@ -54,9 +54,9 @@ function Gallery() {
         ))}
       </div>
 
-      <a href="#" className="gallery__button">
-        Partners Us
-      </a>
+      <Link to="/contact" className="gallery__button">
+        Contact Us
+      </Link>
     </section>
   );
 }

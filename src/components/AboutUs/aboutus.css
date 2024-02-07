@@ -18,13 +18,13 @@
 }
 
 .about__data h3 {
-  font-size: 4rem;
+  font-size: clamp(3rem, 3vw, 4rem);
   text-transform: uppercase;
 }
 
 .about__data p {
   color: #000000b0;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.3rem);
 }
 
 .about__img {
@@ -34,8 +34,29 @@
 
 .about__description {
   padding: 3rem;
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
   color: #000000b0;
   line-height: 1.7;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+  .about__card {
+    display: grid;
+    gap: 3rem;
+    padding: 1rem;
+  }
+
+  .about__data {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .about__img {
+    width: 100%;
+  }
+
+  .about__description {
+    padding: 1rem;
+  }
 }

@@ -19,14 +19,12 @@ function Products() {
         <div className="products__container">
           <div className="product">
             <img
-              src="https://static.wixstatic.com/media/2b8fca_ea86f3ca776643b4aae94bd84f1d88b6~mv2_d_1836_3264_s_2.jpg/v1/crop/x_0,y_220,w_1836,h_2277/fill/w_618,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/20190610_131658.jpg"
+              src="https://static.wixstatic.com/media/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg/v1/fill/w_452,h_567,fp_0.50_0.50,q_80,enc_auto/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg"
               alt=""
               className="product__img"
             />
-            <span className="product__title">
-              Hercules Conveyor Belt Winder
-            </span>
-            <Link to="/products/herculesconveyor" className="product__more">
+            <span className="product__title">Light Duty Conveyor Belts</span>
+            <Link to="/products/lightdutyconveyor" className="product__more">
               Learn More
             </Link>
 
@@ -35,15 +33,13 @@ function Products() {
 
           <div className="product">
             <img
-              src="https://static.wixstatic.com/media/2b8fca_538070cd1fe341498f16547e5a1f2352~mv2.jpg/v1/fill/w_570,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84%20inch%20wide%20just%20in%20scraper.jpg"
+              src="https://static.wixstatic.com/media/373325_82b2f1e9b4d742f6b2b0a8102d895906~mv2.jpg/v1/fill/w_1034,h_1360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/373325_82b2f1e9b4d742f6b2b0a8102d895906~mv2.jpg"
               alt=""
               className="product__img"
             />
-            <span className="product__title">
-              Just-In Scraper Conveyor Belt Cleaner
-            </span>
+            <span className="product__title">Heavy Duty Conveyor Belts</span>
 
-            <Link to="/products/scraperconveyor" className="product__more">
+            <Link to="/products/heavydutyconveyor" className="product__more">
               Learn More
             </Link>
 

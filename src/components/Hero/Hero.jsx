@@ -24,7 +24,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__img">
-        <img src={HeroImg} alt="Hero Image" />
+        {/* <img src={HeroImg} alt="Hero Image" /> */}
       </div>
       <div className="hero__shadow"></div>
 

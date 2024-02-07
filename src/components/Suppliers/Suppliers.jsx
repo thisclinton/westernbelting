@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import "./About.css";
+import "./suppliers.css";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import SectionHeader from "../SectionHeader";
@@ -53,7 +53,7 @@ const suppliersData = [
   },
 ];
 
-function About() {
+function Suppliers() {
   const containerRef = useRef(null);
 
   const isInView = useInView(containerRef, { once: true });
@@ -203,4 +203,4 @@ function About() {
   );
 } */
 
-export default About;
+export default Suppliers;

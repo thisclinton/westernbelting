@@ -1,5 +1,5 @@
 import Transition from "../../transition";
-import About from "../About/About";
+import About from "../Suppliers/Suppliers";
 import Partners from "../Partners/Partners";
 import Gallery from "../Gallery/Gallery";
 import Hero from "../Hero/Hero";
@@ -10,7 +10,7 @@ function Home() {
       <Transition />
       <Hero />
       <About />
-      {/* <Gallery /> */}
+      <Gallery />
     </>
   );
 }

@@ -24,11 +24,11 @@ const navLinksVariants = {
 };
 
 const navs = [
-  { title: "products", link: "/products", id: 1 },
-  { title: "services", link: "/services", id: 2 },
-  { title: "our workshops", link: "/workshop", id: 3 },
-  { title: "safety", link: "/safety", id: 4 },
-  { title: "about us", link: "/about", id: 5 },
+  { title: "about", link: "/about", id: 1 },
+  { title: "products", link: "/products", id: 2 },
+  { title: "services", link: "/services", id: 3 },
+  { title: "our workshops", link: "/workshop", id: 4 },
+  { title: "safety", link: "/safety", id: 5 },
   { title: "blog", link: "/blog", id: 6 },
 ];
 
@@ -50,6 +50,25 @@ function Nav() {
             </Link>
           </motion.div>
 
+          <motion.ul
+            className="nav__list nav__large"
+            variants={navVariants}
+            initial="hidden"
+            animate="show"
+          >
+            {navs.map((nav) => (
+              <motion.li
+                className="nav__item"
+                key={nav.id}
+                variants={navLinksVariants}
+              >
+                <Link to={nav.link} className="nav__link">
+                  {nav.title}
+                </Link>
+              </motion.li>
+            ))}
+          </motion.ul>
+
           {toggleMenu && (
             <div className="nav__menu show__menu">
               <motion.ul
@@ -69,6 +88,10 @@ function Nav() {
                     </Link>
                   </motion.li>
                 ))}
+
+                <div className="nav__contact">
+                  <Link to="/contact">Contact Us</Link>
+                </div>
               </motion.ul>
 
               <div className="nav__close">
@@ -77,9 +100,9 @@ function Nav() {
             </div>
           )}
 
-          {/* <div className="nav__contact">
+          <div className="nav__contact nav__contact-large">
             <Link to="/contact">Contact Us</Link>
-          </div> */}
+          </div>
 
           <div className="nav__toggle">
             <RiMenuFill onClick={() => setToggleMenu(true)} />

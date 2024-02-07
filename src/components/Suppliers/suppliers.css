@@ -5,16 +5,20 @@
 }
 
 .suppliers > .section__title {
+  font-size: clamp(1.2rem, 6vw, 4rem);
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .suppliers > .section__description {
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
   line-height: 1.7;
   text-align: center;
   color: #000000af;
   font-size: clamp(0.7rem, 3vw, 1.2rem);
+  border-bottom: 1px solid black;
 }
 
 .suppliers__card {

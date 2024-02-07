@@ -1,5 +1,5 @@
 .header {
-  padding: 1rem 2rem;
+  padding: 1.5rem;
   width: 100%;
   color: #fff;
   background-color: #000;
@@ -12,7 +12,6 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  height: 3rem;
   align-items: center;
   margin-bottom: 1px solid black;
   width: 100%;
@@ -26,8 +25,9 @@
   box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
 } */
 
-.nav__logo {
-  font-size: 1.8rem;
+.nav__logo,
+.nav__logo span {
+  font-size: clamp(1.4rem, 6vw, 1.8rem);
   font-weight: 600;
 }
 
@@ -38,7 +38,7 @@
 
 .nav__list {
   display: flex;
-  gap: 1.45rem;
+  gap: 2.5rem;
 }
 
 /* .nav__dropmenu {
@@ -61,9 +61,15 @@
 
 .nav__item {
   transition: 0.4s;
-  font-size: 1.1rem;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 1.2rem;
   text-transform: capitalize;
+  padding: 0.3rem;
+  color: #fff;
+}
+
+.nav__link {
+  transition: color 0.2s;
+  font-size: clamp(1rem, 1vw, 1.5rem);
 }
 
 /* .nav__item:hover ul.nav__dropmenu {
@@ -93,12 +99,28 @@
   background-color: #ffffffd5;
 }
 
+.show__menu,
+.nav__toggle {
+  display: none;
+}
+
 /* .nav__toggle,
 .nav__close {
   display: flex;
 } */
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1110px) {
+  .nav__list {
+    gap: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  ul.nav__list.nav__large,
+  .nav__contact-large {
+    display: none;
+  }
+
   .nav__menu {
     position: fixed;
     top: 0;
@@ -109,9 +131,13 @@
     background: #000;
   }
 
-  .nav__logo,
-  .nav__logo span {
-    font-size: clamp(1.4rem, 6vw, 1.8rem);
+  .show__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background: #000;
+    padding: 1rem 2rem;
   }
 
   .nav__toggle,
@@ -125,7 +151,7 @@
   .nav__list {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 1.5rem;
   }
 
   .nav__link {
@@ -142,12 +168,7 @@
 
   .nav__close {
     position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-  }
-
-  .show__menu {
-    transition: 0.5s;
-    right: 0;
+    top: 1.8rem;
+    right: 1rem;
   }
 }

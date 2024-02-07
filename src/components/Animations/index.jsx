@@ -6,8 +6,8 @@ import Services from "../Services/Services.jsx";
 import Workshop from "../Workshop/Workshop.jsx";
 import Safety from "../Safety/Safety.jsx";
 import Shop from "../Shop/Shop.jsx";
-import HerculesConveyor from "../HerculesConveyor/index.jsx";
-import ScraperConveyor from "../ScraperConveyor/index.jsx";
+import LightDutyConveyor from "../LightDutyConveyor/index.jsx";
+import HeavyDutyConveyor from "../HeavyDutyConveyor/index.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import AboutUs from "../AboutUs/AboutUs.jsx";
 import Contact from "../Contact/Contact.jsx";
@@ -358,10 +358,13 @@ function AnimatedRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="products" element={<Products />}></Route>
           <Route
-            path="/products/herculesconveyor"
-            element={<HerculesConveyor />}
+            path="/products/lightdutyconveyor"
+            element={<LightDutyConveyor />}
           />
-          <Route path="/products/conveyor" element={<ScraperConveyor />} />
+          <Route
+            path="/products/heavydutyconveyor"
+            element={<HeavyDutyConveyor />}
+          />
           <Route path="services" element={<Services />} />
           <Route path="workshop" element={<Workshop />} />
           <Route path="safety" element={<Safety />} />

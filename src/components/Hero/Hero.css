@@ -1,12 +1,12 @@
 .hero {
   position: relative;
+  height: 120vh;
 }
 
 .hero__img img {
   position: absolute;
   width: 100%;
   object-fit: cover;
-  height: 100%;
   object-position: center;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .hero__title {
-  font-size: clamp(50px, 8vw + 1rem, 100px);
+  font-size: clamp(2rem, 8vw + 1rem, 4rem);
 }
 
 .hero__title span {
@@ -47,7 +47,7 @@
 }
 
 .hero__subtitle {
-  font-size: clamp(10px, 3vw + 1rem, 16px);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   line-height: 2;
 }
 
@@ -81,9 +81,5 @@
   .hero__data {
     width: 100%;
     margin-left: 2rem;
-  }
-
-  .hero__title {
-    margin-bottom: 1.6rem;
   }
 }

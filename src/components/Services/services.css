@@ -90,12 +90,13 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
   .services__data {
     display: grid;
     grid-template-columns: 1fr;
     place-content: center;
-    margin: 0 3rem;
+    margin: 0 1rem;
+    max-width: 400px;
   }
 
   .services__detail {
