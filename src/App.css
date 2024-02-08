@@ -42,3 +42,7 @@ ul {
   transform-origin: top;
   z-index: 999;
 }
+
+.container {
+  margin: 0 3rem;
+}

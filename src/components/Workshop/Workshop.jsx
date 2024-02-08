@@ -2,83 +2,91 @@ import { motion } from "framer-motion";
 import "./workshop.css";
 import Transition from "../../transition";
 
+const industries = [
+  {
+    title: "Ports and Terminals",
+    description:
+      "Vital hubs for global trade, facilitating the import and export of goods via ships, connecting nations and enabling economic growth.",
+    img: "https://plus.unsplash.com/premium_photo-1661962773421-6b97ceec1f0e?q=80&w=2347&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 1,
+  },
+  {
+    title: "Aggregate and Forestry",
+    description:
+      "Industries involved in the extraction and processing of raw materials like sand, gravel, and timber for construction and wood products.",
+    img: "https://images.unsplash.com/photo-1664792558934-c7b321605f29?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 2,
+  },
+  {
+    title: "Mining",
+    description:
+      "Extractive industry focused on obtaining valuable minerals and ores from the earth, supporting infrastructure, energy, and manufacturing sectors.",
+    img: "https://plus.unsplash.com/premium_photo-1661911778005-bda918172dd3?q=80&w=2382&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 3,
+  },
+  {
+    title: "Manufacturing",
+    description:
+      "Sector encompassing the production of goods, ranging from automobiles to electronics, often involving assembly, fabrication, and processing operations.",
+    img: "https://images.unsplash.com/photo-1598299803204-b73796f43289?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 4,
+  },
+  {
+    title: "Oil and Gas",
+    description:
+      "Energy sector responsible for exploration, extraction, refining, and distribution of petroleum products, playing a critical role in global energy supply.",
+    img: "https://plus.unsplash.com/premium_photo-1664298311043-46b3814a511f?q=80&w=2383&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 5,
+  },
+  {
+    title: "Food & Processing",
+    description:
+      " Industry involved in the production, packaging, and distribution of food products, ensuring quality, safety, and efficiency in food supply chains.",
+    img: "https://plus.unsplash.com/premium_photo-1661876053515-5b7902815759?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    id: 6,
+  },
+];
+
 function Workshop() {
   return (
     <>
       <Transition />
-      <section className="workshop">
+      <section className="industries">
         <div className="title__container">
-          <h1 className="section__title">Our Workshops</h1>
+          <h1 className="section__title">Industries</h1>
           <p className="section__description">
-            Our locations around British Columbia for servicing the north west
+            Welcome to our Industries section, where we delve into the diverse
+            sectors that power economies worldwide.
           </p>
         </div>
 
-        <article class="workshop__card">
-          <div className="workshop__img">
-            <img
-              src="https://static.wixstatic.com/media/2b8fca_e00b48a167f24d43aa81993f47636a42~mv2.jpg/v1/fill/w_432,h_227,al_c,lg_1,q_80,enc_auto/2b8fca_e00b48a167f24d43aa81993f47636a42~mv2.jpg"
-              alt=""
-            />
+        <div className="industries__container">
+          <p className="industries__intro">
+            The Industries section encompasses diverse sectors, each with unique
+            roles and contributions. From facilitating global trade at Ports and
+            Terminals to extracting vital resources in Mining, and supporting
+            energy needs in Oil and Gas, this section explores the dynamics of
+            various sectors driving economic growth and innovation. Whether in
+            Manufacturing, Aggregate and Forestry, or Food & Processing, these
+            industries play pivotal roles in shaping our modern world.
+          </p>
+          <div className="industries__box">
+            {industries.map((industry) => (
+              <article className="industries__card" key={industry.id}>
+                <img
+                  src={industry.img}
+                  alt={industry.title}
+                  className="industries__img"
+                />
+                <span className="industries__title">{industry.title}</span>
+                <p className="industries__description">
+                  {industry.description}
+                </p>
+                <div className="industries__shadow"></div>
+              </article>
+            ))}
           </div>
-          <div className="workshop__data">
-            <h3 class="workshop__title">Prince George, BC</h3>
-            <span class="workshop__info">
-              3490 Opie Crescent <br />
-              Prince George, BC V2N 2P9 <br /> (877) 480-2358 Toll Free <br />
-              (250) 561-2358 Phone <br />
-              (250) 562-7406 Fax <br />
-              info@westernbelting.ca
-            </span>
-          </div>
-
-          <span className="workshop__btn">Browse Location</span>
-        </article>
-
-        <article class="workshop__card">
-          <div className="workshop__img">
-            <img
-              src="https://static.wixstatic.com/media/2b8fca_85b7bf5257fa42ef844c06b2772a8ff3~mv2.jpg/v1/fill/w_672,h_353,al_c,lg_1,q_80,enc_auto/2b8fca_85b7bf5257fa42ef844c06b2772a8ff3~mv2.jpg"
-              alt=""
-            />
-          </div>
-          <div className="workshop__data">
-            <h3 class="workshop__title">Surrey</h3>
-            <span class="workshop__info">
-              Head Office <br />
-              5510 192 Street <br />
-              Surrey, BC V3S 8E5 <br />
-              (866) 451-2358 Toll Free <br />
-              (604) 451-4133 Phone <br />
-              (604) 451-4166 Fax <br />
-              info@westernbelting.ca
-            </span>
-          </div>
-
-          <span className="workshop__btn">Browse Location</span>
-        </article>
-
-        <article class="workshop__card">
-          <div className="workshop__img">
-            <img
-              src="https://static.wixstatic.com/media/2b8fca_e00b48a167f24d43aa81993f47636a42~mv2.jpg/v1/fill/w_432,h_227,al_c,lg_1,q_80,enc_auto/2b8fca_e00b48a167f24d43aa81993f47636a42~mv2.jpg"
-              alt=""
-            />
-          </div>
-          <div className="workshop__data">
-            <h3 class="workshop__title"> CALGARY, AB</h3>
-            <span class="workshop__info">
-              7880 66th Street SE <br />
-              Building 2, Unit 106 <br />
-              Calgary, Alberta <br />
-              (866) 451-2358 Toll Free <br />
-              (604) 451-4133 Phone <br />
-              calgary@westernbelting.ca
-            </span>
-          </div>
-
-          <span className="workshop__btn">Browse Location</span>
-        </article>
+        </div>
       </section>
     </>
   );

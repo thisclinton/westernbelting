@@ -2,60 +2,93 @@
   margin-bottom: 3rem;
 }
 
-.workshop__card {
-  display: flex;
-  justify-content: space-between;
-  align-items: self-start;
-  max-width: 80%;
-  margin: 3rem auto;
-  border: 2px solid black;
-  padding: 1rem 2.5rem;
-  gap: 2rem;
+.industries__container {
+  padding: 5rem 7rem;
+  width: 100%;
 }
 
-.workshop__img img {
+.industries__intro {
+  margin-bottom: 4rem;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+.industries__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.industries__img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
 }
 
-.workshop__data {
+.industries__img-container {
+  position: relative;
+}
+
+.industries__card {
+  position: relative;
   display: grid;
   gap: 0.7rem;
-}
-
-.workshop__info {
-  font-size: (0.65rem, 3vw + 1rem, 1.25rem);
-}
-
-.workshop__btn {
-  background: #000;
-  color: #fff;
-  padding: 1rem 2.2rem;
+  border: 2px solid #000;
+  padding-bottom: 1rem;
+  background: #fff;
   cursor: pointer;
-  font-size: clamp(0.75rem, 3vw, 1rem);
-  display: inline-block;
 }
 
-@media screen and (max-width: 1240px) {
-  .workshop__img img {
-    width: 700px;
-    height: 100%;
-    object-fit: cover;
-  }
+.industries__shadow {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transform: translate(9px, 10px);
+}
 
-  .workshop__card {
-    display: grid;
-    place-content: center;
-    text-align: center;
-    margin: 3rem auto;
+.industries__title {
+  font-weight: 600;
+  z-index: 2;
+  font-size: clamp(1rem, 4vw, 1.4rem);
+}
+
+.industries__description {
+  font-size: clamp(0.9rem, 4vw, 1rem);
+}
+
+.industries__description,
+.industries__title {
+  padding-left: 0.7rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .industries__box {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (max-width: 991px) {
-  .workshop__img img {
-    max-width: 80%;
-    height: 100%;
-    object-fit: cover;
+@media screen and (max-width: 1110px) {
+  .industries__container {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  .industries__box {
+    grid-template-columns: 1fr;
+  }
+
+  .industries__container {
+    padding: 4rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  .industries__container {
+    padding: 1rem;
+    width: 100%;
   }
 }
