@@ -19,48 +19,19 @@ const tl = gsap.timeline();
 
 // Preloader Animation
 export const preLoaderAnim = () => {
-  tl.to("body", {
-    duration: 0.1,
-    css: { overflowY: "hidden" },
-    ease: "power3.inOut",
+  tl.from([".preloader__logo", ".preloader__title", ".text__container span"], {
+    duration: 1.3,
+    opacity: 0,
+    delay: 0.5,
+    y: "+=30",
+    stagger: 0.5,
+    ease: "Power3.easeOut",
   })
-    .to(".landing", {
-      duration: 0.05,
-      css: { overflowY: "hidden", height: "90vh" },
-    })
-    .to(".text__container", {
-      duration: 0,
-      opacity: 1,
-      ease: "Power3.easeOut",
-    })
-    .from([".preloader__logo", ".preloader__title", ".text__container span"], {
-      duration: 1.3,
-      opacity: 0,
-      delay: 0.5,
-      y: "+=30",
-      stagger: 0.5,
-      ease: "Power3.easeOut",
-    })
     .to([".preloader__title", ".preloader__logo", ".text__container span"], {
       opacity: 0,
       y: "-=30",
       delay: 0.3,
       stagger: 0.5,
-    })
-    .to(".landing", {
-      duration: 0.05,
-      css: { overflowY: "hidden", height: "unset" },
-    })
-    .to("body", {
-      duration: 0.1,
-      css: { overflowY: "scroll" },
-      ease: "power3.inOut",
-    })
-    .from(".landing__top .sub", {
-      duration: 1,
-      opacity: 0,
-      y: 80,
-      ease: "expo.easeOut",
     })
     .to(
       ".preloader",

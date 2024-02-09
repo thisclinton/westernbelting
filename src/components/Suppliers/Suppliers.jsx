@@ -124,7 +124,7 @@ function Suppliers() {
         }}
         transition={{ delay: 1, duration: 0.5 }}
       >
-        Suppliers
+        Our Suppliers
       </motion.h2>
       <motion.p
         className="section__description"
@@ -145,9 +145,6 @@ function Suppliers() {
       <div className="suppliers__container container">
         {suppliersData.map((supplier, index) => (
           <article className="suppliers__card" key={supplier.id}>
-            <span className="suppliers__number">
-              {supplier.id}/{lengthOfSuppliers}
-            </span>
             <div className="suppliers__img-container">
               <a href={supplier.link} target="_blank">
                 <img src={supplier.img} alt="" className="suppliers__img" />

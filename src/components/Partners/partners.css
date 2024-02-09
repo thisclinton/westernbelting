@@ -8,7 +8,6 @@
   text-transform: uppercase;
   font-size: clamp(1rem, 5vw, 3.5rem);
   margin-bottom: 3rem;
-  font-family: "Protest Riot", sans-serif;
 }
 
 .client__gallery {

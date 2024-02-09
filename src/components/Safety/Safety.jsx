@@ -116,7 +116,6 @@ function Safety() {
               {safetyProgram.map((safety) => (
                 <article className="safety__card" key={safety.id}>
                   <div className="safety__shadow"></div>
-                  <span className="safety__number">{safety.id}</span>
                   <img
                     src={safety.svg}
                     alt={safety.title}

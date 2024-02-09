@@ -4,8 +4,7 @@ import "./gallery.css";
 
 const galleries = [
   {
-    src: "https://images.unsplash.com/photo-1535923430552-0ce3cd477cc7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+    src: "https://www.iclamerica.com/wp-content/uploads/2020/08/Belt-Store-700x450.jpg",
     title: "Products",
     link: "/products",
 
@@ -18,14 +17,14 @@ const galleries = [
     id: 2,
   },
   {
-    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2301&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://images.unsplash.com/photo-1582280871722-424e91cbee8b?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     title: "Industries",
     link: "/workshop",
     id: 3,
   },
   {
-    src: "https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?q=80&w=2754&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://st5.depositphotos.com/10256402/66905/i/600/depositphotos_669056076-stock-photo-construction-worker-wearing-safety-harness.jpg",
 
     title: "Health & Safety",
     link: "/safety",

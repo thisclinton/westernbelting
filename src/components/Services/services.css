@@ -8,9 +8,7 @@
 .section__title {
   font-size: clamp(1rem, 3vw + 1rem, 8rem);
   text-transform: uppercase;
-  font-family: "Arame", sans-serif;
   margin-bottom: 1rem;
-  letter-spacing: 0.6rem;
 }
 
 .services__description {

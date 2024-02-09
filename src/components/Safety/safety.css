@@ -44,17 +44,10 @@
   background: #fff;
 }
 
-.safety__number {
-  position: absolute;
-  top: 0.2rem;
-  right: 0.6rem;
-}
-
 .safety__title {
   text-transform: uppercase;
   margin-bottom: 0.7rem;
   font-size: clamp(1.2rem, 3vw, 1.6rem);
-  font-family: "Protest Riot", sans-serif;
   font-weight: bold;
 }
 

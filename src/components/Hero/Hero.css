@@ -52,7 +52,7 @@
 }
 
 .hero__subtitle {
-  font-size: clamp(0.95rem, 3vw, 1.2rem);
+  font-size: clamp(0.85rem, 3vw, 1.2rem);
   line-height: 2;
 }
 
@@ -83,18 +83,15 @@
   .hero__data {
     width: 100%;
     margin: 1rem;
+    text-align: center;
   }
 
   .hero-logo {
-    width: 70px;
+    width: 60px;
   }
 }
 
 @media screen and (max-width: 370px) {
-  .hero {
-    height: 100%;
-  }
-
   .hero__container {
     padding: 3rem 0;
   }
