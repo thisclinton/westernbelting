@@ -1,122 +1,22 @@
 import "./Footer.css";
+import Logo from "../../assets/Western-Belting-Logo-Website.png";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <a href="#" className="footer__title">
-          Western <span>BELTING</span>
-        </a>
+        <div className="footer__title-container">
+          <img
+            src={Logo}
+            alt="Western-Belting-Logo"
+            className="nav__logo-img"
+          />
+          <a href="#" className="footer__title">
+            Western <span>BELTING</span>
+          </a>
+        </div>
 
         <div className="footer__line"></div>
-
-        {/* <div className="footer__content">
-          <div className="footer__links">
-            <span className="footer__head">Services</span>
-            <ul className="footer__list">
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Vulcanizing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Pulley Lagging
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Lacing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Tracking
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Stringing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Patching
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Steel Cable Splicing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Light Weight / Speciality
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="footer__links">
-            <span className="footer__head">Resources</span>
-            <ul className="footer__list">
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Vulcanizing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Pulley Lagging
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Lacing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Tracking
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Stringing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Patching
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Steel Cable Splicing
-                </a>
-              </li>
-
-              <li className="footer__item">
-                <a href="#" className="footer__link">
-                  Light Weight / Speciality
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div> */}
 
         <div className="footer__address">
           <span className="footer__head">Our Locations</span>

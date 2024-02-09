@@ -7,7 +7,15 @@ function Products() {
   return (
     <>
       <Transition />
-      <section className="products">
+      <motion.section
+        className="products"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.65,
+        }}
+      >
         <div className="title__container">
           <h1 className="section__title">Products</h1>
           <p className="section__description">
@@ -46,7 +54,7 @@ function Products() {
             <div className="product__shadow"></div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

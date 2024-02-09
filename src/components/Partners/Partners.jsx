@@ -44,7 +44,7 @@ function Partners() {
 
       <div className="client__gallery">
         {workforceCompliance.map((compliance) => (
-          <a href={compliance.link} target="_blank">
+          <a href={compliance.link} target="_blank" key={compliance.id}>
             <img
               src={compliance.img}
               alt={compliance.title}

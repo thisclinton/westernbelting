@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../Home/Home.jsx";
 import Products from "../Products/Products.jsx";
 import Services from "../Services/Services.jsx";
-import Workshop from "../Workshop/Workshop.jsx";
+import Industries from "../Industries/Industries.jsx";
 import Safety from "../Safety/Safety.jsx";
 import Shop from "../Shop/Shop.jsx";
 import LightDutyConveyor from "../LightDutyConveyor/index.jsx";
@@ -366,7 +366,7 @@ function AnimatedRoutes() {
             element={<HeavyDutyConveyor />}
           />
           <Route path="services" element={<Services />} />
-          <Route path="workshop" element={<Workshop />} />
+          <Route path="industries" element={<Industries />} />
           <Route path="safety" element={<Safety />} />
           <Route path="shop" element={<Shop />} />
           <Route path="about" element={<AboutUs />} />

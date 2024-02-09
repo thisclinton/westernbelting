@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./workshop.css";
+import "./industries.css";
 import Transition from "../../transition";
 
 const industries = [
@@ -47,11 +47,19 @@ const industries = [
   },
 ];
 
-function Workshop() {
+function Industries() {
   return (
     <>
       <Transition />
-      <section className="industries">
+      <motion.section
+        className="industries"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.65,
+        }}
+      >
         <div className="title__container">
           <h1 className="section__title">Industries</h1>
           <p className="section__description">
@@ -87,9 +95,9 @@ function Workshop() {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }
 
-export default Workshop;
+export default Industries;

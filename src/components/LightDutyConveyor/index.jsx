@@ -5,24 +5,24 @@ function LightDutyConveyor() {
   return (
     <>
       <Transition />
-      <section className="hercules">
+      <section className="lightduty">
         <div className="title__container">
           <h1 className="section__title">Light duty conveyor belt</h1>
           <p className="section__description">
             Made by Scandia USA Midwest LLC
           </p>
         </div>
-        <div className="hercules__container">
-          <div className="hercules__data">
-            <div className="hercules__top">
+        <div className="lightduty__container">
+          <div className="lightduty__data">
+            <div className="lightduty__top">
               <img
                 src="https://static.wixstatic.com/media/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg/v1/fill/w_452,h_567,fp_0.50_0.50,q_80,enc_auto/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg"
                 alt=""
-                className="hercules__img1"
+                className="lightduty__img1"
               />
 
-              <span className="hercules__detail">
-                <span className="hercules__detail-top">
+              <span className="lightduty__detail">
+                <span className="lightduty__detail-top">
                   <h2>This Conveyor Belt earns its name proudly!</h2>
                 </span>
                 <p>
@@ -38,27 +38,27 @@ function LightDutyConveyor() {
                   component for enhancing efficiency and productivity in various
                   industrial environments.
                 </p>
-                <span className="hercules__detail-bottom"></span>
+                <span className="lightduty__detail-bottom"></span>
               </span>
-              <div className="hercules__shadow"></div>
+              <div className="lightduty__shadow"></div>
             </div>
 
-            {/* <div className="hercules__bottom">
-              <div className="hercules__bottom-img">
+            {/* <div className="lightduty__bottom">
+              <div className="lightduty__bottom-img">
                 <img
                   src="https://static.wixstatic.com/media/2b8fca_e2c4f0b9ed48494985edf4b379877f5c~mv2_d_1836_3264_s_2.jpg/v1/fill/w_384,h_666,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20190610_131754_jpg.jpg"
                   alt=""
-                  className="hercules__img2"
+                  className="lightduty__img2"
                 />
 
                 <img
                   src="https://static.wixstatic.com/media/2b8fca_04f62c12b3274e48a1f95be07ab15c75~mv2_d_1836_3264_s_2.jpg/v1/fill/w_390,h_664,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20190610_131730_jpg.jpg"
                   alt=""
-                  className="hercules__img3"
+                  className="lightduty__img3"
                 />
               </div>
 
-              <div className="hercules__shadow-bottom"></div>
+              <div className="lightduty__shadow-bottom"></div>
             </div> */}
           </div>
         </div>

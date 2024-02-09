@@ -1,24 +1,73 @@
 .contact__container {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 1.35rem 1rem;
-  gap: 5rem;
+  margin: 1rem 5rem;
+}
+
+.contact__address {
+  background: #000;
+  color: #fff;
+  margin: 7rem 0rem;
+  border: 2px solid black;
+}
+
+.contact__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__img-container {
+  width: 50vw;
 }
 
 .contact__img {
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.contact__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.contact__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+
+.contact__title {
+  font-size: clamp(1rem, 6vw, 4.2rem);
+  text-transform: uppercase;
+}
+
+.contact__description {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+}
+
+.contact__location {
+  background: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: 0.5s all;
+}
+
+.contact__icon {
+  transition: 0.5s all;
+}
+
+.contact__location:hover .contact__icon {
+  transform: translate(6px, -3px);
+}
+
+.contact__location:hover {
+  background: #ffffffd3;
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.45rem;
 }
 
@@ -80,6 +129,8 @@
   cursor: pointer;
   padding: 0.875rem 1.5rem;
   transition: transform 0.3s;
+  display: flex;
+  width: fit-content;
 }
 
 .form__btn:hover {
@@ -105,13 +156,23 @@
   transition: 0.3s;
 }
 
-@media screen and (max-width: 999px) {
-  .contact__container {
-    width: 100%;
+@media screen and (max-width: 1200px) {
+  .contact__img-container {
+    width: 45vw;
   }
 
-  .contact__img {
-    width: 100%;
+  .contact__container {
+    margin: 1rem 3rem;
+  }
+
+  .contact__detail {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .contact__img-container {
+    width: 40vw;
   }
 
   .contact__form,
@@ -121,9 +182,39 @@
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 860px) {
+  .contact__img-container {
+    width: 38vw;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .contact__card {
+    flex-direction: column-reverse;
+  }
+
+  .contact__img-container {
+    width: 100%;
+  }
+
+  .contact__container {
+    margin: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
   .contact__form,
   .form__box {
     width: 100%;
+  }
+
+  .contact__container {
+    margin: 1rem 0.6rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact__detail {
+    padding: 1rem 0.5rem;
   }
 }

@@ -52,6 +52,8 @@
   font-weight: 600;
   z-index: 2;
   font-size: clamp(1rem, 4vw, 1.4rem);
+  font-family: "protest riot", sans-serif;
+  text-transform: uppercase;
 }
 
 .industries__description {

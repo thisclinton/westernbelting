@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import "./Hero.css";
-import HeroImg from "../../assets/hero.jpg";
+import Logo from "../../assets/Western-Belting-Logo-Website.png";
 import { useEffect, useLayoutEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { motion } from "framer-motion";
@@ -11,7 +11,7 @@ const textVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 5,
+      delay: 2,
       duration: 1,
       staggerChildren: 1,
     },
@@ -24,7 +24,10 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__img">
-        {/* <img src={HeroImg} alt="Hero Image" /> */}
+        <img
+          src="https://images.unsplash.com/photo-1623742110056-e01d81db039d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Hero Image"
+        />
       </div>
       <div className="hero__shadow"></div>
 
@@ -35,9 +38,16 @@ function Hero() {
           initial="hidden"
           animate="show"
         >
-          <h1 className="hero__title">
-            Western <span>BELTING</span>
-          </h1>
+          <div className="hero__title-container">
+            <img
+              src={Logo}
+              alt="Western-Belting-Logo"
+              className="nav__logo-img hero-logo"
+            />
+            <h1 className="hero__title">
+              Western <span>BELTING</span>
+            </h1>
+          </div>
           <motion.span className="hero__subtitle">
             Welcome to Western Belting Company, where precision meets
             performance in every belt we craft. As industry leaders, we take
@@ -49,34 +59,7 @@ function Hero() {
             together for your success.
           </motion.span>
         </motion.div>
-        <div className="hero__scroll">
-          <span>scroll</span>
-          <motion.div
-            className="hero__line"
-            /* initial={{ translateY: 0 }} */
-            animate={{ y: 10 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "reverse",
-              repeatDelay: 1,
-            }}
-          >
-            <RiArrowDownSLine className="hero__arrow" />
-          </motion.div>
-        </div>
       </div>
-
-      {/* <div className="reveal">
-        <div>
-          {text.split("").map((letters, index) => {
-            <span className="reveal__text" key={index}>
-              {letters}
-            </span>;
-          })}
-        </div>
-      </div> */}
     </section>
   );
 }

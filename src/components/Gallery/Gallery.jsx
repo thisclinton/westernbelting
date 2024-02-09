@@ -4,7 +4,7 @@ import "./gallery.css";
 
 const galleries = [
   {
-    src: "https://static.wixstatic.com/media/2b8fca_33f3899e9ff74397833eba868bd620eb~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1200,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_33f3899e9ff74397833eba868bd620eb~mv2_d_3264_2448_s_4_2.jpg",
+    src: "https://images.unsplash.com/photo-1535923430552-0ce3cd477cc7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
     title: "Products",
     link: "/products",
@@ -12,7 +12,7 @@ const galleries = [
     id: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://static.wixstatic.com/media/2b8fca_aa81aa9a824a4a318d3fee3081d7e6b2~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1200,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_aa81aa9a824a4a318d3fee3081d7e6b2~mv2_d_3264_2448_s_4_2.jpg",
     title: "Services",
     link: "/services",
     id: 2,
@@ -20,22 +20,22 @@ const galleries = [
   {
     src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2301&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
-    title: "Our Workshops",
+    title: "Industries",
     link: "/workshop",
     id: 3,
   },
   {
     src: "https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?q=80&w=2754&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
-    title: "Safety",
+    title: "Health & Safety",
     link: "/safety",
     id: 4,
   },
   {
-    src: "https://static.wixstatic.com/media/2b8fca_aa81aa9a824a4a318d3fee3081d7e6b2~mv2_d_3264_2448_s_4_2.jpg/v1/fill/w_1200,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_aa81aa9a824a4a318d3fee3081d7e6b2~mv2_d_3264_2448_s_4_2.jpg",
+    src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29tcGFueXxlbnwwfHwwfHx8MA%3D%3D",
 
-    title: "Shop",
-    link: "/shop",
+    title: "About Us",
+    link: "/about",
     id: 5,
   },
 ];

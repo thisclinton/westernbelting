@@ -116,12 +116,6 @@
 } */
 
 @media screen and (max-width: 1110px) {
-  .nav__list {
-    gap: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 1020px) {
   ul.nav__list.nav__large,
   .nav__contact-large {
     display: none;

@@ -28,8 +28,8 @@ const navs = [
   { title: "about", link: "/about", id: 1 },
   { title: "products", link: "/products", id: 2 },
   { title: "services", link: "/services", id: 3 },
-  { title: "industries", link: "/workshop", id: 4 },
-  { title: "safety", link: "/safety", id: 5 },
+  { title: "health & safety", link: "/safety", id: 4 },
+  { title: "industries", link: "/industries", id: 5 },
   { title: "news", link: "/blog", id: 6 },
 ];
 

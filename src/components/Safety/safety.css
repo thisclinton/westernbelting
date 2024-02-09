@@ -1,6 +1,5 @@
 .safety__container {
   display: grid;
-  padding: 3rem;
 }
 
 .safety__description {
@@ -31,9 +30,10 @@
 
 .safety__box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: 6rem;
   column-gap: 4rem;
+  margin: 0 4rem;
 }
 
 .safety__card {
@@ -54,6 +54,8 @@
   text-transform: uppercase;
   margin-bottom: 0.7rem;
   font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-family: "Protest Riot", sans-serif;
+  font-weight: bold;
 }
 
 .safety__detail {
@@ -75,9 +77,33 @@
   transform: translate(-20px, -20px);
 }
 
+@media screen and (max-width: 1250px) {
+  .safety__box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .safety__container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .safety__box {
+    margin: 0 1rem;
+  }
+
+  .safety__container {
+    padding: 2rem;
+  }
+}
+
 @media screen and (max-width: 690px) {
   .safety__box {
     grid-template-columns: 1fr;
+  }
+
+  .safety__box {
+    margin: 0;
   }
 
   .safety__container {

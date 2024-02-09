@@ -12,7 +12,7 @@ function HeavyDutyConveyor() {
             Made by Scandia USA Midwest LLC
           </p>
         </div>
-        <div className="heavyduty__container">
+        <div className="heavyduty__container container">
           <div className="heavyduty__data">
             <div className="heavyduty__top">
               <img

@@ -73,16 +73,24 @@ function Safety() {
   return (
     <>
       <Transition />
-      <section className="safety">
+      <motion.section
+        className="safety"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.65,
+        }}
+      >
         <div className="title__container">
-          <h1 className="section__title">Safety</h1>
+          <h1 className="section__title">health & Safety</h1>
           <p className="section__description">
             Explore our safety section for comprehensive guidelines and
             resources. We prioritize safety above all else, ensuring a secure
             environment for all stakeholders.
           </p>
         </div>
-        <div className="safety__container">
+        <div className="safety__container container">
           <p className="safety__description">
             Western Belting, like most of our customers, has a strong commitment
             to safety. We strongly believe that it is the most important thing
@@ -134,7 +142,7 @@ function Safety() {
             </ul> */}
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

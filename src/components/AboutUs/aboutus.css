@@ -1,25 +1,27 @@
 .about__card {
   border-top: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 3rem;
+  margin-bottom: 3rem;
 }
 
 .about__card {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .about__data {
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 2rem;
 }
 
 .about__data h3 {
-  font-size: clamp(3rem, 3vw, 4rem);
+  font-size: clamp(2.2rem, 6vw, 5rem);
   text-transform: uppercase;
+  font-family: "Protest Riot", sans-serif;
+  margin-bottom: 1.2rem;
 }
 
 .about__data p {
@@ -27,17 +29,46 @@
   font-size: clamp(1rem, 3vw, 1.3rem);
 }
 
+.about__img-container {
+  position: relative;
+}
+
 .about__img {
   border-radius: 10px;
   object-fit: cover;
 }
 
+.about__img-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform: translate(10px, 5px);
+  z-index: -1;
+  border-radius: 10px;
+}
+
 .about__description {
-  padding: 3rem;
-  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  font-size: clamp(1rem, 3vw, 1.2rem);
   color: #000000b0;
   line-height: 1.7;
   margin-bottom: 3rem;
+}
+
+.mission__title {
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  text-transform: uppercase;
+  font-family: "Protest Riot", sans-serif;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.mission__title::after {
+  content: "Our Mission";
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
+  opacity: 0.1;
 }
 
 @media screen and (max-width: 991px) {
@@ -58,5 +89,9 @@
 
   .about__description {
     padding: 1rem;
+  }
+
+  .about__container.container {
+    padding: 0;
   }
 }

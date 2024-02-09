@@ -6,7 +6,7 @@ import Layout from "./Layout.jsx";
 import Home from "./components/Home/Home.jsx";
 import Products from "./components/Products/Products.jsx";
 import Services from "./components/Services/Services.jsx";
-import Workshop from "./components/Workshop/Workshop.jsx";
+import Workshop from "./components/Industries/Industries.jsx";
 import Safety from "./components/Safety/Safety.jsx";
 import Shop from "./components/Shop/Shop.jsx";
 import HerculesConveyor from "./components/LightDutyConveyor/index.jsx";

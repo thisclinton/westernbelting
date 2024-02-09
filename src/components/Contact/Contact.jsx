@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Transition from "../../transition";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 function Contact() {
   const form = useRef();
@@ -33,12 +34,34 @@ function Contact() {
           <h1 className="section__title">Contact Us</h1>
         </div>
         <div className="contact__container">
-          {/* <div className="contact__img">
-            <img
-              src="https://static.wixstatic.com/media/2b8fca_50adb6b7570a44f4922ca2ed0ed0b9a8~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_920,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b8fca_50adb6b7570a44f4922ca2ed0ed0b9a8~mv2_d_2448_3264_s_4_2.jpg"
-              alt="contact page image"
-            />
-          </div> */}
+          <div className="contact__address">
+            <article className="contact__card">
+              <div className="contact__detail">
+                <h2 className="contact__title">Contact Us</h2>
+                <p className="contact__description">
+                  5510 192 Street, Surrey, BC V3S 8E5 <br />
+                  onlinesales@westernbelting.ca <br />
+                  Phone: (604) 451-4133
+                </p>
+                <a
+                  href="https://www.google.com/maps?cid=1159887035919818481"
+                  className="contact__location"
+                  target="_blank"
+                >
+                  View Office Location
+                  <RiArrowRightUpLine className="contact__icon" />
+                </a>
+              </div>
+
+              <div className="contact__img-container">
+                <img
+                  src="https://images.unsplash.com/photo-1651672397008-01d088f4a9f6?q=80&w=2140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  className="contact__img"
+                />
+              </div>
+            </article>
+          </div>
 
           <form
             ref={form}
