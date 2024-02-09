@@ -87,7 +87,7 @@ function AboutUs() {
             the highest quality benchmarks throughout our supply chain.
           </p>
 
-          <h2 className="mission__title" data-name>
+          <h2 className="mission__title about__title" data-name>
             Our Mission
           </h2>
           <p className="mission__description about__description">
@@ -99,6 +99,23 @@ function AboutUs() {
             partnerships and a relentless pursuit of excellence, we strive to
             empower our clients to achieve their goals while contributing
             positively to the communities we serve.
+          </p>
+
+          <h2 className="people__title about__title">Our People</h2>
+          <p className="people__description about__description">
+            At Western Belting, our most valuable asset is our employees. We
+            recognize and appreciate the dedication, skills, and contributions
+            of each member of our team. Consequently, we prioritize creating a
+            supportive and inclusive work environment where every individual
+            feels valued, respected, and empowered to thrive. From competitive
+            compensation and benefits packages to ongoing training and
+            development opportunities, we invest in the well-being and growth of
+            our employees. We foster a culture of teamwork, collaboration, and
+            open communication, ensuring that everyone has a voice and
+            opportunity to contribute to our collective success. At Western
+            Belting, we truly believe that our employees are the driving force
+            behind our success, and we are committed to nurturing and supporting
+            them every step of the way.
           </p>
         </div>
       </motion.section>

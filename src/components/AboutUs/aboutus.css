@@ -21,6 +21,7 @@
   font-size: clamp(2.2rem, 6vw, 5rem);
   text-transform: uppercase;
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 .about__data p {
@@ -52,21 +53,21 @@
   color: #000000b0;
   line-height: 1.7;
   margin-bottom: 3rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 3rem;
 }
 
-.mission__title {
+.about__title {
   font-size: clamp(2.5rem, 6vw, 5.5rem);
   text-transform: uppercase;
   margin: 1rem 0;
   position: relative;
+  text-align: center;
 }
 
-.mission__title::after {
-  content: "Our Mission";
-  position: absolute;
-  top: 1rem;
-  left: 0.8rem;
-  opacity: 0.1;
+.mission__description {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid black;
 }
 
 @media screen and (max-width: 991px) {
