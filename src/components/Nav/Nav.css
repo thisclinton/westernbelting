@@ -1,5 +1,5 @@
 .header {
-  padding: 1.5rem;
+  padding: 1.2rem 3rem;
   width: 100%;
   color: #fff;
   background-color: #000;
@@ -13,21 +13,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1px solid black;
   width: 100%;
   position: relative;
   z-index: 9;
 }
 
-/* .header.active {
-  background: #000;
-  color: #fff;
-  box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
-} */
-
 .nav__logo,
 .nav__logo span {
-  font-size: clamp(0.8rem, 6vw, 1.8rem);
+  font-size: clamp(0.8rem, 6vw, 1.6rem);
   font-weight: 600;
 }
 
@@ -45,24 +38,6 @@
   display: flex;
   gap: 2.5rem;
 }
-
-/* .nav__dropmenu {
-  position: absolute;
-  top: 4.2rem;
-  opacity: 0;
-  display: none;
-  z-index: 1;
-  display: grid;
-  gap: 0.7rem;
-  background: #000;
-  color: #fff;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.nav__dropmenu li:hover {
-  color: #ffffff93;
-} */
 
 .nav__item {
   transition: 0.4s;

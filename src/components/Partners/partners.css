@@ -6,7 +6,7 @@
 
 .client__title {
   text-transform: uppercase;
-  font-size: clamp(1rem, 5vw, 3.5rem);
+  font-size: clamp(1rem, 5vw, 2rem);
   margin-bottom: 3rem;
 }
 

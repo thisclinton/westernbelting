@@ -45,7 +45,7 @@
 }
 
 .slider__description {
-  font-size: clamp(0.9rem, 5vw, 1.2rem);
+  font-size: clamp(0.9rem, 4vw, 1.1rem);
   padding-right: 2rem;
 }
 
@@ -90,6 +90,10 @@
     height: 300px;
   }
 
+  .accessories__card {
+    padding: 2rem 1.4rem;
+  }
+
   .container {
     padding: 0 0.6rem;
   }
@@ -99,6 +103,6 @@
   }
 
   .slider__data {
-    padding: 0.4rem;
+    padding: 0.2rem;
   }
 }

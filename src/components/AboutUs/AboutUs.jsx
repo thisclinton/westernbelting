@@ -17,7 +17,9 @@ function AboutUs() {
       >
         <div className="title__container">
           <h1 className="section__title">About Us</h1>
-          <p className="section__description"></p>
+          <p className="section__description">
+            Discover our story, passion, and commitment to excellence here.
+          </p>
         </div>
 
         <div className="about__container container">

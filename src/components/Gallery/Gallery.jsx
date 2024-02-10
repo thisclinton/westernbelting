@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./gallery.css";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const galleries = [
   {
@@ -55,6 +56,7 @@ function Gallery() {
 
       <Link to="/contact" className="gallery__button">
         Contact Us
+        <RiArrowRightUpLine className="gallery__icon" />
       </Link>
     </section>
   );

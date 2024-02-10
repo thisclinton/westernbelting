@@ -76,9 +76,7 @@ function Contact() {
                 placeholder="Enter Name"
                 name="user_name"
               />
-              <label htmlFor="" className="form__label">
-                enter name
-              </label>
+              <label className="form__label">enter name</label>
               <div className="form__shadow"></div>
             </div>
 
@@ -89,9 +87,7 @@ function Contact() {
                 placeholder="Enter Email"
                 name="user_email"
               />
-              <label htmlFor="" className="form__label">
-                enter email
-              </label>
+              <label className="form__label">enter email</label>
               <div className="form__shadow"></div>
             </div>
 
@@ -101,9 +97,7 @@ function Contact() {
                 className="form__input"
                 placeholder="Subject"
               />
-              <label htmlFor="" className="form__label">
-                subject
-              </label>
+              <label className="form__label">subject</label>
               <div className="form__shadow"></div>
             </div>
 
@@ -113,9 +107,7 @@ function Contact() {
                 className="form__input"
                 placeholder="Message"
               />
-              <label htmlFor="" className="form__label">
-                Message
-              </label>
+              <label className="form__label">Message</label>
               <div className="form__shadow"></div>
             </div>
 

@@ -10,7 +10,7 @@
 
 .industries__intro {
   margin-bottom: 4rem;
-  font-size: clamp(1rem, 5vw, 1.1rem);
+  font-size: clamp(1rem, 4vw, 1.1rem);
 }
 
 .industries__box {

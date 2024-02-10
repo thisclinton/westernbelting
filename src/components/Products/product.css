@@ -91,7 +91,8 @@
 }
 
 .product__accessories-description {
-  font-size: clamp(0.9rem, 6vw, 1.3rem);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  line-height: 1.7;
 }
 
 .product__accessories-btn {

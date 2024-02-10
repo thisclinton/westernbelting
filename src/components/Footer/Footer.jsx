@@ -1,19 +1,34 @@
 import "./Footer.css";
 import Logo from "../../assets/Western-Belting-Logo-Website.png";
+import { RiFacebookCircleFill, RiLinkedinBoxFill } from "react-icons/ri";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__title-container">
-          <img
-            src={Logo}
-            alt="Western-Belting-Logo"
-            className="nav__logo-img"
-          />
-          <a href="#" className="footer__title">
-            Western <span>BELTING</span>
-          </a>
+          <div>
+            <img
+              src={Logo}
+              alt="Western-Belting-Logo"
+              className="nav__logo-img"
+            />
+            <a href="#" className="footer__title">
+              Western <span>BELTING</span>
+            </a>
+          </div>
+
+          <div className="footer__socials">
+            <span className="footer__socials-text">Follow us on</span>
+            <div className="footer__socials-logo">
+              <a href="" target="_blank">
+                <RiFacebookCircleFill />
+              </a>
+              <a href="" target="_blank">
+                <RiLinkedinBoxFill />
+              </a>
+            </div>
+          </div>
         </div>
 
         <div className="footer__line"></div>
@@ -80,6 +95,10 @@ function Footer() {
             </ul>
           </div>
         </div>
+
+        <div className="footer__line"></div>
+
+        <div className="footer__copyright">copyright© of Western Belting</div>
       </div>
     </footer>
   );
