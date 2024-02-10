@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
 import "./industries.css";
 import Transition from "../../transition";
+import { motion } from "framer-motion";
 
 const industries = [
   {
