@@ -122,7 +122,7 @@ function Suppliers() {
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 },
         }}
-        transition={{ delay: 1, duration: 0.5 }}
+        transition={{ delay: 1, duration: 0.8 }}
       >
         Our Suppliers
       </motion.h2>
