@@ -70,11 +70,11 @@
   border-bottom: 1px solid black;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1110px) {
   .about__card {
     display: grid;
     gap: 3rem;
-    padding: 1rem;
+    padding: 4rem;
   }
 
   .about__data {
@@ -92,5 +92,11 @@
 
   .about__container.container {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .about__card {
+    padding: 2rem;
   }
 }
