@@ -12,6 +12,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import AboutUs from "../AboutUs/AboutUs.jsx";
 import Contact from "../Contact/Contact.jsx";
 import Blog from "../Blog/Blog.jsx";
+import Accessories from "../Accessories/Accessories.jsx";
 
 // Declare a general timeline to use in all the animation functions.
 
@@ -336,6 +337,7 @@ function AnimatedRoutes() {
             path="/products/heavydutyconveyor"
             element={<HeavyDutyConveyor />}
           />
+          <Route path="/products/accessories" element={<Accessories />} />
           <Route path="services" element={<Services />} />
           <Route path="industries" element={<Industries />} />
           <Route path="safety" element={<Safety />} />

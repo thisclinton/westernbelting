@@ -1,14 +1,15 @@
 .title__container {
-  background-color: #000;
+  background-image: url("https://images.unsplash.com/photo-1623742110056-e01d81db039d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   color: #fff;
   padding: 5.5rem 0;
   text-align: center;
 }
 
 .section__title {
-  font-size: clamp(1rem, 3vw + 1rem, 8rem);
+  font-size: clamp(1rem, 8vw, 8rem);
   text-transform: uppercase;
   margin-bottom: 1rem;
+  letter-spacing: 0.4rem;
 }
 
 .services__description {

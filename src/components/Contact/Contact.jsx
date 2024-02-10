@@ -31,7 +31,7 @@ function Contact() {
       <Transition />
       <section className="contact">
         <div className="title__container">
-          <h1 className="section__title">Contact Us</h1>
+          <h1 className="section__title">Contact</h1>
         </div>
         <div className="contact__container">
           <div className="contact__address">

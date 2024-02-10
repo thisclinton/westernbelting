@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
 import "./services.css";
 import Transition from "../../transition";
+import { motion } from "framer-motion";
 
 const services = [
   {
     title: "inspection & audit",
-    img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://www.iclamerica1.com/wp-content/uploads/2014/11/slide_quality-check1.jpg",
     description:
       "Essential for safety and efficiency, ensuring compliance, identifying hazards, and optimizing conveyor systems through thorough assessment and proactive maintenance strategies.",
     id: 1,
@@ -19,7 +19,7 @@ const services = [
   },
   {
     title: "fabric belt cover thickness testing",
-    img: "https://images.unsplash.com/photo-1447945702361-458a1d71f318?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "https://safety-evo-production.s3.ca-central-1.amazonaws.com/6h8v3qpg3wqh7yw9k2cqtfbrw8bh?response-content-disposition=inline%3B%20filename%3D%22C3%20Gauge%20Scan%2002.02.2024%20img-1a.jpg%22%3B%20filename%2A%3DUTF-8%27%27C3%2520Gauge%2520Scan%252002.02.2024%2520img-1a.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIUHODAYXGXUBMTKA%2F20240209%2Fca-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240209T163008Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=970b2532a7147976499bbe068aa869cd082dd5cf0c3c261dbd3476a2bc08b57e",
     description:
       "Evaluates belt integrity, predicts wear patterns, and ensures durability, minimizing downtime and maximizing efficiency of fabric conveyor belts.",
     id: 3,
@@ -33,7 +33,7 @@ const services = [
   },
   {
     title: "conveyor belt repair",
-    img: "http://www.iclamerica1.com/wp-content/uploads/2014/11/slide_quality-check1-300x199.jpg",
+
     description:
       "Restores functionality, prevents downtime, and extends conveyor belt life through patching, splicing, and specialized coatings.",
     id: 5,
@@ -127,10 +127,10 @@ function Services() {
 
             <div className="services__data">
               {services.map((service) => (
-                <article class="services__card" key={service.id}>
+                <article className="services__card" key={service.id}>
                   <img src={service.img} alt="" className="services__img" />
-                  <h3 class="services__title">{service.title}</h3>
-                  <span class="services__info">{service.description}</span>
+                  <h3 className="services__title">{service.title}</h3>
+                  <span className="services__info">{service.description}</span>
                   <div className="services__shadow"></div>
                 </article>
               ))}

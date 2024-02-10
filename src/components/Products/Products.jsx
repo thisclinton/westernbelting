@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./product.css";
 import { motion } from "framer-motion";
 import Transition from "../../transition";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 function Products() {
   return (
@@ -53,6 +54,27 @@ function Products() {
 
             <div className="product__shadow"></div>
           </div>
+        </div>
+
+        <div className="product__accessories-container">
+          <article className="product__accessories-card">
+            <h2 className="product__accessories-title">Accessories</h2>
+            <div className="product__accessories-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+              qui. Molestias tempora consequatur, dolorem quo harum recusandae
+              nostrum accusantium numquam tenetur placeat a officiis quia amet
+              porro ab pariatur modi iste illo maxime! Ipsa amet doloremque quae
+              laboriosam. Dolorem, repudiandae?
+            </div>
+
+            <Link
+              to="/products/accessories"
+              className="product__accessories-btn"
+            >
+              Learn More
+              <RiArrowRightUpLine className="product__accessories-icon" />
+            </Link>
+          </article>
         </div>
       </motion.section>
     </>

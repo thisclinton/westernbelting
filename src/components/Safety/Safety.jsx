@@ -96,11 +96,11 @@ function Safety() {
             to safety. We strongly believe that it is the most important thing
             to us to keep our workers safe. We do this by being proactive with
             safety committees and programs that assure the best in safety. ​ We
-            don’t just meet WCB regulations, but we surpass them. We pride
+            don't just meet WCB regulations, but we surpass them. We pride
             ourselves on being as safe as we possibly can, both inside or
             facilities and on the job sites. This is proven when looking at our
             WCB man hour rates, they are lower than the industry average by at
-            least 30%. ​ Not only do we have strict safety policies, but we make
+            least 30%. Not only do we have strict safety policies, but we make
             sure we meet all requirements by our customers and their safety
             protocols. We make sure our workers have proper training so we are
             able to meet all requirements set by our customers.

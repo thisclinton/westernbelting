@@ -60,9 +60,7 @@ function Preloader() {
             alt="Western-Belting-Logo"
             className="preloader__logo"
           />
-          <h1 className="preloader__title">
-            Western <h1>BELTING</h1>
-          </h1>
+          <h1 className="preloader__title">Western BELTING</h1>
         </div>
         <span>Conveyor Belts since 1959</span>
       </motion.div>
