@@ -3,6 +3,7 @@ import "./preloader.css";
 import gsap from "gsap";
 import { motion } from "framer-motion";
 import Logo from "../../assets/Western-Belting-Logo-Website.png";
+import yearsLogo from "../../assets/years-logo.png";
 import { preLoaderAnim } from "../Animations";
 
 const container = {
@@ -63,6 +64,7 @@ function Preloader() {
           <h1 className="preloader__title">Western BELTING</h1>
         </div>
         <span>Conveyor Belts since 1959</span>
+        <img src={yearsLogo} alt="" className="preloader__years" />
       </motion.div>
     </section>
   );

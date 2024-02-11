@@ -3,12 +3,25 @@
   border-bottom: 1px solid black;
   padding: 3rem;
   margin-bottom: 3rem;
-}
-
-.about__card {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
+}
+
+.about__header {
+  background-image: url("../../assets/backgrounds/about-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact__header {
+  background-image: url("../../assets/backgrounds/contact-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .about__data {
@@ -34,18 +47,7 @@
 }
 
 .about__img {
-  border-radius: 10px;
   object-fit: cover;
-}
-
-.about__img-shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  transform: translate(10px, 5px);
-  z-index: -1;
-  border-radius: 10px;
 }
 
 .about__description {
@@ -53,7 +55,6 @@
   color: #000000b0;
   line-height: 1.7;
   margin-bottom: 3rem;
-  border-bottom: 1px solid black;
   padding-bottom: 3rem;
 }
 
@@ -68,6 +69,19 @@
 .mission__description {
   padding-bottom: 3rem;
   border-bottom: 1px solid black;
+}
+
+.people__img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+
+.people__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1110px) {

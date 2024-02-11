@@ -1,5 +1,6 @@
-import "./Footer.css";
 import Logo from "../../assets/Western-Belting-Logo-Website.png";
+import yearsLogo from "../../assets/years-logo.png";
+import "./Footer.css";
 import { RiFacebookCircleFill, RiLinkedinBoxFill } from "react-icons/ri";
 
 function Footer() {
@@ -17,6 +18,7 @@ function Footer() {
               Western <span>BELTING</span>
             </a>
           </div>
+          <img src={yearsLogo} alt="" className="footer__logo-years" />
 
           <div className="footer__socials">
             <span className="footer__socials-text">Follow us on</span>

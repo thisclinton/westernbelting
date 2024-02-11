@@ -1,15 +1,38 @@
 .title__container {
-  background-image: url("https://images.unsplash.com/photo-1623742110056-e01d81db039d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   padding: 5.5rem 0;
   text-align: center;
 }
 
+.title__front {
+  position: relative;
+}
+
 .section__title {
-  font-size: clamp(1rem, 8vw, 8rem);
+  font-size: clamp(1rem, 8vw, 4rem);
   text-transform: uppercase;
   margin-bottom: 1rem;
   letter-spacing: 0.4rem;
+}
+
+.services__header {
+  background-image: url("../../assets/backgrounds/services-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .services__description {

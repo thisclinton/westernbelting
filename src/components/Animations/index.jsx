@@ -20,25 +20,41 @@ const tl = gsap.timeline();
 
 // Preloader Animation
 export const preLoaderAnim = () => {
-  tl.from([".preloader__logo", ".preloader__title", ".text__container span"], {
-    duration: 1.3,
-    opacity: 0,
-    delay: 0.5,
-    y: "+=30",
-    stagger: 0.5,
-    ease: "Power3.easeOut",
-  })
-    .to([".preloader__title", ".preloader__logo", ".text__container span"], {
+  tl.from(
+    [
+      ".preloader__logo",
+      ".preloader__title",
+      ".text__container span",
+      ".preloader__years",
+    ],
+    {
+      duration: 1.3,
       opacity: 0,
-      y: "-=30",
-      delay: 0.3,
+      delay: 0.5,
+      y: "+=30",
       stagger: 0.5,
-    })
+      ease: "Power3.easeOut",
+    }
+  )
+    .to(
+      [
+        ".preloader__title",
+        ".preloader__logo",
+        ".preloader__years",
+        ".text__container span",
+      ],
+      {
+        opacity: 0,
+        y: "-=30",
+        delay: 0.3,
+        stagger: 0.5,
+      }
+    )
     .to(
       ".preloader",
       {
         duration: 1.5,
-        delay: 0.8,
+        delay: 1.3,
         height: "0vh",
         ease: "Power3.easeOut",
         onComplete: mobileLanding(),

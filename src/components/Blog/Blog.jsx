@@ -37,8 +37,11 @@ function Blog() {
           delay: 0.65,
         }}
       >
-        <div className="title__container">
-          <h1 className="section__title">News</h1>
+        <div className="title__container news__header">
+          <div className="overlay"></div>
+          <div className="title__front">
+            <h1 className="section__title">News</h1>
+          </div>
         </div>
         <div className="blog__container">
           {fetchError && <p>{fetchError}</p>}
@@ -53,7 +56,7 @@ function Blog() {
               }}
             >
               {posts.map((post) => (
-                <article className="blog__card">
+                <article className="blog__card" key={post.title}>
                   <img src="" alt="" className="blog__img" />
                   <div className="blog__data">
                     <h2 className="blog__title">{post.title}</h2>

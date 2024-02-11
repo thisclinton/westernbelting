@@ -26,6 +26,10 @@
   justify-content: center;
 }
 
+.text__container span {
+  margin-bottom: 2rem;
+}
+
 .preloader__logo {
   width: 250px;
 }
@@ -39,8 +43,8 @@
   display: inline-block;
 }
 
-.text__container span {
-  font-size: clamp(0.6rem, 3vw, 1.3rem);
+.preloader__years {
+  width: 200px;
 }
 
 @media screen and (max-width: 650px) {
@@ -51,5 +55,9 @@
 
   .preloader__logo {
     width: 100px;
+  }
+
+  .preloader__years {
+    width: 70px;
   }
 }

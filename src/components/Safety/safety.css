@@ -3,6 +3,14 @@
   display: grid;
 }
 
+.safety__header {
+  background-image: url("../../assets/backgrounds/health-safety-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .safety__description {
   color: #000000a8;
   font-size: clamp(0.9rem, 4vw, 1.1rem);

@@ -82,13 +82,16 @@ function Safety() {
           delay: 0.65,
         }}
       >
-        <div className="title__container">
-          <h1 className="section__title">health & Safety</h1>
-          <p className="section__description">
-            Explore our safety section for comprehensive guidelines and
-            resources. We prioritize safety above all else, ensuring a secure
-            environment for all stakeholders.
-          </p>
+        <div className="title__container safety__header">
+          <div className="overlay"></div>
+          <div className="title__front">
+            <h1 className="section__title">health & Safety</h1>
+            <p className="section__description">
+              Explore our safety section for comprehensive guidelines and
+              resources. We prioritize safety above all else, ensuring a secure
+              environment for all stakeholders.
+            </p>
+          </div>
         </div>
         <div className="safety__container container">
           <p className="safety__description">

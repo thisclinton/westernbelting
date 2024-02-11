@@ -1,8 +1,29 @@
 import { motion } from "framer-motion";
 import Transition from "../../transition";
 import "./aboutus.css";
+import image1 from "../../assets/people/image-1.jpeg";
+import image2 from "../../assets/people/image-2.jpeg";
+import image3 from "../../assets/people/image-3.jpeg";
+import image4 from "../../assets/people/image-4.jpeg";
+import image5 from "../../assets/people/image-5.jpeg";
+import image6 from "../../assets/people/image-6.jpeg";
+import image7 from "../../assets/people/image-7.jpeg";
+import image9 from "../../assets/people/image-9.jpeg";
+import image10 from "../../assets/people/image-10.jpeg";
 
 function AboutUs() {
+  const people = [
+    { img: image1, id: 1 },
+    { img: image2, id: 2 },
+    { img: image3, id: 3 },
+    { img: image4, id: 4 },
+    { img: image5, id: 5 },
+    { img: image6, id: 6 },
+    { img: image7, id: 7 },
+    { img: image9, id: 9 },
+    { img: image10, id: 10 },
+  ];
+
   return (
     <>
       <Transition />
@@ -15,11 +36,14 @@ function AboutUs() {
           delay: 0.65,
         }}
       >
-        <div className="title__container">
-          <h1 className="section__title">About Us</h1>
-          <p className="section__description">
-            Discover our story, passion, and commitment to excellence here.
-          </p>
+        <div className="title__container about__header">
+          <div className="overlay"></div>
+          <div className="title__front">
+            <h1 className="section__title">About Us</h1>
+            <p className="section__description">
+              Discover our story, passion, and commitment to excellence here.
+            </p>
+          </div>
         </div>
 
         <div className="about__container container">
@@ -62,7 +86,6 @@ function AboutUs() {
               </p>
             </div>
             <div className="about__img-container">
-              <div className="about__img-shadow"></div>
               <img
                 src="https://static.wixstatic.com/media/2b8fca_edb703d3cba746cfbb37bbce2bd5b937~mv2.jpg/v1/crop/x_40,y_0,w_403,h_480/fill/w_483,h_576,al_c,lg_1,q_80,enc_auto/Pic-A.jpg"
                 alt="about us image"
@@ -119,6 +142,17 @@ function AboutUs() {
             behind our success, and we are committed to nurturing and supporting
             them every step of the way.
           </p>
+
+          <div className="people__img-container">
+            {people.map((people) => (
+              <img
+                src={people.img}
+                alt=""
+                className="people__img"
+                key={people.id}
+              />
+            ))}
+          </div>
         </div>
       </motion.section>
     </>

@@ -3,6 +3,11 @@ import "./product.css";
 import { motion } from "framer-motion";
 import Transition from "../../transition";
 import { RiArrowRightUpLine } from "react-icons/ri";
+import conveyorBeltWinder1 from "../../assets/products/conveyor-belt-winder-1.jpg";
+import conveyorBeltWinder2 from "../../assets/products/conveyor-belt-winder-2.jpg";
+import conveyorBeltWinder3 from "../../assets/products/conveyor-belt-winder-3.jpg";
+import heavyDutyBelt1 from "../../assets/products/heavy-duty-belt-1.jpg";
+import heavyDutyBelt2 from "../../assets/products/heavy-duty-belt-2.jpg";
 
 function Products() {
   return (
@@ -17,43 +22,196 @@ function Products() {
           delay: 0.65,
         }}
       >
-        <div className="title__container">
-          <h1 className="section__title">Products</h1>
-          <p className="section__description">
-            Browse through our product offerings and discover how our conveyor
-            belting solutions can streamline your processes, improve efficiency,
-            and elevate performance.
-          </p>
+        <div className="title__container products__header">
+          <div className="overlay"></div>
+          <div className="title__front">
+            <h1 className="section__title">Products</h1>
+            <p className="section__description">
+              Browse through our product offerings and discover how our conveyor
+              belting solutions can streamline your processes, improve
+              efficiency, and elevate performance.
+            </p>
+          </div>
         </div>
         <div className="products__container">
-          <div className="product">
-            <img
-              src="https://static.wixstatic.com/media/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg/v1/fill/w_452,h_567,fp_0.50_0.50,q_80,enc_auto/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg"
-              alt=""
-              className="product__img"
-            />
-            <span className="product__title">Light Duty Conveyor Belts</span>
-            <Link to="/products/lightdutyconveyor" className="product__more">
-              Learn More
-            </Link>
+          <p className="products__intro">
+            Understanding the classification of conveyor belts allows
+            <span className="products__intro-bold"> Western Belting </span>
+            Specialist to select the most appropriate belt for their specific
+            needs, ensuring optimal performance, efficiency, and safety in
+            material handling operations.
+          </p>
+
+          <div className="products__components">
+            <p className="products__card">
+              Conveyor belts are crucial components in various industries,
+              facilitating the efficient movement of materials and products
+              along manufacturing and distribution processes. These belts come
+              in a variety of classifications, each tailored to specific
+              applications and operating conditions. Understanding the
+              classification of conveyor belts is essential for selecting the
+              most suitable option for your needs. this includes material
+              composition, belt structure, surface properties and application.
+              With consideration to this classification, Western Belting carries
+              a wide range of products for specific needs, ensuring optimal
+              performance, efficiency, and safety in material handling
+              operations.
+            </p>
+
+            <div className="components__container">
+              <h3 className="components__title">1. Light Weight Belt </h3>
+              <p className="components__description">
+                Lightweight conveyor belts are designed for applications with
+                lower loads and less demanding operating conditions. They are
+                typically used in industries such as food processing, packaging,
+                and light manufacturing. These belts are characterized by their
+                flexibility, smooth surface, and ease of installation.
+                Lightweight belts are often made from materials such as PVC,
+                polyurethane, or rubber, and they may feature fabric
+                reinforcement for added strength. Examples of lightweight belt
+                applications include conveying packaged goods, sorting and
+                inspection processes, and transporting lightweight materials.
+              </p>
+            </div>
+
+            <div className="components__container">
+              <h3 className="components__title"> 2. Heavy Duty Belt</h3>
+              <p className="components__description">
+                Heavy-duty conveyor belts are engineered to withstand high
+                loads, abrasive materials, and harsh operating environments.
+                They are commonly used in industries such as mining,
+                construction, and bulk material handling. Heavy-duty belts are
+                characterized by their rugged construction, high tensile
+                strength, and resistance to impact and wear. These belts may
+                feature reinforced fabric layers, steel cords, or specialized
+                rubber compounds to enhance durability and longevity. Heavy-duty
+                belts are employed in applications such as ore and aggregate
+                transport, heavy machinery feeding, and industrial processing
+                operations.
+              </p>
+
+              <div className="components__img-container">
+                <img src={heavyDutyBelt1} alt="" className="components__img" />
+                <img src={heavyDutyBelt2} alt="" className="components__img" />
+              </div>
+            </div>
+
+            <div className="components__container">
+              <h3 className="components__title">
+                3. Conveyor Systems Accessories
+              </h3>
+              <p className="components__description">
+                Conveyor systems accessories play a critical role in enhancing
+                the performance, reliability, and safety of conveyor belt
+                systems across various industries. These components are
+                carefully selected and integrated into conveyor systems to
+                optimize material handling processes and maximize operational
+                efficiency. These accessories include:
+                <p>
+                  <span>Idlers:</span>
+                  Support and guide the conveyor belt along the conveyor frame,
+                  reducing friction and wear.
+                </p>
+                <p>
+                  <span>Rollers:</span>
+                  Provide support and facilitate smooth movement of conveyed
+                  materials along the conveyor path.
+                </p>
+                <p>
+                  <span>Pulleys:</span>
+                  Transmit power and tension to the conveyor belt, facilitating
+                  its movement and direction.
+                </p>
+                <p>
+                  <span>Belt cleaners:</span>
+                  Remove debris, spills, and buildup from the conveyor belt
+                  surface to maintain cleanliness and prevent material
+                  carryback.
+                </p>
+                <p>
+                  <span>Skirting and sealing systems:</span>
+                  Seal the conveyor belt edges to prevent spillage and contain
+                  material on the conveyor.
+                </p>
+                <p>
+                  <span>Tracking devices:</span>
+                  Ensure proper alignment and tracking of the conveyor belt to
+                  prevent misalignment and reduce wear.
+                </p>
+                <p>
+                  <span>Impact beds and bars:</span>
+                  Absorb impact and cushion conveyed materials to reduce damage
+                  to the conveyor belt and components.
+                </p>
+              </p>
+            </div>
+
+            <div className="components__container">
+              <h3 className="components__title">4. Conveyor Belt Winder</h3>
+              <p className="components__description">
+                Conveyor belt winder is an essential tool for safely handling
+                and managing conveyor belts, streamlining maintenance and
+                installation processes while ensuring the safety of operators
+                and personnel involved in belt handling operations. Our Conveyor
+                Belt Winder earns its name proudly! The Hercules mythical
+                ability to manage a 72" wide x 1000 ft Roll with weights ranging
+                from 15,000 Lbs to 19,000 Lbs this winder exceeds expectations.
+                The Scandia USA Midwest LLC Team. With years of experience
+                developing this winder with not only maximum performance
+                ability, The robust construction of it to last the riggers of
+                time and heavy use.
+              </p>
+              <div className="components__img-container">
+                <img
+                  src={conveyorBeltWinder1}
+                  alt=""
+                  className="components__img"
+                />
+
+                <img
+                  src={conveyorBeltWinder2}
+                  alt=""
+                  className="components__img"
+                />
+
+                <img
+                  src={conveyorBeltWinder3}
+                  alt=""
+                  className="components__img"
+                />
+              </div>
+            </div>
+          </div>
+          {/* <div className="products__card">
+            <div className="product">
+              <img
+                src="https://static.wixstatic.com/media/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg/v1/fill/w_452,h_567,fp_0.50_0.50,q_80,enc_auto/16e0a7_721a699f203042d180da48c53c469141~mv2.jpg"
+                alt=""
+                className="product__img"
+              />
+              <span className="product__title">Light Duty Conveyor Belts</span>
+              <Link to="/products/lightdutyconveyor" className="product__more">
+                Learn More
+              </Link>
+
+              <div className="product__shadow"></div>
+            </div>
+
+            <div className="product">
+              <img
+                src="https://static.wixstatic.com/media/373325_82b2f1e9b4d742f6b2b0a8102d895906~mv2.jpg/v1/fill/w_1034,h_1360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/373325_82b2f1e9b4d742f6b2b0a8102d895906~mv2.jpg"
+                alt=""
+                className="product__img"
+              />
+              <span className="product__title">Heavy Duty Conveyor Belts</span>
+
+              <Link to="/products/heavydutyconveyor" className="product__more">
+                Learn More
+              </Link>
+            </div>
 
             <div className="product__shadow"></div>
-          </div>
-
-          <div className="product">
-            <img
-              src="https://static.wixstatic.com/media/373325_82b2f1e9b4d742f6b2b0a8102d895906~mv2.jpg/v1/fill/w_1034,h_1360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/373325_82b2f1e9b4d742f6b2b0a8102d895906~mv2.jpg"
-              alt=""
-              className="product__img"
-            />
-            <span className="product__title">Heavy Duty Conveyor Belts</span>
-
-            <Link to="/products/heavydutyconveyor" className="product__more">
-              Learn More
-            </Link>
-
-            <div className="product__shadow"></div>
-          </div>
+          </div> */}
         </div>
 
         <div className="product__accessories-container">

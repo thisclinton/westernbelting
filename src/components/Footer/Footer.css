@@ -22,6 +22,10 @@
   padding: 0 3rem;
 }
 
+.footer__logo-years {
+  width: 100px;
+}
+
 .footer__socials {
   display: flex;
   align-items: center;
@@ -43,7 +47,7 @@
 }
 
 .footer__title {
-  font-size: clamp(1.2rem, 5vw, 2.5rem);
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
   text-align: center;
   font-weight: 600;
 }
@@ -116,6 +120,12 @@
   }
 }
 
+@media screen and (max-width: 920px) {
+  .footer__title-container {
+    padding: 0 0.3rem;
+  }
+}
+
 @media screen and (max-width: 860px) {
   .footer__address {
     margin-left: 1rem;
@@ -126,8 +136,17 @@
     grid-template-columns: 1fr;
   }
 
+  .footer__logo-years {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer__socials {
+    gap: 1rem;
+  }
+
   .footer__title-container {
-    padding: 0 1rem;
+    padding: 0 0.3rem;
   }
 }
 
@@ -135,6 +154,12 @@
   .footer__title-container {
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
+  }
+
+  .footer__logo-years {
+    width: 60px;
+    height: 60px;
   }
 }
 
