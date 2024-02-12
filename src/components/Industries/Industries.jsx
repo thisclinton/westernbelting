@@ -88,6 +88,7 @@ function Industries() {
                   src={industry.img}
                   alt={industry.title}
                   className="industries__img"
+                  loading="lazy"
                 />
                 <span className="industries__title">{industry.title}</span>
                 <p className="industries__description">

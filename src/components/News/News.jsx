@@ -20,7 +20,12 @@ function News() {
       }}
     >
       <Transition />
-      <img src={post.img} alt={post.title} className="post__img" />
+      <img
+        src={post.img}
+        alt={post.title}
+        className="post__img"
+        loading="lazy"
+      />
       <h2 className="post__title">{post.title}</h2>
       <p className="post__description">{post.text}</p>
     </motion.section>

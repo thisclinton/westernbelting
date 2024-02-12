@@ -90,6 +90,7 @@ function AboutUs() {
                 src="https://static.wixstatic.com/media/2b8fca_edb703d3cba746cfbb37bbce2bd5b937~mv2.jpg/v1/crop/x_40,y_0,w_403,h_480/fill/w_483,h_576,al_c,lg_1,q_80,enc_auto/Pic-A.jpg"
                 alt="about us image"
                 className="about__img"
+                loading="lazy"
               />
             </div>
           </article>
@@ -150,6 +151,7 @@ function AboutUs() {
                 alt=""
                 className="people__img"
                 key={people.id}
+                loading="lazy"
               />
             ))}
           </div>

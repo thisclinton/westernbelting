@@ -72,6 +72,29 @@ function Products() {
                 applications include conveying packaged goods, sorting and
                 inspection processes, and transporting lightweight materials.
               </p>
+
+              <div className="components__img-container">
+                <img
+                  src="https://www.asgco.com/wp-content/uploads/2020/04/ASGCO-Conveyor-Belting-Light-Duty-PERFORATION-CAPABILITIES-1.jpg"
+                  alt="light weight conveyor belt 1"
+                  className="components__img"
+                  loading="lazy"
+                />
+
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/01/13/14/16/factory-1137993_1280.jpg"
+                  alt="light weight conveyor belt 2"
+                  className="components__img"
+                  loading="lazy"
+                />
+
+                <img
+                  src="https://images.pexels.com/photos/3693017/pexels-photo-3693017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="light weight conveyor belt 3"
+                  className="components__img"
+                  loading="lazy"
+                />
+              </div>
             </div>
 
             <div className="components__container">
@@ -91,8 +114,25 @@ function Products() {
               </p>
 
               <div className="components__img-container">
-                <img src={heavyDutyBelt1} alt="" className="components__img" />
-                <img src={heavyDutyBelt2} alt="" className="components__img" />
+                <img
+                  src={heavyDutyBelt1}
+                  alt="heavy duty conveyor belt"
+                  className="components__img"
+                  loading="lazy"
+                />
+                <img
+                  src={heavyDutyBelt2}
+                  alt="heavy duty conveyor belt"
+                  className="components__img"
+                  loading="lazy"
+                />
+
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/06/12/18/42/conveyor-belt-3471181_1280.jpg"
+                  alt="heavy duty conveyor belt"
+                  className="components__img"
+                  loading="lazy"
+                />
               </div>
             </div>
 
@@ -166,18 +206,21 @@ function Products() {
                   src={conveyorBeltWinder1}
                   alt=""
                   className="components__img"
+                  loading="lazy"
                 />
 
                 <img
                   src={conveyorBeltWinder2}
                   alt=""
                   className="components__img"
+                  loading="lazy"
                 />
 
                 <img
                   src={conveyorBeltWinder3}
                   alt=""
                   className="components__img"
+                  loading="lazy"
                 />
               </div>
             </div>

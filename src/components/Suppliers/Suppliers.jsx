@@ -146,7 +146,12 @@ function Suppliers() {
           <article className="suppliers__card" key={supplier.id}>
             <div className="suppliers__img-container">
               <a href={supplier.link} target="_blank">
-                <img src={supplier.img} alt="" className="suppliers__img" />
+                <img
+                  src={supplier.img}
+                  alt=""
+                  className="suppliers__img"
+                  loading="lazy"
+                />
               </a>
             </div>
             <motion.div className="suppliers__data">

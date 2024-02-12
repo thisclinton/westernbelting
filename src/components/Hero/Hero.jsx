@@ -43,6 +43,7 @@ function Hero() {
               src={Logo}
               alt="Western-Belting-Logo"
               className="nav__logo-img hero-logo"
+              loading="lazy"
             />
             <h1 className="hero__title">
               Western <span>BELTING</span>

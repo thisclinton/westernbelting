@@ -49,6 +49,7 @@ function Partners() {
               src={compliance.img}
               alt={compliance.title}
               className="client__img"
+              loading="lazy"
             />
           </a>
         ))}

@@ -21,6 +21,14 @@
   padding: 2rem 3rem;
 }
 
+.accessories__header {
+  background-image: url("../../assets/backgrounds/services-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .accessories__slider {
   padding: 0 2rem;
 }

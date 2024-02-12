@@ -36,7 +36,12 @@ function Blog() {
             >
               {posts.map((post) => (
                 <article className="blog__card" key={post.title}>
-                  <img src={post.img} alt="" className="blog__img" />
+                  <img
+                    src={post.img}
+                    alt=""
+                    className="blog__img"
+                    loading="lazy"
+                  />
                   <div className="blog__data">
                     <h2 className="blog__title">{post.title}</h2>
                     <p className="blog__description">{post.description}</p>

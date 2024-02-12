@@ -105,13 +105,16 @@ function Accessories() {
           delay: 0.65,
         }}
       >
-        <div className="title__container">
-          <h1 className="section__title">Accessories</h1>
-          <p className="section__description">
-            Browse through our product offerings and discover how our conveyor
-            belting solutions can streamline your processes, improve efficiency,
-            and elevate performance.
-          </p>
+        <div className="title__container accessories__header">
+          <div className="overlay"></div>
+          <div className="title__front">
+            <h1 className="section__title">Accessories</h1>
+            <p className="section__description">
+              Browse through our product offerings and discover how our conveyor
+              belting solutions can streamline your processes, improve
+              efficiency, and elevate performance.
+            </p>
+          </div>
         </div>
 
         <div className="accessories__container container">

@@ -138,7 +138,12 @@ function Services() {
             <div className="services__data">
               {services.map((service) => (
                 <article className="services__card" key={service.id}>
-                  <img src={service.img} alt="" className="services__img" />
+                  <img
+                    src={service.img}
+                    alt=""
+                    className="services__img"
+                    loading="lazy"
+                  />
                   <h3 className="services__title">{service.title}</h3>
                   <span className="services__info">{service.description}</span>
                   <div className="services__shadow"></div>
