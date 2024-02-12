@@ -29,11 +29,16 @@ function Footer() {
           <div className="footer__socials">
             <span className="footer__socials-text">Follow us on</span>
             <div className="footer__socials-logo">
-              <a href="https://www.facebook.com/WesternBelting" target="_blank">
+              <a
+                href="https://www.facebook.com/WesternBelting"
+                aria-label="Visit our Facebook page"
+                target="_blank"
+              >
                 <RiFacebookCircleFill />
               </a>
               <a
                 href="https://ca.linkedin.com/company/western-belting-hose"
+                aria-label="visit our LinkedIn Page"
                 target="_blank"
               >
                 <RiLinkedinBoxFill />
