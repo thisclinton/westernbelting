@@ -29,9 +29,9 @@ export const preLoaderAnim = () => {
       ".preloader__years",
     ],
     {
-      duration: 1.3,
+      duration: 0.7,
       opacity: 0,
-      delay: 0.5,
+      delay: 0.3,
       y: "+=30",
       stagger: 0.5,
       ease: "Power3.easeOut",
@@ -54,7 +54,7 @@ export const preLoaderAnim = () => {
     .to(
       ".preloader",
       {
-        duration: 1.5,
+        duration: 1.2,
         delay: 1.3,
         height: "0vh",
         ease: "Power3.easeOut",
@@ -66,24 +66,6 @@ export const preLoaderAnim = () => {
       duration: 0,
       css: { display: "none" },
     });
-};
-
-export const heroAnim = () => {
-  const tl = gsap.timeline();
-  tl.from(".hero__subtitle", {
-    duration: 2,
-    opacity: 0,
-    delay: 2,
-    y: 0,
-    stagger: 0.5,
-  }).to(".hero__subtitle", {
-    duration: 1,
-    opacity: 1,
-    y: "-=30",
-    delay: 0.5,
-    stagger: 0.5,
-    ease: "Power3.easeOut",
-  });
 };
 
 export const mobileLanding = () => {

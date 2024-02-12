@@ -25,7 +25,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__img">
-        <img src={heroBG} alt="Hero Image" loading="lazy" />
+        <img src={heroBG} alt="Hero Image" />
       </div>
       <div className="hero__shadow"></div>
 
@@ -41,7 +41,6 @@ function Hero() {
               src={Logo}
               alt="Western-Belting-Logo"
               className="nav__logo-img hero-logo"
-              loading="lazy"
             />
             <h1 className="hero__title">
               Western <span>BELTING</span>
