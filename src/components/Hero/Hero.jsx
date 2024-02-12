@@ -4,6 +4,7 @@ import Logo from "../../assets/Western-Belting-Logo-Website.png";
 import { useEffect, useLayoutEffect } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { motion } from "framer-motion";
+import heroBG from "../../assets/backgrounds/hero-bg.jpg";
 
 const textVariants = {
   hidden: { opacity: 0, y: "1vh", transition: { duration: 0.5 } },
@@ -11,8 +12,8 @@ const textVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 2,
-      duration: 1,
+      delay: 0.4,
+      duration: 0.5,
       staggerChildren: 1,
     },
   },
@@ -24,10 +25,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__img">
-        <img
-          src="https://images.unsplash.com/photo-1623742110056-e01d81db039d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Hero Image"
-        />
+        <img src={heroBG} alt="Hero Image" loading="lazy" />
       </div>
       <div className="hero__shadow"></div>
 
