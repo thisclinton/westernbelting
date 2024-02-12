@@ -1,6 +1,5 @@
 import "./services.css";
 import Transition from "../../transition";
-import { motion } from "framer-motion";
 import beltWinding from "../../assets/services/belt-winding.jpg";
 import fabricBeltSplicing from "../../assets/services/fabric-belt-splicing.jpg";
 import steelCordSplicing from "../../assets/services/steel-cord-splicing.jpg";
@@ -8,6 +7,8 @@ import installation from "../../assets/services/installation.jpg";
 import conveyorAccessoriesInstallation from "../../assets/services/conveyor-accessories-installation.jpg";
 import mechanical from "../../assets/services/mechanical.jpeg";
 import pulleyLagging from "../../assets/services/pulley-lagging.jpg";
+import { motion } from "framer-motion";
+
 const services = [
   {
     title: "inspection & audit",

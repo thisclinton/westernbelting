@@ -107,42 +107,42 @@ function Products() {
                 carefully selected and integrated into conveyor systems to
                 optimize material handling processes and maximize operational
                 efficiency. These accessories include:
-                <p>
+                <span>
                   <span>Idlers:</span>
                   Support and guide the conveyor belt along the conveyor frame,
                   reducing friction and wear.
-                </p>
-                <p>
+                </span>
+                <span>
                   <span>Rollers:</span>
                   Provide support and facilitate smooth movement of conveyed
                   materials along the conveyor path.
-                </p>
-                <p>
+                </span>
+                <span>
                   <span>Pulleys:</span>
                   Transmit power and tension to the conveyor belt, facilitating
                   its movement and direction.
-                </p>
-                <p>
+                </span>
+                <span>
                   <span>Belt cleaners:</span>
                   Remove debris, spills, and buildup from the conveyor belt
                   surface to maintain cleanliness and prevent material
                   carryback.
-                </p>
-                <p>
+                </span>
+                <span>
                   <span>Skirting and sealing systems:</span>
                   Seal the conveyor belt edges to prevent spillage and contain
                   material on the conveyor.
-                </p>
-                <p>
+                </span>
+                <span>
                   <span>Tracking devices:</span>
                   Ensure proper alignment and tracking of the conveyor belt to
                   prevent misalignment and reduce wear.
-                </p>
-                <p>
+                </span>
+                <span>
                   <span>Impact beds and bars:</span>
                   Absorb impact and cushion conveyed materials to reduce damage
                   to the conveyor belt and components.
-                </p>
+                </span>
               </p>
             </div>
 

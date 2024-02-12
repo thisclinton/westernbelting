@@ -14,6 +14,8 @@ const locations = [
     number2: "(250) 561-2358 Phone",
     number3: "(250) 562-7406 Fax",
     email: "onlinesales@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/place/Western+Belting+%26+Hose+Ltd/@53.9006096,-122.7854371,17z/data=!3m1!4b1!4m6!3m5!1s0x5388996b4aaaeb0d:0xab1cfaa85a0446de!8m2!3d53.9006096!4d-122.7854371!16s%2Fg%2F1thq9jpm?entry=ttu",
     id: 1,
   },
 
@@ -26,11 +28,13 @@ const locations = [
     number2: "(604) 451-4133 Phone",
     number3: "",
     email: "calgary@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1BB5M9Xl1qfUqX-Qbbwsr5K2NQBU&hl=en&ll=50.9821303196227%2C-113.93729280000001&z=18",
     id: 2,
   },
 
   {
-    province: "  BARRIE, ON",
+    province: "BARRIE, ON",
     street: "220 Bayview Drive",
     city: "Unit 15 & 16",
     postal: "Barrie, ON LYN 4YB",
@@ -38,6 +42,7 @@ const locations = [
     number2: "",
     number3: "",
     email: "onlinesales@westernbelting.ca",
+    location: "",
     id: 3,
   },
 
@@ -50,6 +55,7 @@ const locations = [
     number2: "",
     number3: "",
     email: "RMcBride@westernbelting.ca",
+    location: "",
     id: 4,
   },
 
@@ -62,6 +68,7 @@ const locations = [
     number2: "",
     number3: "",
     email: "onlinesales@westernbelting.ca",
+    location: "",
     id: 5,
   },
 
@@ -74,6 +81,7 @@ const locations = [
     number2: "",
     number3: "",
     email: "mdeans@westernbelting.ca",
+    location: "",
     id: 6,
   },
 ];
@@ -159,10 +167,14 @@ function Contact() {
                 <a href="" className="location__email">
                   {location.email}
                 </a>
-                <a href="" className="location__map" target="_blank">
+                {/* <a
+                  href={location.location}
+                  className="location__map"
+                  target="_blank"
+                >
                   View Location
                   <RiArrowRightUpLine className="contact__icon" />
-                </a>
+                </a> */}
               </article>
             ))}
           </div>

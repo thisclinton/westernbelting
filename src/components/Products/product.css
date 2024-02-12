@@ -38,7 +38,7 @@
   font-size: clamp(0.9rem, 4vw, 1rem);
 }
 
-.components__description p span {
+.components__description span span {
   display: block;
   font-weight: bold;
   font-size: clamp(1rem, 4vw, 1.2rem);

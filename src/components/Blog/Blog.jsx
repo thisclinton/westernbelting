@@ -1,30 +1,10 @@
-import { useEffect, useState } from "react";
-import supabase from "../../config/SupabaseClient";
 import Transition from "../../transition";
 import "./Blog.css";
+import { Link } from "react-router-dom";
+import { posts } from "../../data/BlogDetail";
 import { motion } from "framer-motion";
 
 function Blog() {
-  const [fetchError, setFetchError] = useState(null);
-  const [posts, setPosts] = useState(null);
-
-  useEffect(() => {
-    const fetchPost = async () => {
-      const { data, error } = await supabase.from("blog").select();
-
-      if (error) {
-        setFetchError("Could not fetch Blog posts");
-        setPosts(null);
-      }
-      if (data) {
-        setPosts(data);
-        setFetchError(null);
-      }
-    };
-
-    fetchPost();
-  }, []);
-
   return (
     <>
       <Transition />
@@ -44,7 +24,6 @@ function Blog() {
           </div>
         </div>
         <div className="blog__container">
-          {fetchError && <p>{fetchError}</p>}
           {posts && (
             <motion.div
               className="posts"
@@ -57,12 +36,14 @@ function Blog() {
             >
               {posts.map((post) => (
                 <article className="blog__card" key={post.title}>
-                  <img src="" alt="" className="blog__img" />
+                  <img src={post.img} alt="" className="blog__img" />
                   <div className="blog__data">
                     <h2 className="blog__title">{post.title}</h2>
                     <p className="blog__description">{post.description}</p>
+                    <Link to={`/blog/${post.id}`} className="blog__more">
+                      Read More
+                    </Link>
                   </div>
-                  <div className="blog__shadow"></div>
                 </article>
               ))}
             </motion.div>

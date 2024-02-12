@@ -41,7 +41,7 @@
 
 .nav__item {
   transition: 0.4s;
-  padding: 0.7rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   text-transform: capitalize;
   padding: 0.3rem;
   color: #fff;
@@ -52,14 +52,6 @@
   transition: color 0.2s;
   font-size: clamp(1rem, 1vw, 1.5rem);
 }
-
-/* .nav__item:hover ul.nav__dropmenu {
-  opacity: 1;
-  display: none;
-  transition: 1s;
-  position: fixed;
-  margin-top: 0;
-} */
 
 .nav__item:hover {
   background: #fff;
@@ -84,11 +76,6 @@
 .nav__toggle {
   display: none;
 }
-
-/* .nav__toggle,
-.nav__close {
-  display: flex;
-} */
 
 @media screen and (max-width: 1200px) {
   ul.nav__list.nav__large,

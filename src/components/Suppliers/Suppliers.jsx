@@ -1,7 +1,6 @@
 import gsap from "gsap";
 import "./suppliers.css";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import SectionHeader from "../SectionHeader";
 import {
   useAnimation,

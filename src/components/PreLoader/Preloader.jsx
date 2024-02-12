@@ -1,10 +1,10 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
 import "./preloader.css";
 import gsap from "gsap";
-import { motion } from "framer-motion";
 import Logo from "../../assets/Western-Belting-Logo-Website.png";
 import yearsLogo from "../../assets/years-logo.png";
 import { preLoaderAnim } from "../Animations";
+import { motion } from "framer-motion";
 
 const container = {
   show: {
