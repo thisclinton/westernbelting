@@ -148,7 +148,7 @@ function Suppliers() {
               <a href={supplier.link} target="_blank">
                 <img
                   src={supplier.img}
-                  alt=""
+                  alt={`${supplier.title} image`}
                   className="suppliers__img"
                   loading="lazy"
                 />
