@@ -13,20 +13,29 @@ function Footer() {
               src={Logo}
               alt="Western-Belting-Logo"
               className="nav__logo-img"
+              loading="lazy"
             />
             <a href="#" className="footer__title">
               Western <span>BELTING</span>
             </a>
           </div>
-          <img src={yearsLogo} alt="" className="footer__logo-years" />
+          <img
+            src={yearsLogo}
+            alt="number of years logo"
+            className="footer__logo-years"
+            loading="lazy"
+          />
 
           <div className="footer__socials">
             <span className="footer__socials-text">Follow us on</span>
             <div className="footer__socials-logo">
-              <a href="" target="_blank">
+              <a href="https://www.facebook.com/WesternBelting" target="_blank">
                 <RiFacebookCircleFill />
               </a>
-              <a href="" target="_blank">
+              <a
+                href="https://ca.linkedin.com/company/western-belting-hose"
+                target="_blank"
+              >
                 <RiLinkedinBoxFill />
               </a>
             </div>
@@ -100,7 +109,7 @@ function Footer() {
 
         <div className="footer__line"></div>
 
-        <div className="footer__copyright">copyright© of Western Belting</div>
+        <div className="footer__copyright">© copyright of Western Belting</div>
       </div>
     </footer>
   );
