@@ -7,6 +7,7 @@ import installation from "../../assets/services/installation.jpg";
 import conveyorAccessoriesInstallation from "../../assets/services/conveyor-accessories-installation.jpg";
 import mechanical from "../../assets/services/mechanical.jpeg";
 import pulleyLagging from "../../assets/services/pulley-lagging.jpg";
+import fabricBeltThicknessTesting from "../../assets/services/fabric-thickness-testing.jpg";
 import { motion } from "framer-motion";
 
 const services = [
@@ -26,7 +27,7 @@ const services = [
   },
   {
     title: "fabric belt cover thickness testing",
-    img: "https://safety-evo-production.s3.ca-central-1.amazonaws.com/6h8v3qpg3wqh7yw9k2cqtfbrw8bh?response-content-disposition=inline%3B%20filename%3D%22C3%20Gauge%20Scan%2002.02.2024%20img-1a.jpg%22%3B%20filename%2A%3DUTF-8%27%27C3%2520Gauge%2520Scan%252002.02.2024%2520img-1a.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIUHODAYXGXUBMTKA%2F20240209%2Fca-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240209T163008Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=970b2532a7147976499bbe068aa869cd082dd5cf0c3c261dbd3476a2bc08b57e",
+    img: fabricBeltThicknessTesting,
     description:
       "Evaluates belt integrity, predicts wear patterns, and ensures durability, minimizing downtime and maximizing efficiency of fabric conveyor belts.",
     id: 3,
