@@ -163,42 +163,63 @@ function Products() {
                 optimize material handling processes and maximize operational
                 efficiency. These accessories include:
                 <span>
-                  <span>Idlers:</span>
+                  <span>Idlers</span>
                   Support and guide the conveyor belt along the conveyor frame,
                   reducing friction and wear.
                 </span>
                 <span>
-                  <span>Rollers:</span>
+                  <span>Rollers</span>
                   Provide support and facilitate smooth movement of conveyed
                   materials along the conveyor path.
                 </span>
                 <span>
-                  <span>Pulleys:</span>
+                  <span>Pulleys</span>
                   Transmit power and tension to the conveyor belt, facilitating
                   its movement and direction.
                 </span>
                 <span>
-                  <span>Belt cleaners:</span>
+                  <span>Belt cleaners</span>
                   Remove debris, spills, and buildup from the conveyor belt
                   surface to maintain cleanliness and prevent material
                   carryback.
                 </span>
                 <span>
-                  <span>Skirting and sealing systems:</span>
+                  <span>Skirting and sealing systems</span>
                   Seal the conveyor belt edges to prevent spillage and contain
                   material on the conveyor.
                 </span>
                 <span>
-                  <span>Tracking devices:</span>
+                  <span>Tracking devices</span>
                   Ensure proper alignment and tracking of the conveyor belt to
                   prevent misalignment and reduce wear.
                 </span>
                 <span>
-                  <span>Impact beds and bars:</span>
+                  <span>Impact beds and bars</span>
                   Absorb impact and cushion conveyed materials to reduce damage
                   to the conveyor belt and components.
                 </span>
               </p>
+
+              <div className="components__img-container">
+                <img
+                  src="https://www.asgco.com/wp-content/uploads/2019/07/TT_Flat-Return_Gallery-5_web.jpg"
+                  alt="heavy duty conveyor belt"
+                  className="components__img"
+                  loading="lazy"
+                />
+                <img
+                  src="https://www.asgco.com/wp-content/uploads/2021/10/ASGCO-Grizzly-Screw-Splice_Application-19-web.jpg"
+                  alt="heavy duty conveyor belt"
+                  className="components__img"
+                  loading="lazy"
+                />
+                <img
+                  src="https://www.asgco.com/wp-content/uploads/2019/07/ASGCO-Super-Skalper-HD_7-1.jpg"
+                  alt="heavy duty conveyor belt"
+                  className="components__img"
+                  loading="lazy"
+                />
+              </div>
             </div>
 
             <div className="components__container">
@@ -273,7 +294,7 @@ function Products() {
           </div> */}
         </div>
 
-        <div className="product__accessories-container">
+        {/* <div className="product__accessories-container">
           <article className="product__accessories-card">
             <h2 className="product__accessories-title">Accessories</h2>
             <div className="product__accessories-description">
@@ -292,7 +313,7 @@ function Products() {
               <RiArrowRightUpLine className="product__accessories-icon" />
             </Link>
           </article>
-        </div>
+        </div> */}
       </motion.section>
     </>
   );
