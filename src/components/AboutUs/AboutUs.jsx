@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Transition from "../../transition";
 import "./aboutus.css";
-import image1 from "../../assets/people/image-1.jpeg";
+import image1 from "../../assets/people/people-photo-1.jpeg";
 import image2 from "../../assets/people/image-2.jpeg";
 import image3 from "../../assets/people/image-3.jpeg";
 import image4 from "../../assets/people/image-4.jpeg";
