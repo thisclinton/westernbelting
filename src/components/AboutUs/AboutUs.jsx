@@ -3,7 +3,7 @@ import Transition from "../../transition";
 import "./aboutus.css";
 import image1 from "../../assets/people/people-photo-1.jpeg";
 import image2 from "../../assets/people/people-photo-2.jpeg";
-import image3 from "../../assets/people/people-photo-3.jpeg";
+import image3 from "../../assets/people/people-photo-3.jpg";
 import image4 from "../../assets/people/people-photo-4.jpeg";
 import image5 from "../../assets/people/image-5.jpeg";
 import image6 from "../../assets/people/image-6.jpeg";
