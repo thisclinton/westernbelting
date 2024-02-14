@@ -1,6 +1,7 @@
 import "./industries.css";
 import Transition from "../../transition";
 import { motion } from "framer-motion";
+import industriesSVG from "../../assets/industries/industries.png";
 
 const industries = [
   {
@@ -72,6 +73,13 @@ function Industries() {
         </div>
 
         <div className="industries__container">
+          <div className="hero-img-container">
+            <img
+              src={industriesSVG}
+              alt=""
+              className="products__hero-img img__hero"
+            />
+          </div>
           <p className="industries__intro">
             The Industries section encompasses diverse sectors, each with unique
             roles and contributions. From facilitating global trade at Ports and

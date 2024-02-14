@@ -10,6 +10,7 @@ import image6 from "../../assets/people/image-6.jpeg";
 import image7 from "../../assets/people/image-7.jpeg";
 import image9 from "../../assets/people/image-9.jpeg";
 import image10 from "../../assets/people/image-10.jpeg";
+import workersSVG from "../../assets/about/workers.png";
 
 function AboutUs() {
   const people = [
@@ -47,6 +48,13 @@ function AboutUs() {
         </div>
 
         <div className="about__container container">
+          <div className="hero-img-container">
+            <img
+              src={workersSVG}
+              alt=""
+              className="products__hero-img img__hero"
+            />
+          </div>
           <p className="about__description">
             Western Belting Canada is a premier provider of conveyor belting
             solutions, catering to a diverse range of industries across Canada

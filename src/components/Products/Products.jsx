@@ -8,6 +8,11 @@ import conveyorBeltWinder2 from "../../assets/products/conveyor-belt-winder-2.jp
 import conveyorBeltWinder3 from "../../assets/products/conveyor-belt-winder-3.jpg";
 import heavyDutyBelt1 from "../../assets/products/heavy-duty-belt-1.jpg";
 import heavyDutyBelt2 from "../../assets/products/heavy-duty-belt-2.jpg";
+import lightDutySVG from "../../assets/products/light-duty.svg";
+import heavyDutySVG from "../../assets/products/heavy-duty.svg";
+import accessoriesSVG from "../../assets/products/accesories-svg.png";
+import winderSVG from "../../assets/products/winder-svg.png";
+import production from "../../assets/products/production.png";
 
 function Products() {
   return (
@@ -34,6 +39,13 @@ function Products() {
           </div>
         </div>
         <div className="products__container">
+          <div className="hero-img-container">
+            <img
+              src={production}
+              alt=""
+              className="products__hero-img img__hero"
+            />
+          </div>
           <p className="products__intro">
             Understanding the classification of conveyor belts allows
             <span className="products__intro-bold"> Western Belting </span>
@@ -59,7 +71,8 @@ function Products() {
             </p>
 
             <div className="components__container">
-              <h3 className="components__title">1. Light Weight Belt </h3>
+              <img src={lightDutySVG} alt="" className="components__svg" />
+              <h3 className="components__title">Light Weight Belt </h3>
               <p className="components__description">
                 Lightweight conveyor belts are designed for applications with
                 lower loads and less demanding operating conditions. They are
@@ -89,7 +102,7 @@ function Products() {
                 />
 
                 <img
-                  src="https://images.pexels.com/photos/3693017/pexels-photo-3693017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="https://www.iclamerica.com/wp-content/uploads/2020/08/Sample-Book-2-700x300.jpg"
                   alt="light weight conveyor belt 3"
                   className="components__img"
                   loading="lazy"
@@ -98,7 +111,8 @@ function Products() {
             </div>
 
             <div className="components__container">
-              <h3 className="components__title"> 2. Heavy Duty Belt</h3>
+              <img src={heavyDutySVG} alt="" className="components__svg" />
+              <h3 className="components__title">Heavy Duty Belt</h3>
               <p className="components__description">
                 Heavy-duty conveyor belts are engineered to withstand high
                 loads, abrasive materials, and harsh operating environments.
@@ -137,8 +151,9 @@ function Products() {
             </div>
 
             <div className="components__container">
+              <img src={accessoriesSVG} alt="" className="components__svg" />
               <h3 className="components__title">
-                3. Conveyor Systems Accessories
+                Conveyor Systems Accessories
               </h3>
               <p className="components__description">
                 Conveyor systems accessories play a critical role in enhancing
@@ -187,7 +202,8 @@ function Products() {
             </div>
 
             <div className="components__container">
-              <h3 className="components__title">4. Conveyor Belt Winder</h3>
+              <img src={winderSVG} alt="" className="components__svg" />
+              <h3 className="components__title">Conveyor Belt Winder</h3>
               <p className="components__description">
                 Conveyor belt winder is an essential tool for safely handling
                 and managing conveyor belts, streamlining maintenance and

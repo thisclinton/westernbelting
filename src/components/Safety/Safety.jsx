@@ -9,6 +9,7 @@ import incident from "../../assets/safety/incident.svg";
 import communication from "../../assets/safety/communication.svg";
 import risk from "../../assets/safety/risk.svg";
 import improvement from "../../assets/safety/improvement.svg";
+import safetySVG from "../../assets/safety/safety.png";
 
 const safetyProgram = [
   {
@@ -94,6 +95,13 @@ function Safety() {
           </div>
         </div>
         <div className="safety__container container">
+          <div className="hero-img-container">
+            <img
+              src={safetySVG}
+              alt=""
+              className="products__hero-img img__hero"
+            />
+          </div>
           <p className="safety__description">
             Western Belting, like most of our customers, has a strong commitment
             to safety. We strongly believe that it is the most important thing

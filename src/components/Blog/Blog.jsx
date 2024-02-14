@@ -2,6 +2,7 @@ import Transition from "../../transition";
 import "./Blog.css";
 import { Link } from "react-router-dom";
 import { posts } from "../../data/BlogDetail";
+import newsSVG from "../../assets/news/newspaper.png";
 import { motion } from "framer-motion";
 
 function Blog() {
@@ -24,6 +25,13 @@ function Blog() {
           </div>
         </div>
         <div className="blog__container">
+          <div className="hero-img-container">
+            <img
+              src={newsSVG}
+              alt=""
+              className="products__hero-img img__hero"
+            />
+          </div>
           {posts && (
             <motion.div
               className="posts"

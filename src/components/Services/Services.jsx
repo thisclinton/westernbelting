@@ -8,6 +8,7 @@ import conveyorAccessoriesInstallation from "../../assets/services/conveyor-acce
 import mechanical from "../../assets/services/mechanical.jpeg";
 import pulleyLagging from "../../assets/services/pulley-lagging.jpg";
 import fabricBeltThicknessTesting from "../../assets/services/fabric-thickness-testing.jpg";
+import servicesSVG from "../../assets/services/customer-service.png";
 import { motion } from "framer-motion";
 
 const services = [
@@ -129,6 +130,13 @@ function Services() {
           </div>
         </div>
         <div className="services__container">
+          <div className="hero-img-container">
+            <img
+              src={servicesSVG}
+              alt=""
+              className="products__hero-img img__hero"
+            />
+          </div>
           <div className="services__detail">
             <p className="services__text">
               To bring a real high quality of support, products and service to a
@@ -139,12 +147,7 @@ function Services() {
             <div className="services__data">
               {services.map((service) => (
                 <article className="services__card" key={service.id}>
-                  <img
-                    src={service.img}
-                    alt=""
-                    className="services__img"
-                    loading="lazy"
-                  />
+                  <img src={service.img} alt="" className="services__img" />
                   <h3 className="services__title">{service.title}</h3>
                   <span className="services__info">{service.description}</span>
                   <div className="services__shadow"></div>

@@ -3,6 +3,115 @@ import yearsLogo from "../../assets/years-logo.png";
 import "./Footer.css";
 import { RiFacebookCircleFill, RiLinkedinBoxFill } from "react-icons/ri";
 
+const locations = [
+  {
+    province: "SURREY",
+    street: "5510 192 Street,",
+    city: "Surrey,",
+    postal: "BC V3S 8E5",
+    number1: "(866) 451-2358 Toll Free",
+    number2: "(604) 451-4133 Phone",
+    number3: "(604) 451-4166 Fax",
+    email: "onlinesales@westernbelting.ca",
+    location: "https://www.google.com/maps?cid=1159887035919818481",
+    id: 1,
+  },
+
+  {
+    province: "KAMLOOPS",
+    street: "630 Kingston Ave,",
+    city: " Kamloops,",
+    postal: "BC V2B 2C8",
+    number1: "1-866-451-2358 Toll Free",
+    number2: "(604) 451-4133 Phone",
+    number3: "(604) 451-4166 Fax",
+    email: "onlinesales@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/place/630+Kingston+Ave,+Kamloops,+BC+V2B+2C8,+Canada/@50.7118439,-120.3604259,17z/data=!3m1!4b1!4m6!3m5!1s0x537e2d31fc64da13:0x634b8da1c728e3f6!8m2!3d50.7118405!4d-120.357851!16s%2Fg%2F11c0r5s0g8?entry=ttu",
+    id: 2,
+  },
+
+  {
+    province: "PRINCE GEORGE",
+    street: "3490 Opie Crescent",
+    city: "Prince George,",
+    postal: "BC V2N 2P9",
+    number1: "(877) 480-2358 Toll Free",
+    number2: "(250) 561-2358 Phone",
+    number3: "(250) 562-7406 Fax",
+    email: "onlinesales@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/place/Western+Belting+%26+Hose+Ltd/@53.9006096,-122.7854371,17z/data=!3m1!4b1!4m6!3m5!1s0x5388996b4aaaeb0d:0xab1cfaa85a0446de!8m2!3d53.9006096!4d-122.7854371!16s%2Fg%2F1thq9jpm?entry=ttu",
+    id: 3,
+  },
+
+  {
+    province: "CALGARY, AB",
+    street: "7880 66th Street SE",
+    city: "Building 2, Unit 106",
+    postal: "Calgary, AB T2C 5V2",
+    number1: "(866) 451-2358 Toll Free",
+    number2: "(604) 451-4133 Phone",
+    number3: "",
+    email: "calgary@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/d/u/0/viewer?mid=1BB5M9Xl1qfUqX-Qbbwsr5K2NQBU&hl=en&ll=50.9821303196227%2C-113.93729280000001&z=18",
+    id: 4,
+  },
+
+  {
+    province: "BARRIE, ON",
+    street: "220 Bayview Drive",
+    city: "Unit 15 & 16",
+    postal: "Barrie, ON LYN 4YB",
+    number1: "(905) 251-2125",
+    number2: "",
+    number3: "",
+    email: "onlinesales@westernbelting.ca",
+    location: "",
+    id: 5,
+  },
+
+  {
+    province: "ABBOTSFORD, BC",
+    street: "",
+    city: "",
+    postal: "",
+    number1: "(604) 968-3963",
+    number2: "",
+    number3: "",
+    email: "RMcBride@westernbelting.ca",
+    location: "",
+    id: 6,
+  },
+
+  {
+    province: "VANCOUVER ISLAND, BC",
+    street: "",
+    city: "",
+    postal: "",
+    number1: "(250) 327-4109",
+    number2: "",
+    number3: "",
+    email: "onlinesales@westernbelting.ca",
+    location: "",
+    id: 7,
+  },
+
+  {
+    province: "KELOWNA, BC​",
+    street: "",
+    city: "",
+    postal: "",
+    number1: "(250) 300-8240",
+    number2: "",
+    number3: "",
+    email: "mdeans@westernbelting.ca",
+    location: "",
+    id: 8,
+  },
+];
+
 function Footer() {
   return (
     <footer className="footer">
@@ -53,7 +162,22 @@ function Footer() {
           <span className="footer__head">Our Locations</span>
 
           <div className="footer__locations">
-            <ul className="footer__location">
+            {locations.map((location) => (
+              <article className="footer__location" key={location.id}>
+                <h3 className="footer__location-title">{location.province}</h3>
+                <p className="footer__info">{location.street}</p>
+                <p className="footer__info">{location.city}</p>
+                <p className="footer__info">{location.postal}</p>
+                <p className="footer__info">{location.number1}</p>
+                <p className="footer__info">{location.number2}</p>
+                <p className="footer__info">{location.number3}</p>
+                <a href="" className="footer__email">
+                  {location.email}
+                </a>
+              </article>
+            ))}
+
+            {/* <ul className="footer__location">
               <li className="footer__location-title">Surrey</li>
               <li className="footer__info">Head Office</li>
               <li className="footer__info">5510 192 Street</li>
@@ -109,6 +233,48 @@ function Footer() {
                 </a>
               </li>
             </ul>
+
+            <ul className="footer__location">
+              <li className="footer__location-title">CALGARY, AB​</li>
+              <li className="footer__info">7880 66th Street SE</li>
+              <li className="footer__info">Building 2, Unit 106</li>
+              <li className="footer__info">Calgary, AB T2C 5V2</li>
+              <li className="footer__info">(866) 451-2358 Toll Free</li>
+              <li className="footer__info">(604) 451-4133 Phone</li>
+              <li className="footer__info">
+                <a href="#" className="footer__email">
+                  calgary@westernbelting.ca
+                </a>
+              </li>
+            </ul>
+
+            <ul className="footer__location">
+              <li className="footer__location-title">CALGARY, AB​</li>
+              <li className="footer__info">7880 66th Street SE</li>
+              <li className="footer__info">Building 2, Unit 106</li>
+              <li className="footer__info">Calgary, AB T2C 5V2</li>
+              <li className="footer__info">(866) 451-2358 Toll Free</li>
+              <li className="footer__info">(604) 451-4133 Phone</li>
+              <li className="footer__info">
+                <a href="#" className="footer__email">
+                  calgary@westernbelting.ca
+                </a>
+              </li>
+            </ul>
+
+            <ul className="footer__location">
+              <li className="footer__location-title">CALGARY, AB​</li>
+              <li className="footer__info">7880 66th Street SE</li>
+              <li className="footer__info">Building 2, Unit 106</li>
+              <li className="footer__info">Calgary, AB T2C 5V2</li>
+              <li className="footer__info">(866) 451-2358 Toll Free</li>
+              <li className="footer__info">(604) 451-4133 Phone</li>
+              <li className="footer__info">
+                <a href="#" className="footer__email">
+                  calgary@westernbelting.ca
+                </a>
+              </li>
+            </ul> */}
           </div>
         </div>
 

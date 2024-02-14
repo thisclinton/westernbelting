@@ -3,8 +3,36 @@ import Transition from "../../transition";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { RiArrowRightUpLine } from "react-icons/ri";
+import contactSVG from "../../assets/contact/contact.png";
 
 const locations = [
+  {
+    province: "SURREY",
+    street: "5510 192 Street,",
+    city: "Surrey,",
+    postal: "BC V3S 8E5",
+    number1: "(866) 451-2358 Toll Free",
+    number2: "(604) 451-4133 Phone",
+    number3: "(604) 451-4166 Fax",
+    email: "onlinesales@westernbelting.ca",
+    location: "https://www.google.com/maps?cid=1159887035919818481",
+    id: 1,
+  },
+
+  {
+    province: "KAMLOOPS",
+    street: "630 Kingston Ave,",
+    city: " Kamloops,",
+    postal: "BC V2B 2C8",
+    number1: "1-866-451-2358 Toll Free",
+    number2: "(604) 451-4133 Phone",
+    number3: "(604) 451-4166 Fax",
+    email: "onlinesales@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/place/630+Kingston+Ave,+Kamloops,+BC+V2B+2C8,+Canada/@50.7118439,-120.3604259,17z/data=!3m1!4b1!4m6!3m5!1s0x537e2d31fc64da13:0x634b8da1c728e3f6!8m2!3d50.7118405!4d-120.357851!16s%2Fg%2F11c0r5s0g8?entry=ttu",
+    id: 2,
+  },
+
   {
     province: "PRINCE GEORGE",
     street: "3490 Opie Crescent",
@@ -15,8 +43,8 @@ const locations = [
     number3: "(250) 562-7406 Fax",
     email: "onlinesales@westernbelting.ca",
     location:
-      "https://www.google.com/maps/place/Western+Belting+%26+Hose+Ltd/@53.9006096,-122.7854371,17z/data=!3m1!4b1!4m6!3m5!1s0x5388996b4aaaeb0d:0xab1cfaa85a0446de!8m2!3d53.9006096!4d-122.7854371!16s%2Fg%2F1thq9jpm?entry=ttu",
-    id: 1,
+      "https://www.google.com/maps/place/3490+Opie+Crescent,+Prince+George,+BC+V2N+2P9,+Canada/@53.9006097,-122.7854234,17z/data=!3m1!4b1!4m6!3m5!1s0x5388996b3559ce47:0x6ea5ae23d93359e7!8m2!3d53.9006097!4d-122.7854234!16s%2Fg%2F11c2bb9z82?entry=ttu",
+    id: 3,
   },
 
   {
@@ -29,8 +57,8 @@ const locations = [
     number3: "",
     email: "calgary@westernbelting.ca",
     location:
-      "https://www.google.com/maps/d/u/0/viewer?mid=1BB5M9Xl1qfUqX-Qbbwsr5K2NQBU&hl=en&ll=50.9821303196227%2C-113.93729280000001&z=18",
-    id: 2,
+      "https://www.google.com/maps/place/7880+66+St+SE,+Calgary,+AB+T2C+5V2,+Canada/@50.9822984,-113.9398601,17z/data=!4m14!1m7!3m6!1s0x5371798777c228a1:0xc022e8d830a96d68!2s7880+66+St+SE+Building+2,+Unit+106,+Calgary,+AB+T2C+5V2,+Canada!3b1!8m2!3d50.9822984!4d-113.9372852!3m5!1s0x5371798777c228a1:0xaa6c48288595b746!8m2!3d50.9822933!4d-113.9373016!16s%2Fg%2F11spx53p0w?entry=ttu",
+    id: 4,
   },
 
   {
@@ -42,8 +70,9 @@ const locations = [
     number2: "",
     number3: "",
     email: "onlinesales@westernbelting.ca",
-    location: "",
-    id: 3,
+    location:
+      "https://www.google.com/maps/place/220+Bayview+Dr+%2315,+Barrie,+ON+L4N+4Y8,+Canada/@44.3580296,-79.6858189,19z/data=!4m9!1m2!2m1!1s220+Bayview+Drive++Unit+15+%26+16++Barrie,+ON+LYN+4YB!3m5!1s0x882abce5789f7bff:0x7de9053b1653497c!8m2!3d44.357977!4d-79.6844402!15sCjMyMjAgQmF5dmlldyBEcml2ZSAgVW5pdCAxNSAmIDE2ICBCYXJyaWUsIE9OIExZTiA0WUKSARBjb21wb3VuZF9zZWN0aW9u4AEA?entry=ttu",
+    id: 5,
   },
 
   {
@@ -56,7 +85,7 @@ const locations = [
     number3: "",
     email: "RMcBride@westernbelting.ca",
     location: "",
-    id: 4,
+    id: 6,
   },
 
   {
@@ -69,7 +98,7 @@ const locations = [
     number3: "",
     email: "onlinesales@westernbelting.ca",
     location: "",
-    id: 5,
+    id: 7,
   },
 
   {
@@ -82,7 +111,7 @@ const locations = [
     number3: "",
     email: "mdeans@westernbelting.ca",
     location: "",
-    id: 6,
+    id: 8,
   },
 ];
 
@@ -123,6 +152,13 @@ function Contact() {
           </div>
         </div>
         <div className="contact__container">
+          <div className="hero-img-container">
+            <img
+              src={contactSVG}
+              alt=""
+              className="products__hero-img img__hero"
+            />
+          </div>
           <div className="contact__address">
             <article className="contact__card">
               <div className="contact__detail">
@@ -167,14 +203,14 @@ function Contact() {
                 <a href="" className="location__email">
                   {location.email}
                 </a>
-                {/* <a
+                <a
                   href={location.location}
                   className="location__map"
                   target="_blank"
                 >
                   View Location
                   <RiArrowRightUpLine className="contact__icon" />
-                </a> */}
+                </a>
               </article>
             ))}
           </div>
