@@ -130,14 +130,15 @@ function Services() {
           </div>
         </div>
         <div className="services__container">
-          <div className="hero-img-container">
-            <img
-              src={servicesSVG}
-              alt=""
-              className="products__hero-img img__hero"
-            />
-          </div>
           <div className="services__detail">
+            <div className="hero-img-container">
+              <img
+                src={servicesSVG}
+                alt=""
+                className="products__hero-img img__hero"
+              />
+            </div>
+
             <p className="services__text">
               To bring a real high quality of support, products and service to a
               wide range of industries is our biggest mission. We take pride in
