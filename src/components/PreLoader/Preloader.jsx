@@ -63,7 +63,7 @@ function Preloader() {
           />
           <h1 className="preloader__title">Western BELTING</h1>
         </div>
-        <span>Conveyor Belts since 1959</span>
+        <span className="preloader__duration">Conveyor Belts since 1959</span>
         <img src={yearsLogo} alt="" className="preloader__years" />
       </motion.div>
     </section>

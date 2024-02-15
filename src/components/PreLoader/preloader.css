@@ -11,14 +11,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .text__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 8rem;
 }
 
 .preloader__head {
@@ -28,8 +29,8 @@
   position: relative;
 }
 
-.text__container span {
-  margin-bottom: 2rem;
+.preloader__duration {
+  font-size: clamp(0.5rem, 4vw, 1rem);
 }
 
 .preloader__logo {
@@ -40,13 +41,8 @@
   font-size: clamp(1rem, 7vw, 7rem);
 }
 
-.preloader__title h1 {
-  font-size: clamp(1rem, 7vw, 7rem);
-  display: inline-block;
-}
-
 .preloader__years {
-  width: 200px;
+  width: 300px;
 }
 
 @media screen and (max-width: 650px) {
@@ -60,6 +56,6 @@
   }
 
   .preloader__years {
-    width: 70px;
+    width: 150px;
   }
 }

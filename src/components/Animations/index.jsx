@@ -29,7 +29,7 @@ export const preLoaderAnim = () => {
       ".preloader__years",
     ],
     {
-      duration: 0.7,
+      duration: 1,
       opacity: 0,
       delay: 0.3,
       y: "+=30",
@@ -47,7 +47,7 @@ export const preLoaderAnim = () => {
       {
         opacity: 0,
         y: "-=30",
-        delay: 0.3,
+        delay: 0.5,
         stagger: 0.5,
       }
     )
@@ -58,7 +58,6 @@ export const preLoaderAnim = () => {
         delay: 1.3,
         height: "0vh",
         ease: "Power3.easeOut",
-        onComplete: mobileLanding(),
       },
       "-=2"
     )
@@ -66,124 +65,6 @@ export const preLoaderAnim = () => {
       duration: 0,
       css: { display: "none" },
     });
-};
-
-export const mobileLanding = () => {
-  window.innerWidth < 763 &&
-    tl.from(".landing__main2", {
-      duration: 1,
-      delay: 0,
-      opacity: 0,
-      y: 80,
-      ease: "expo.easeOut",
-    });
-};
-
-const animateShapes = () => {
-  const infiniteTl = gsap.timeline({
-    repeat: -1,
-  });
-  infiniteTl
-    .to(".shapes .shape", {
-      duration: 4,
-      rotate: 360,
-      delay: -1,
-      ease: "power3.easeInOut",
-      stagger: 2,
-    })
-    .to(".shapes .shape-3", {
-      duration: 1,
-      rotate: 360,
-      delay: -2,
-      ease: "power3.easeInOut",
-    })
-    .to(".shapes .shape", {
-      duration: 3,
-      rotate: 0,
-      ease: "power3.easeInOut",
-      stagger: 1,
-    })
-    .to(".shapes .shape", {
-      duration: 1,
-      opacity: 0,
-      delay: -1,
-      ease: "power3.easeInOut",
-      stagger: 1,
-    })
-    .to(".shapes .shape", {
-      duration: 1.5,
-      opacity: 1,
-      ease: "power3.easeInOut",
-      stagger: 1,
-    });
-};
-
-const animateMainShape = () => {
-  const infiniteTl = gsap.timeline({
-    repeat: -1,
-  });
-  infiniteTl
-    .to(".shapes .main-circle", {
-      duration: 6,
-      x: -30,
-      y: -50,
-      ease: "expo.easeOut",
-    })
-    .to(".shapes .main-circle", {
-      duration: 6,
-      x: -30,
-      y: 50,
-      ease: "expo.easeOut",
-    })
-    .to(".shapes .main-circle", {
-      duration: 4,
-      x: 0,
-      y: 0,
-      ease: "expo.easeOut",
-    });
-};
-
-export const boxHover = (e) => {
-  const tl = gsap.timeline();
-  window.innerWidth >= 986 &&
-    tl
-      .to(e.target.querySelector(".link"), {
-        duration: 0,
-        opacity: 1,
-      })
-      .from(e.target.querySelectorAll(".box-anim"), {
-        duration: 0.3,
-        opacity: 0,
-        y: 30,
-        stagger: 0.1,
-        ease: "Power3.easeOut",
-      });
-};
-
-export const boxExit = (e) => {
-  window.innerWidth >= 986 &&
-    gsap.to(e.target.querySelector(".link"), {
-      duration: 0,
-      opacity: 0,
-    });
-};
-
-export const fadeIn = (el) => {
-  gsap.to(el, {
-    duration: 2,
-    opacity: 1,
-    y: -60,
-    ease: "power4.out",
-  });
-};
-
-export const fadeOut = (el) => {
-  gsap.to(el, {
-    duration: 1,
-    opacity: 0,
-    y: -20,
-    ease: "power4.out",
-  });
 };
 
 function AnimatedRoutes() {

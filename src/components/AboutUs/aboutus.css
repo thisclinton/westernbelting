@@ -67,13 +67,14 @@
 }
 
 .mission__description {
+  font-size: clamp(0.9rem, 3vw, 1rem);
   padding-bottom: 3rem;
   border-bottom: 1px solid black;
 }
 
 .people__img-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   width: 100%;
   gap: 2rem;
 }
@@ -100,17 +101,29 @@
     width: 100%;
   }
 
-  .about__description {
-    padding: 1rem;
-  }
-
   .about__container.container {
-    padding: 0;
+    padding: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .people__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .people__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
 @media screen and (max-width: 568px) {
   .about__card {
-    padding: 2rem;
+    padding: 3rem 0rem;
+  }
+
+  .people__img-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
