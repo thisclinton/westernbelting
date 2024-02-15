@@ -84,3 +84,9 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .blog__container {
+    padding: 0 1rem;
+  }
+}

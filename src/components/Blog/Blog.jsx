@@ -4,8 +4,26 @@ import { Link } from "react-router-dom";
 import { posts } from "../../data/BlogDetail";
 import newsSVG from "../../assets/news/newspaper.png";
 import { motion } from "framer-motion";
+import supabase from "../../config/SupabaseClient";
+import { useEffect, useState } from "react";
 
 function Blog() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const { data, error } = await supabase.from("blog").select();
+
+      if (error) {
+        console.error("Error fetching data:", error.message);
+      } else {
+        setData(data);
+      }
+    }
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <Transition />
@@ -32,7 +50,7 @@ function Blog() {
               className="products__hero-img img__hero"
             />
           </div>
-          {posts && (
+          {data && (
             <motion.div
               className="posts"
               initial={{ opacity: 0 }}
@@ -42,18 +60,18 @@ function Blog() {
                 delay: 0.65,
               }}
             >
-              {posts.map((post) => (
-                <article className="blog__card" key={post.title}>
+              {data.map((blog) => (
+                <article className="blog__card" key={blog.title}>
                   <img
-                    src={post.img}
+                    src={blog.image}
                     alt=""
                     className="blog__img"
                     loading="lazy"
                   />
                   <div className="blog__data">
-                    <h2 className="blog__title">{post.title}</h2>
-                    <p className="blog__description">{post.description}</p>
-                    <Link to={`/blog/${post.id}`} className="blog__more">
+                    <h2 className="blog__title">{blog.title}</h2>
+                    <p className="blog__description">{blog.description}</p>
+                    <Link to={`/blog/${blog.id}`} className="blog__more">
                       Read More
                     </Link>
                   </div>
