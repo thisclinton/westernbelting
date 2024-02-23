@@ -56,7 +56,7 @@ function News() {
               loading="lazy"
             />
             <h2 className="post__title">{post.title}</h2>
-            <p className="post__description">{post.description}</p>
+            <p className="post__description">{post.text}</p>
           </article>
         )}
       </div>

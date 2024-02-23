@@ -25,7 +25,7 @@ const suppliersData = [
   {
     title: "Scandia USA",
     description:
-      "Scandia USA is a leading provider of amusement park and entertainment solutions, offering a wide range of rides, attractions, and themed experiences. With expertise in design, manufacturing, and installation, Scandia USA creates memorable entertainment environments for theme parks, family entertainment centers, and other leisure destinations worldwide. Since its establishment, Scandia USA has been dedicated to delivering high-quality and innovative entertainment solutions that delight visitors of all ages.",
+      "Scandia USA, Midwest LLC is a company that specializes in providing various types of conveyor belting products for different industries, such as heavy duty, lightweight, agriculture, and sheet rubber. The company operates in multiple states, including Kansas, Oregon, Tennessee, and Texas. Scandia USA, Midwest LLC is a partner of Scandia Belting Company, a leading manufacturer of conveyor belts in Scandinavia. The company aims to offer high-quality products, competitive prices, and excellent customer service.",
     img: "http://scandiamidwestllc.com/wp-content/uploads/2015/01/logo2.png",
     id: 2,
     link: "https://scandiamidwestllc.com/",
