@@ -103,7 +103,7 @@ function AboutUs() {
             </div>
           </article>
 
-          <p className="about__description">
+          <p className="about__description about__us-description">
             At Western Belting , our operations align with ISO:9001 principles,
             resulting in heightened customer satisfaction, enhanced performance,
             and improved consistency in our conveyor belt systems. Each team

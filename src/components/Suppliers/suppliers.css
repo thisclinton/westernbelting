@@ -85,6 +85,12 @@
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 980px) {
+  .suppliers {
+    padding: 0rem 2rem;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .suppliers__card {
     flex-direction: column;

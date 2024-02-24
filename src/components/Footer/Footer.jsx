@@ -7,8 +7,8 @@ const locations = [
   {
     province: "SURREY",
     street: "5510 192 Street,",
-    city: "Surrey,",
-    postal: "BC V3S 8E5",
+    city: "",
+    postal: "Surrey, BC V3S 8E5",
     number1: "(866) 451-2358 Toll Free",
     number2: "(604) 451-4133 Phone",
     number3: "(604) 451-4166 Fax",
@@ -20,8 +20,8 @@ const locations = [
   {
     province: "KAMLOOPS",
     street: "630 Kingston Ave,",
-    city: " Kamloops,",
-    postal: "BC V2B 2C8",
+    city: " ",
+    postal: "Kamloops, BC V2B 2C8",
     number1: "1-866-451-2358 Toll Free",
     number2: "(604) 451-4133 Phone",
     number3: "(604) 451-4166 Fax",
@@ -34,8 +34,8 @@ const locations = [
   {
     province: "PRINCE GEORGE",
     street: "3490 Opie Crescent",
-    city: "Prince George,",
-    postal: "BC V2N 2P9",
+    city: "",
+    postal: "Prince George, BC V2N 2P9",
     number1: "(877) 480-2358 Toll Free",
     number2: "(250) 561-2358 Phone",
     number3: "(250) 562-7406 Fax",
@@ -73,6 +73,32 @@ const locations = [
   },
 
   {
+    province: "Calgary, AB",
+    street: "Unit#16, 261024 Dwight McLellan Trail",
+    city: "",
+    postal: "Rockyview County, AB  T4A 0T5",
+    number1: "(403) 731-7474",
+    number2: "",
+    number3: "",
+    email: "onlinesales@westernbelting.ca",
+    location: "",
+    id: 6,
+  },
+
+  {
+    province: "ST. Albert, AB",
+    street: "300, 25 Corriveau Avenue",
+    city: "",
+    postal: "St. Albert, AB, T8N 5A3 Canada",
+    number1: "(780) 544-9209",
+    number2: "",
+    number3: "",
+    email: "onlinesales@westernbelting.ca",
+    location: "",
+    id: 7,
+  },
+
+  {
     province: "ABBOTSFORD, BC",
     street: "",
     city: "",
@@ -82,7 +108,7 @@ const locations = [
     number3: "",
     email: "RMcBride@westernbelting.ca",
     location: "",
-    id: 6,
+    id: 8,
   },
 
   {
@@ -95,7 +121,7 @@ const locations = [
     number3: "",
     email: "onlinesales@westernbelting.ca",
     location: "",
-    id: 7,
+    id: 9,
   },
 
   {
@@ -108,7 +134,7 @@ const locations = [
     number3: "",
     email: "mdeans@westernbelting.ca",
     location: "",
-    id: 8,
+    id: 10,
   },
 ];
 

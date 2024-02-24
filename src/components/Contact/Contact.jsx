@@ -9,8 +9,8 @@ const locations = [
   {
     province: "SURREY",
     street: "5510 192 Street,",
-    city: "Surrey,",
-    postal: "BC V3S 8E5",
+    city: "",
+    postal: "Surrey, BC V3S 8E5",
     number1: "(866) 451-2358 Toll Free",
     number2: "(604) 451-4133 Phone",
     number3: "(604) 451-4166 Fax",
@@ -22,8 +22,8 @@ const locations = [
   {
     province: "KAMLOOPS",
     street: "630 Kingston Ave,",
-    city: " Kamloops,",
-    postal: "BC V2B 2C8",
+    city: "",
+    postal: "Kamloops, BC V2B 2C8",
     number1: "1-866-451-2358 Toll Free",
     number2: "(604) 451-4133 Phone",
     number3: "(604) 451-4166 Fax",
@@ -36,8 +36,8 @@ const locations = [
   {
     province: "PRINCE GEORGE",
     street: "3490 Opie Crescent",
-    city: "Prince George,",
-    postal: "BC V2N 2P9",
+    city: "",
+    postal: "Prince George, BC V2N 2P9",
     number1: "(877) 480-2358 Toll Free",
     number2: "(250) 561-2358 Phone",
     number3: "(250) 562-7406 Fax",
@@ -76,6 +76,32 @@ const locations = [
   },
 
   {
+    province: "Calgary, AB",
+    street: "Unit#16, 261024 Dwight McLellan Trail",
+    city: "",
+    postal: "Rockyview County, AB  T4A 0T5",
+    number1: "(403) 731-7474",
+    number2: "",
+    number3: "",
+    email: "onlinesales@westernbelting.ca",
+    location: "",
+    id: 6,
+  },
+
+  {
+    province: "ST. Albert, AB",
+    street: "300, 25 Corriveau Avenue",
+    city: "",
+    postal: "St. Albert, AB, T8N 5A3 Canada",
+    number1: "(780) 544-9209",
+    number2: "",
+    number3: "",
+    email: "onlinesales@westernbelting.ca",
+    location: "",
+    id: 7,
+  },
+
+  {
     province: "ABBOTSFORD, BC",
     street: "",
     city: "",
@@ -85,7 +111,7 @@ const locations = [
     number3: "",
     email: "RMcBride@westernbelting.ca",
     location: "",
-    id: 6,
+    id: 8,
   },
 
   {
@@ -98,7 +124,7 @@ const locations = [
     number3: "",
     email: "onlinesales@westernbelting.ca",
     location: "",
-    id: 7,
+    id: 9,
   },
 
   {
@@ -111,7 +137,7 @@ const locations = [
     number3: "",
     email: "mdeans@westernbelting.ca",
     location: "",
-    id: 8,
+    id: 10,
   },
 ];
 
@@ -159,6 +185,29 @@ function Contact() {
               className="products__hero-img img__hero"
             />
           </div>
+
+          <div className="career">
+            <h2 className="career__title">
+              Shape the Future of Conveyor Belt Technology: Join Western Belting
+              Ltd for Exciting Career Opportunities
+            </h2>
+            <p className="career__description">
+              Explore exciting career opportunities with Western Belting Ltd, a
+              trusted leader in conveyor belt solutions. Join our dynamic team
+              and contribute to innovative projects in the fields of
+              manufacturing, engineering, sales, and operations. Whether you're
+              an experienced professional or just starting your career journey,
+              Western Belting offers a supportive work environment,
+              opportunities for growth, and competitive benefits. Discover your
+              potential with Western Belting Ltd and be part of shaping the
+              future of conveyor belt technology. Apply now and embark on a
+              rewarding career path with us.
+            </p>
+            <p className="career__contact">
+              Contact us below for open opportunities
+            </p>
+          </div>
+
           <div className="contact__address">
             <article className="contact__card">
               <div className="contact__detail">
@@ -180,12 +229,14 @@ function Contact() {
               </div>
 
               <div className="contact__img-container">
-                <img
-                  src="https://images.unsplash.com/photo-1651672397008-01d088f4a9f6?q=80&w=2140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  className="contact__img"
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.142365507712!2d-122.9695767!3d49.216827099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676360ca8f6e5%3A0x1018bf1d2394def1!2sWestern%20Belting%20%26%20Hose!5e0!3m2!1sen!2sng!4v1708785534957!5m2!1sen!2sng"
+                  width="100%"
+                  height="600"
+                  allowfullscreen=""
                   loading="lazy"
-                />
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </article>
           </div>

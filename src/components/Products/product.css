@@ -12,7 +12,7 @@
 }
 
 .products__container {
-  padding: 0rem 3rem;
+  padding: 0rem 2rem;
 }
 
 .products__header {
@@ -25,7 +25,7 @@
 
 .products__components {
   display: grid;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .hero-img-container {
@@ -40,25 +40,49 @@
 .components__title {
   font-size: clamp(1.1rem, 4vw, 2rem);
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-.components__description {
+.components__description-grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 3rem;
   font-size: clamp(0.9rem, 4vw, 1rem);
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
-.components__description span span {
-  display: block;
-  font-weight: bold;
-  font-size: clamp(1rem, 4vw, 1.5rem);
-  text-transform: uppercase;
+.components__description-grid > span {
+  border: 2px solid #000;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+.components__title-description {
+  margin-bottom: 1.5rem;
 }
 
 .components__img-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+.components__description-grid > div {
+  border: 2px solid #000;
+  background: #fff;
+  padding: 1rem 0.6rem;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s all;
+  width: 100%;
+  height: 100%;
+}
+
+.components__description-grid h3 {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 4vw, 1.4rem);
+  margin-bottom: 1rem;
 }
 
 .components__svg {
@@ -76,7 +100,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
-  margin: 3rem 0;
+  margin: 0.6rem 0;
 }
 
 .product {
@@ -173,9 +197,10 @@
   transform: translate(4px, -3px);
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1280px) {
   .products__container {
     gap: 2rem;
+    padding: 0rem 1rem;
   }
 
   .product__img {

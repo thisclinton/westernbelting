@@ -16,6 +16,8 @@
 
 .contact__img-container {
   width: 50vw;
+  height: 100%;
+  display: flex;
 }
 
 .contact__img {
@@ -30,6 +32,21 @@
   justify-content: center;
   gap: 3rem;
   padding: 0 2rem;
+}
+
+.career__title {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 6vw, 1.5rem);
+  margin-bottom: 1rem;
+}
+
+.career__description {
+  font-size: clamp(0.95rem, 4vw, 1.1rem);
+  margin-bottom: 1rem;
+}
+
+.career__contact {
+  font-size: clamp(0.95rem, 4vw, 1.1rem);
 }
 
 .contact__title {

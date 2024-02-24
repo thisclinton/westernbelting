@@ -54,8 +54,12 @@
   font-size: clamp(0.9rem, 3vw, 1rem);
   color: #000000b0;
   line-height: 1.7;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding-bottom: 3rem;
+}
+
+.about__us-description {
+  border-bottom: 1px solid #000;
 }
 
 .about__title {

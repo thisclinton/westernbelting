@@ -155,50 +155,56 @@ function Products() {
               <h3 className="components__title">
                 Conveyor Systems Accessories
               </h3>
-              <p className="components__description">
+              <p className="components__title-description">
                 Conveyor systems accessories play a critical role in enhancing
                 the performance, reliability, and safety of conveyor belt
                 systems across various industries. These components are
                 carefully selected and integrated into conveyor systems to
                 optimize material handling processes and maximize operational
                 efficiency. These accessories include:
-                <span>
-                  <span>Idlers</span>
+              </p>
+
+              <div className="components__description-grid">
+                <div>
+                  <h3>Idlers & Rollers</h3>
                   Support and guide the conveyor belt along the conveyor frame,
-                  reducing friction and wear.
-                </span>
-                <span>
-                  <span>Rollers</span>
-                  Provide support and facilitate smooth movement of conveyed
-                  materials along the conveyor path.
-                </span>
-                <span>
-                  <span>Pulleys</span>
+                  reducing friction and wear, and also provide support and
+                  facilitate smooth movement of conveyed materials along the
+                  conveyor path.
+                  <div className="components__shadow"></div>
+                </div>
+                <div>
+                  <h3>Pulleys</h3>
                   Transmit power and tension to the conveyor belt, facilitating
                   its movement and direction.
-                </span>
-                <span>
-                  <span>Belt cleaners</span>
+                  <div className="components__shadow"></div>
+                </div>
+                <div>
+                  <h3>Belt cleaners</h3>
                   Remove debris, spills, and buildup from the conveyor belt
                   surface to maintain cleanliness and prevent material
                   carryback.
-                </span>
-                <span>
-                  <span>Skirting and sealing systems</span>
+                  <div className="components__shadow"></div>
+                </div>
+                <div>
+                  <h3>Skirting and sealing systems</h3>
                   Seal the conveyor belt edges to prevent spillage and contain
                   material on the conveyor.
-                </span>
-                <span>
-                  <span>Tracking devices</span>
+                  <div className="components__shadow"></div>
+                </div>
+                <div>
+                  <h3>Tracking devices</h3>
                   Ensure proper alignment and tracking of the conveyor belt to
                   prevent misalignment and reduce wear.
-                </span>
-                <span>
-                  <span>Impact beds and bars</span>
+                  <div className="components__shadow"></div>
+                </div>
+                <div>
+                  <h3>Impact beds and bars</h3>
                   Absorb impact and cushion conveyed materials to reduce damage
                   to the conveyor belt and components.
-                </span>
-              </p>
+                  <div className="components__shadow"></div>
+                </div>
+              </div>
 
               <div className="components__img-container">
                 <img
