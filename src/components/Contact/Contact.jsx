@@ -300,6 +300,7 @@ function Contact() {
                 type="text"
                 className="form__input"
                 placeholder="Subject"
+                name="subject"
               />
               <label className="form__label">subject</label>
               <div className="form__shadow"></div>
@@ -310,6 +311,7 @@ function Contact() {
                 type="text"
                 className="form__input"
                 placeholder="Message"
+                name="message"
               />
               <label className="form__label">Message</label>
               <div className="form__shadow"></div>
