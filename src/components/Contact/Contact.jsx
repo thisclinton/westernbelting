@@ -77,14 +77,15 @@ const locations = [
 
   {
     province: "Calgary, AB",
-    street: "Unit#16, 261024 Dwight McLellan Trail",
+    street: "Unit 16, 261024 Dwight McLellan Trail",
     city: "",
     postal: "Rockyview County, AB  T4A 0T5",
     number1: "(403) 731-7474",
     number2: "",
     number3: "",
     email: "onlinesales@westernbelting.ca",
-    location: "",
+    location:
+      "https://www.google.com/maps/place/261024+Dwight+McLellan+Trail+%2316,+Calgary,+AB+T4A+0T5,+Canada/@51.199393,-113.975217,17z/data=!3m1!4b1!4m6!3m5!1s0x53716055a93fa2eb:0x4db066363a8706f3!8m2!3d51.199393!4d-113.975217!16s%2Fg%2F11j4qwlvx1?entry=ttu",
     id: 6,
   },
 
@@ -97,7 +98,8 @@ const locations = [
     number2: "",
     number3: "",
     email: "onlinesales@westernbelting.ca",
-    location: "",
+    location:
+      "https://www.google.com/maps/place/25+Corriveau+Ave+%23300,+St.+Albert,+AB+T8N+5A3,+Canada/@53.6431061,-113.5780009,17z/data=!3m1!4b1!4m5!3m4!1s0x53a025dcc9838581:0x5ae9a04a8cd274!8m2!3d53.6431029!4d-113.575426?entry=ttu",
     id: 7,
   },
 
@@ -110,7 +112,7 @@ const locations = [
     number2: "",
     number3: "",
     email: "RMcBride@westernbelting.ca",
-    location: "",
+    location: "https://www.google.com/maps?cid=1159887035919818481",
     id: 8,
   },
 
@@ -123,7 +125,7 @@ const locations = [
     number2: "",
     number3: "",
     email: "onlinesales@westernbelting.ca",
-    location: "",
+    location: "https://www.google.com/maps?cid=1159887035919818481",
     id: 9,
   },
 
@@ -136,7 +138,7 @@ const locations = [
     number2: "",
     number3: "",
     email: "mdeans@westernbelting.ca",
-    location: "",
+    location: "https://www.google.com/maps?cid=1159887035919818481",
     id: 10,
   },
 ];
@@ -233,9 +235,8 @@ function Contact() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.142365507712!2d-122.9695767!3d49.216827099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676360ca8f6e5%3A0x1018bf1d2394def1!2sWestern%20Belting%20%26%20Hose!5e0!3m2!1sen!2sng!4v1708785534957!5m2!1sen!2sng"
                   width="100%"
                   height="600"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  loading="async"
+                  referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
             </article>
