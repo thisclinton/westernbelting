@@ -1,0 +1,48 @@
+.career__header {
+  background-image: url("../../assets/backgrounds/career-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.career__container {
+  padding: 0rem 3rem;
+}
+
+.career__title {
+  text-transform: uppercase;
+  font-size: clamp(1rem, 6vw, 1.7rem);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.career__description {
+  font-size: clamp(0.95rem, 4vw, 1rem);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.career__contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.career__contact-btn {
+  font-size: clamp(0.95rem, 4vw, 1.1rem);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.6rem 3.5rem;
+}
+
+.career__icon {
+  transition: 0.5s all;
+}
+
+.career__contact-btn:hover .career__icon {
+  transform: translate(6px, -3px);
+}

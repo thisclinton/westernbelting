@@ -188,28 +188,6 @@ function Contact() {
             />
           </div>
 
-          <div className="career">
-            <h2 className="career__title">
-              Shape the Future of Conveyor Belt Technology: Join Western Belting
-              Ltd for Exciting Career Opportunities
-            </h2>
-            <p className="career__description">
-              Explore exciting career opportunities with Western Belting Ltd, a
-              trusted leader in conveyor belt solutions. Join our dynamic team
-              and contribute to innovative projects in the fields of
-              manufacturing, engineering, sales, and operations. Whether you're
-              an experienced professional or just starting your career journey,
-              Western Belting offers a supportive work environment,
-              opportunities for growth, and competitive benefits. Discover your
-              potential with Western Belting Ltd and be part of shaping the
-              future of conveyor belt technology. Apply now and embark on a
-              rewarding career path with us.
-            </p>
-            <p className="career__contact">
-              Contact us below for open opportunities
-            </p>
-          </div>
-
           <div className="contact__address">
             <article className="contact__card">
               <div className="contact__detail">
@@ -235,7 +213,7 @@ function Contact() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.142365507712!2d-122.9695767!3d49.216827099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676360ca8f6e5%3A0x1018bf1d2394def1!2sWestern%20Belting%20%26%20Hose!5e0!3m2!1sen!2sng!4v1708785534957!5m2!1sen!2sng"
                   width="100%"
                   height="600"
-                  loading="async"
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>

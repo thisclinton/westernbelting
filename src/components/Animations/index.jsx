@@ -14,6 +14,7 @@ import Blog from "../Blog/Blog.jsx";
 import Accessories from "../Accessories/Accessories.jsx";
 import News from "../News/News.jsx";
 import { AnimatePresence, motion } from "framer-motion";
+import Career from "../Career/Career.jsx";
 
 // Declare a general timeline to use in all the animation functions.
 
@@ -91,6 +92,7 @@ function AnimatedRoutes() {
           <Route path="about" element={<AboutUs />} />
           <Route path="blog" element={<Blog />} />
           <Route path="/blog/:id" element={<News />} />
+          <Route path="/career" element={<Career />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>

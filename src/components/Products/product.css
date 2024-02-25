@@ -48,7 +48,7 @@
   gap: 1rem;
   margin-bottom: 3rem;
   font-size: clamp(0.9rem, 4vw, 1rem);
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 
 .components__description-grid > span {
@@ -243,11 +243,15 @@
     place-items: center;
     row-gap: 2rem;
   }
+
+  .components__description-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 
 @media screen and (max-width: 490px) {
   .products__container {
-    padding: 0 0.4rem;
+    padding: 0 0.8rem;
   }
 
   .product__accessories-container {
@@ -255,7 +259,7 @@
   }
 
   .components__img {
-    width: 300px;
+    width: 350px;
   }
 
   .product__accessories-card {
@@ -268,6 +272,10 @@
 
   .hero-img-container {
     margin-bottom: 1.2rem;
+  }
+
+  .components__description-grid > div {
+    padding: 0.6rem 0.2rem;
   }
 }
 
