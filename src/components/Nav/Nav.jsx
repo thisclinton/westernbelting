@@ -31,7 +31,7 @@ const navs = [
   { title: "health & safety", link: "/safety", id: 4 },
   { title: "industries", link: "/industries", id: 5 },
   { title: "news", link: "/blog", id: 6 },
-  { title: "career", link: "/career", id: 7 },
+  { title: "careers", link: "/career", id: 7 },
 ];
 
 function Nav() {
