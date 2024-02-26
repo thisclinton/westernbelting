@@ -98,7 +98,7 @@
 }
 
 .footer__info {
-  font-size: clamp(0.9rem, 3vw, 1rem);
+  font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 .footer__locations {
@@ -109,7 +109,7 @@
 
 .footer__copyright {
   text-align: center;
-  font-size: clamp(0.9rem, 4vw, 1rem);
+  font-size: clamp(0.7rem, 4vw, 1rem);
 }
 
 @media screen and (max-width: 1230px) {
@@ -163,5 +163,8 @@
   }
 }
 
-@media screen and (max-width: ) {
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 0.7rem;
+  }
 }

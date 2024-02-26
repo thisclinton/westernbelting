@@ -46,3 +46,9 @@
 .career__contact-btn:hover .career__icon {
   transform: translate(6px, -3px);
 }
+
+@media screen and (max-width: 568px) {
+  .career__container {
+    padding: 0rem 1rem;
+  }
+}

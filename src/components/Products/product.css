@@ -279,7 +279,7 @@
   }
 
   .components__img {
-    width: 300px;
+    width: 350px;
   }
 
   .product__accessories-card {
@@ -302,6 +302,10 @@
 @media screen and (max-width: 370px) {
   .products__container {
     padding: 0 0.4rem;
+  }
+
+  .components__img {
+    width: 300px;
   }
 
   .img__hero {

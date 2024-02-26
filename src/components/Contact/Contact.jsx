@@ -188,7 +188,15 @@ function Contact() {
             />
           </div>
 
-          <div className="contact__address">
+          <div className="contact__map">
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=1ydbOW7rr_mL9GnqUSQZJwyR-64A1ug0&ehbc=2E312F"
+              width="100%"
+              height="780"
+            ></iframe>
+          </div>
+
+          {/*  <div className="contact__address">
             <article className="contact__card">
               <div className="contact__detail">
                 <h2 className="contact__title">Contact Us</h2>
@@ -208,17 +216,9 @@ function Contact() {
                 </a>
               </div>
 
-              <div className="contact__img-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.142365507712!2d-122.9695767!3d49.216827099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676360ca8f6e5%3A0x1018bf1d2394def1!2sWestern%20Belting%20%26%20Hose!5e0!3m2!1sen!2sng!4v1708785534957!5m2!1sen!2sng"
-                  width="100%"
-                  height="600"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+              <div className="contact__img-container"></div>
             </article>
-          </div>
+          </div> */}
 
           <div className="locations__container">
             {locations.map((location) => (

@@ -26,6 +26,10 @@
   object-fit: cover;
 }
 
+.contact__map {
+  margin-bottom: 3rem;
+}
+
 .contact__detail {
   display: flex;
   flex-direction: column;
@@ -228,7 +232,7 @@
 
   .contact__form,
   .form__box {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -256,16 +260,11 @@
 @media screen and (max-width: 690px) {
   .locations__container {
     grid-template-columns: 1fr;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .contact__form,
-  .form__box {
-    width: 100%;
-  }
-
   .contact__container {
     margin: 1rem 0.6rem;
   }
