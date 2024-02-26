@@ -7,7 +7,7 @@ import contactSVG from "../../assets/contact/contact.png";
 
 const locations = [
   {
-    province: "SURREY",
+    province: "SURREY, BC",
     street: "5510 192 Street,",
     city: "",
     postal: "Surrey, BC V3S 8E5",
@@ -20,7 +20,7 @@ const locations = [
   },
 
   {
-    province: "KAMLOOPS",
+    province: "KAMLOOPS, BC",
     street: "630 Kingston Ave,",
     city: "",
     postal: "Kamloops, BC V2B 2C8",
@@ -34,7 +34,7 @@ const locations = [
   },
 
   {
-    province: "PRINCE GEORGE",
+    province: "PRINCE GEORGE, BC",
     street: "3490 Opie Crescent",
     city: "",
     postal: "Prince George, BC V2N 2P9",
