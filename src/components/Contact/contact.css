@@ -20,10 +20,11 @@
   display: flex;
 }
 
-.contact__img {
-  height: 100%;
+.location__img {
+  height: 600px;
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .contact__map {

@@ -4,6 +4,7 @@ import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import contactSVG from "../../assets/contact/contact.png";
+import locationMap from "../../assets/contact/location-map.jpeg";
 
 const locations = [
   {
@@ -97,7 +98,7 @@ const locations = [
     number1: "(780) 544-9209",
     number2: "",
     number3: "",
-    email: "onlinesales@westernbelting.ca",
+    email: "rockyview@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/25+Corriveau+Ave+%23300,+St.+Albert,+AB+T8N+5A3,+Canada/@53.6431061,-113.5780009,17z/data=!3m1!4b1!4m5!3m4!1s0x53a025dcc9838581:0x5ae9a04a8cd274!8m2!3d53.6431029!4d-113.575426?entry=ttu",
     id: 7,
@@ -189,11 +190,11 @@ function Contact() {
           </div>
 
           <div className="contact__map">
-            <iframe
-              src="https://www.google.com/maps/d/embed?mid=1ydbOW7rr_mL9GnqUSQZJwyR-64A1ug0&ehbc=2E312F"
-              width="100%"
-              height="780"
-            ></iframe>
+            <img
+              src={locationMap}
+              alt="map locations"
+              className="location__img"
+            />
           </div>
 
           {/*  <div className="contact__address">

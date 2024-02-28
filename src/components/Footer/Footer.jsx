@@ -5,7 +5,7 @@ import { RiFacebookCircleFill, RiLinkedinBoxFill } from "react-icons/ri";
 
 const locations = [
   {
-    province: "SURREY",
+    province: "SURREY, BC",
     street: "5510 192 Street,",
     city: "",
     postal: "Surrey, BC V3S 8E5",
@@ -18,7 +18,7 @@ const locations = [
   },
 
   {
-    province: "KAMLOOPS",
+    province: "KAMLOOPS, BC",
     street: "630 Kingston Ave,",
     city: " ",
     postal: "Kamloops, BC V2B 2C8",
@@ -32,7 +32,7 @@ const locations = [
   },
 
   {
-    province: "PRINCE GEORGE",
+    province: "PRINCE GEORGE, BC",
     street: "3490 Opie Crescent",
     city: "",
     postal: "Prince George, BC V2N 2P9",
@@ -93,7 +93,7 @@ const locations = [
     number1: "(780) 544-9209",
     number2: "",
     number3: "",
-    email: "onlinesales@westernbelting.ca",
+    email: "rockyview@westernbelting.ca",
     location: "",
     id: 7,
   },
