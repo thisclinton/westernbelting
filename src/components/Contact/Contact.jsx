@@ -4,11 +4,14 @@ import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import contactSVG from "../../assets/contact/contact.png";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 import locationMap from "../../assets/contact/location-map.jpeg";
 
 const locations = [
   {
-    province: "Head Office",
+    province: "SURREY ,BC",
+    desc: "head office",
     street: "5510 192 Street,",
     city: "",
     postal: "Surrey, BC V3S 8E5",
@@ -80,11 +83,8 @@ const locations = [
   {
     province: "rockyview, ab",
     street: "Unit 16, 261024 Dwight McLellan Trail",
-    city: "",
     postal: "Rockyview County, AB  T4A 0T5",
     number1: "(403) 731-7474",
-    number2: "",
-    number3: "",
     email: "rockyview@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/261024+Dwight+McLellan+Trail+%2316,+Calgary,+AB+T4A+0T5,+Canada/@51.199393,-113.975217,17z/data=!3m1!4b1!4m6!3m5!1s0x53716055a93fa2eb:0x4db066363a8706f3!8m2!3d51.199393!4d-113.975217!16s%2Fg%2F11j4qwlvx1?entry=ttu",
@@ -126,7 +126,7 @@ const locations = [
     number1: "(250) 758-2358",
     number2: "",
     number3: "",
-    email: "nanaimo@straitline.ca",
+    email: "vanisland@westernbelting.ca",
     location: "https://www.google.com/maps?cid=1159887035919818481",
     id: 9,
   },
@@ -144,6 +144,57 @@ const locations = [
     id: 10,
   },
 ];
+
+const MapComponent = () => {
+  const markerPositions = [
+    {
+      position: [49.1132, -122.7257],
+      content: "5510 192 Street, Surrey, BC V3S 8E5",
+    },
+    {
+      position: [50.711986820153776, -120.3578441914564],
+      content: "630 Kingston Ave, Kamloops, BC V2B 2C8",
+    },
+    {
+      position: [53.9006728853982, -122.78545558929626],
+      content: "3490 Opie Crescent, Prince George, BC V2N 2P9",
+    },
+    {
+      position: [50.98242670609096, -113.93733884712621],
+      content: "7880 66th Street SE, Building 2, Unit 106, Calgary, AB T2C 5V2",
+    },
+    {
+      position: [44.358145732039425, -79.68440801677723],
+      content: "220 Bayview Dr #15, Barrie, ON L4N 4Y8, Canada",
+    },
+    {
+      position: [51.19952070511366, -113.97523846060851],
+      content: "261024 Dwight McLellan Trail, Calgary, AB T4A 0T5, Canada",
+    },
+    {
+      position: [53.64319191502446, -113.57545818931061],
+      content: "25 Corriveau Ave #300, St. Albert, AB T8N 5A3, Canada",
+    },
+    // Add more marker positions as needed
+  ];
+  return (
+    <MapContainer
+      center={[53.64319191502446, -113.57545818931061]}
+      zoom={4}
+      style={{ height: "600px", width: "100%", zIndex: "20" }}
+    >
+      <TileLayer
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution="Western Belting"
+      />
+      {markerPositions.map((marker, index) => (
+        <Marker key={index} position={marker.position}>
+          <Popup>{marker.content}</Popup>
+        </Marker>
+      ))}
+    </MapContainer>
+  );
+};
 
 function Contact() {
   const form = useRef();
@@ -182,19 +233,13 @@ function Contact() {
           </div>
         </div>
         <div className="contact__container">
+          <MapComponent />
+
           <div className="hero-img-container">
             <img
               src={contactSVG}
               alt=""
-              className="products__hero-img img__hero"
-            />
-          </div>
-
-          <div className="contact__map">
-            <img
-              src={locationMap}
-              alt="map locations"
-              className="location__img"
+              className="products__hero-img img__hero contact__svg"
             />
           </div>
 
@@ -226,12 +271,13 @@ function Contact() {
             {locations.map((location) => (
               <article className="location__card" key={location.id}>
                 <h3>{location.province}</h3>
-                <p>{location.street}</p>
-                <p>{location.city}</p>
-                <p>{location.postal}</p>
-                <p>{location.number1}</p>
-                <p>{location.number2}</p>
-                <p>{location.number3}</p>
+                <p className="location__desc">{location.desc}</p>
+                <p className="location__info">{location.street}</p>
+                <p className="location__info">{location.city}</p>
+                <p className="location__info">{location.postal}</p>
+                <p className="location__info">{location.number1}</p>
+                <p className="location__info">{location.number2}</p>
+                <p className="location__info">{location.number3}</p>
                 <a href="" className="location__email">
                   {location.email}
                 </a>

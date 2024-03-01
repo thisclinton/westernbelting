@@ -5,7 +5,8 @@ import { RiFacebookCircleFill, RiLinkedinBoxFill } from "react-icons/ri";
 
 const locations = [
   {
-    province: "Head Office",
+    province: "Surrey, bc",
+    desc: "head office",
     street: "5510 192 Street,",
     city: "",
     postal: "Surrey, BC V3S 8E5",
