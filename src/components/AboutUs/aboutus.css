@@ -8,6 +8,10 @@
   gap: 4rem;
 }
 
+.about__container {
+  max-width: 1480px;
+}
+
 .about__header {
   background-image: url("../../assets/backgrounds/about-bg.jpeg");
   background-size: cover;
@@ -79,7 +83,7 @@
 .people__img-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  width: 100%;
+  margin: 0 auto;
   gap: 2rem;
 }
 
