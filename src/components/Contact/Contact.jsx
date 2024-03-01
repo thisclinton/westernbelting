@@ -8,7 +8,7 @@ import locationMap from "../../assets/contact/location-map.jpeg";
 
 const locations = [
   {
-    province: "SURREY, BC",
+    province: "Head Office",
     street: "5510 192 Street,",
     city: "",
     postal: "Surrey, BC V3S 8E5",
@@ -28,7 +28,7 @@ const locations = [
     number1: "1-866-451-2358 Toll Free",
     number2: "(604) 451-4133 Phone",
     number3: "(604) 451-4166 Fax",
-    email: "onlinesales@westernbelting.ca",
+    email: "kamloops@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/630+Kingston+Ave,+Kamloops,+BC+V2B+2C8,+Canada/@50.7118439,-120.3604259,17z/data=!3m1!4b1!4m6!3m5!1s0x537e2d31fc64da13:0x634b8da1c728e3f6!8m2!3d50.7118405!4d-120.357851!16s%2Fg%2F11c0r5s0g8?entry=ttu",
     id: 2,
@@ -42,7 +42,7 @@ const locations = [
     number1: "(877) 480-2358 Toll Free",
     number2: "(250) 561-2358 Phone",
     number3: "(250) 562-7406 Fax",
-    email: "onlinesales@westernbelting.ca",
+    email: "pg@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/3490+Opie+Crescent,+Prince+George,+BC+V2N+2P9,+Canada/@53.9006097,-122.7854234,17z/data=!3m1!4b1!4m6!3m5!1s0x5388996b3559ce47:0x6ea5ae23d93359e7!8m2!3d53.9006097!4d-122.7854234!16s%2Fg%2F11c2bb9z82?entry=ttu",
     id: 3,
@@ -50,6 +50,7 @@ const locations = [
 
   {
     province: "CALGARY, AB",
+    desc: "lightweight",
     street: "7880 66th Street SE",
     city: "Building 2, Unit 106",
     postal: "Calgary, AB T2C 5V2",
@@ -70,35 +71,35 @@ const locations = [
     number1: "(905) 251-2125",
     number2: "",
     number3: "",
-    email: "onlinesales@westernbelting.ca",
+    email: "barrie@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/220+Bayview+Dr+%2315,+Barrie,+ON+L4N+4Y8,+Canada/@44.3580296,-79.6858189,19z/data=!4m9!1m2!2m1!1s220+Bayview+Drive++Unit+15+%26+16++Barrie,+ON+LYN+4YB!3m5!1s0x882abce5789f7bff:0x7de9053b1653497c!8m2!3d44.357977!4d-79.6844402!15sCjMyMjAgQmF5dmlldyBEcml2ZSAgVW5pdCAxNSAmIDE2ICBCYXJyaWUsIE9OIExZTiA0WUKSARBjb21wb3VuZF9zZWN0aW9u4AEA?entry=ttu",
     id: 5,
   },
 
   {
-    province: "Calgary, AB",
+    province: "rockyview, ab",
     street: "Unit 16, 261024 Dwight McLellan Trail",
     city: "",
     postal: "Rockyview County, AB  T4A 0T5",
     number1: "(403) 731-7474",
     number2: "",
     number3: "",
-    email: "onlinesales@westernbelting.ca",
+    email: "rockyview@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/261024+Dwight+McLellan+Trail+%2316,+Calgary,+AB+T4A+0T5,+Canada/@51.199393,-113.975217,17z/data=!3m1!4b1!4m6!3m5!1s0x53716055a93fa2eb:0x4db066363a8706f3!8m2!3d51.199393!4d-113.975217!16s%2Fg%2F11j4qwlvx1?entry=ttu",
     id: 6,
   },
 
   {
-    province: "ST. Albert, AB",
+    province: "Edmonton, AB",
     street: "300, 25 Corriveau Avenue",
     city: "",
     postal: "St. Albert, AB, T8N 5A3 Canada",
     number1: "(780) 544-9209",
     number2: "",
     number3: "",
-    email: "rockyview@westernbelting.ca",
+    email: "edmonton@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/25+Corriveau+Ave+%23300,+St.+Albert,+AB+T8N+5A3,+Canada/@53.6431061,-113.5780009,17z/data=!3m1!4b1!4m5!3m4!1s0x53a025dcc9838581:0x5ae9a04a8cd274!8m2!3d53.6431029!4d-113.575426?entry=ttu",
     id: 7,
@@ -112,7 +113,7 @@ const locations = [
     number1: "(604) 968-3963",
     number2: "",
     number3: "",
-    email: "RMcBride@westernbelting.ca",
+    email: "abbotsford@westernbelting.ca",
     location: "https://www.google.com/maps?cid=1159887035919818481",
     id: 8,
   },
@@ -122,10 +123,10 @@ const locations = [
     street: "",
     city: "",
     postal: "",
-    number1: "(250) 327-4109",
+    number1: "(250) 758-2358",
     number2: "",
     number3: "",
-    email: "onlinesales@westernbelting.ca",
+    email: "nanaimo@straitline.ca",
     location: "https://www.google.com/maps?cid=1159887035919818481",
     id: 9,
   },
@@ -138,7 +139,7 @@ const locations = [
     number1: "(250) 300-8240",
     number2: "",
     number3: "",
-    email: "mdeans@westernbelting.ca",
+    email: "kelowna@westernbelting.ca",
     location: "https://www.google.com/maps?cid=1159887035919818481",
     id: 10,
   },
