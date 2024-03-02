@@ -6,7 +6,8 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import contactSVG from "../../assets/contact/contact.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import locationMap from "../../assets/contact/location-map.jpeg";
+import Icon from "leaflet";
+import locationMarker from "../../assets/contact/location-pin.png";
 
 const locations = [
   {
@@ -177,6 +178,14 @@ const MapComponent = () => {
     },
     // Add more marker positions as needed
   ];
+
+  const CustomIcon = Icon.icon({
+    iconUrl: locationMarker, // Specify the URL of your custom icon image
+    iconSize: [40, 40], // Specify the size of the icon
+    iconAnchor: [20, 40], // Specify the anchor point of the icon (relative to its size)
+    popupAnchor: [0, -40], // Specify the popup anchor point (relative to the icon's anchor)
+  });
+
   return (
     <MapContainer
       center={[53.64319191502446, -113.57545818931061]}
@@ -188,7 +197,7 @@ const MapComponent = () => {
         attribution="Western Belting"
       />
       {markerPositions.map((marker, index) => (
-        <Marker key={index} position={marker.position}>
+        <Marker key={index} position={marker.position} icon={CustomIcon}>
           <Popup>{marker.content}</Popup>
         </Marker>
       ))}
