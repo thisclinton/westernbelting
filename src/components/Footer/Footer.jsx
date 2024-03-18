@@ -62,6 +62,19 @@ const locations = [
   },
 
   {
+    province: "rockyview, ab",
+    desc: "heavyweight belt",
+    street: "Unit 16, 261024 Dwight McLellan Trail",
+    city: "",
+    postal: "Rockyview County, AB  T4A 0T5",
+    number1: "(866) 451-2358 Toll Free",
+    number2: "(403) 731-7474 Phone",
+    email: "rockyview@westernbelting.ca",
+    location: "",
+    id: 5,
+  },
+
+  {
     province: "BARRIE, ON",
     street: "220 Bayview Drive",
     city: "Unit 15 & 16",
@@ -70,20 +83,6 @@ const locations = [
     number2: "",
     number3: "",
     email: "barrie@westernbelting.ca",
-    location: "",
-    id: 5,
-  },
-
-  {
-    province: "rockyview, ab",
-    desc: "heavyweight belt",
-    street: "Unit 16, 261024 Dwight McLellan Trail",
-    city: "",
-    postal: "Rockyview County, AB  T4A 0T5",
-    number1: "(403) 731-7474",
-    number2: "",
-    number3: "",
-    email: "rockyview@westernbelting.ca",
     location: "",
     id: 6,
   },

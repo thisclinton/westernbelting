@@ -46,12 +46,17 @@ function Career() {
             Apply now and embark on a rewarding career path with us.
           </p>
 
-          <div className="career__contact">
+          <p className="career__email">
+            Contact Us
+            <br /> careers@westernbelting.ca
+          </p>
+
+          {/* <div className="career__contact">
             <Link to="/contact" className="career__contact-btn">
               Contact Us
               <RiArrowRightUpLine className="career__icon" />
             </Link>
-          </div>
+          </div> */}
         </div>
       </motion.section>
     </>

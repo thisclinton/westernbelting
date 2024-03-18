@@ -68,6 +68,19 @@ const locations = [
   },
 
   {
+    province: "rockyview, ab",
+    desc: "heavyweight belt",
+    street: "Unit 16, 261024 Dwight McLellan Trail",
+    postal: "Rockyview County, AB  T4A 0T5",
+    number1: "(866) 451-2358 Toll Free",
+    number2: "(403) 731-7474 Phone",
+    email: "rockyview@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/place/261024+Dwight+McLellan+Trail+%2316,+Calgary,+AB+T4A+0T5,+Canada/@51.199393,-113.975217,17z/data=!3m1!4b1!4m6!3m5!1s0x53716055a93fa2eb:0x4db066363a8706f3!8m2!3d51.199393!4d-113.975217!16s%2Fg%2F11j4qwlvx1?entry=ttu",
+    id: 5,
+  },
+
+  {
     province: "BARRIE, ON",
     street: "220 Bayview Drive",
     city: "Unit 15 & 16",
@@ -78,18 +91,6 @@ const locations = [
     email: "barrie@westernbelting.ca",
     location:
       "https://www.google.com/maps/place/220+Bayview+Dr+%2315,+Barrie,+ON+L4N+4Y8,+Canada/@44.3580296,-79.6858189,19z/data=!4m9!1m2!2m1!1s220+Bayview+Drive++Unit+15+%26+16++Barrie,+ON+LYN+4YB!3m5!1s0x882abce5789f7bff:0x7de9053b1653497c!8m2!3d44.357977!4d-79.6844402!15sCjMyMjAgQmF5dmlldyBEcml2ZSAgVW5pdCAxNSAmIDE2ICBCYXJyaWUsIE9OIExZTiA0WUKSARBjb21wb3VuZF9zZWN0aW9u4AEA?entry=ttu",
-    id: 5,
-  },
-
-  {
-    province: "rockyview, ab",
-    desc: "heavyweight belt",
-    street: "Unit 16, 261024 Dwight McLellan Trail",
-    postal: "Rockyview County, AB  T4A 0T5",
-    number1: "(403) 731-7474",
-    email: "rockyview@westernbelting.ca",
-    location:
-      "https://www.google.com/maps/place/261024+Dwight+McLellan+Trail+%2316,+Calgary,+AB+T4A+0T5,+Canada/@51.199393,-113.975217,17z/data=!3m1!4b1!4m6!3m5!1s0x53716055a93fa2eb:0x4db066363a8706f3!8m2!3d51.199393!4d-113.975217!16s%2Fg%2F11j4qwlvx1?entry=ttu",
     id: 6,
   },
 

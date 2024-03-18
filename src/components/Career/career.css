@@ -8,6 +8,7 @@
 
 .career__container {
   padding: 0rem 3rem;
+  width: 100%;
 }
 
 .career__title {
@@ -27,6 +28,14 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.career__email {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  cursor: pointer;
 }
 
 .career__contact-btn {
