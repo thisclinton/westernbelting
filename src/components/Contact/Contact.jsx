@@ -54,7 +54,7 @@ const locations = [
 
   {
     province: "CALGARY, AB",
-    desc: "lightweight",
+    desc: "lightweight belt",
     street: "7880 66th Street SE",
     city: "Building 2, Unit 106",
     postal: "Calgary, AB T2C 5V2",
@@ -83,6 +83,7 @@ const locations = [
 
   {
     province: "rockyview, ab",
+    desc: "heavyweight belt",
     street: "Unit 16, 261024 Dwight McLellan Trail",
     postal: "Rockyview County, AB  T4A 0T5",
     number1: "(403) 731-7474",
