@@ -88,6 +88,20 @@ const locations = [
   },
 
   {
+    province: "Hamilton, ON",
+    street: "423 Millen Road",
+    city: "",
+    postal: "Stoney Creek, ON L8E 2P6",
+    number1: "(905) 466-2812",
+    number2: "",
+    number3: "",
+    email: "hamilton@westernbelting.ca",
+    location:
+      "https://www.google.com/maps/place/220+Bayview+Dr+%2315,+Barrie,+ON+L4N+4Y8,+Canada/@44.3580296,-79.6858189,19z/data=!4m9!1m2!2m1!1s220+Bayview+Drive++Unit+15+%26+16++Barrie,+ON+LYN+4YB!3m5!1s0x882abce5789f7bff:0x7de9053b1653497c!8m2!3d44.357977!4d-79.6844402!15sCjMyMjAgQmF5dmlldyBEcml2ZSAgVW5pdCAxNSAmIDE2ICBCYXJyaWUsIE9OIExZTiA0WUKSARBjb21wb3VuZF9zZWN0aW9u4AEA?entry=ttu",
+    id: 7,
+  },
+
+  {
     province: "Edmonton, AB",
     street: "300, 25 Corriveau Avenue",
     city: "",
@@ -97,7 +111,7 @@ const locations = [
     number3: "",
     email: "edmonton@westernbelting.ca",
     location: "",
-    id: 7,
+    id: 8,
   },
 
   {
@@ -110,7 +124,7 @@ const locations = [
     number3: "",
     email: "abbotsford@westernbelting.ca",
     location: "",
-    id: 8,
+    id: 9,
   },
 
   {
@@ -123,7 +137,7 @@ const locations = [
     number3: "",
     email: "nanaimo@straitline.ca",
     location: "",
-    id: 9,
+    id: 10,
   },
 
   {
@@ -136,7 +150,7 @@ const locations = [
     number3: "",
     email: "kelowna@westernbelting.ca",
     location: "",
-    id: 10,
+    id: 11,
   },
 ];
 
