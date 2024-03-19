@@ -135,7 +135,7 @@ const locations = [
     number1: "(250) 758-2358",
     number2: "",
     number3: "",
-    email: "nanaimo@straitline.ca",
+    email: "vanisland@westernbelting.ca",
     location: "",
     id: 10,
   },
